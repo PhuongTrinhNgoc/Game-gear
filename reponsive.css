@@ -1,0 +1,366 @@
+
+
+@media(max-width:1023px){
+    .item-main{
+        width: 33%;
+        padding: 6px;
+    }
+    .card-main{
+        padding: 6px;
+        width: 100%;
+        height: 263px;
+    }
+    .card-img{
+
+    }
+    .card-title{
+        transform: translateY(-18px);
+        font-size: 14px;
+    }
+    .shjt{
+       
+    }
+    .card-price{
+        font-size: 16px;
+        left: 41%;
+        bottom: 159px;
+    }
+    .card-price-sale{
+        font-size: 16px;
+        transform: translate(46px, -19px);
+    }
+    .card-color {
+        transform: translate(7px, -23px);
+        margin-bottom: 0px;
+    }
+    .card-action{
+    }
+    .row-info-item{
+        padding: 0;
+        width: 106%;
+        height: 290px;
+    }
+
+    .card-main:hover .card-title{
+        transform: translateY(-58px);
+        font-size: 12px;
+    }
+    .card-main:hover .card-price-sale{
+        font-size: 12px;
+        transform: translate(0px, -49px);
+    }
+    .card-main:hover .card-price{
+        font-size: 18px;
+        left: 43%;
+        bottom: 84px;
+    }
+    .card-main:hover .shjt{
+        display: block;
+        left: 37%;
+        top: 174px;
+    }
+    .card-main:hover .card-color{
+        transform: translate(-31px, -50px);
+        margin-bottom: 0px;
+    }
+    .card-main:hover .card-action{
+        transform: translateY(-61px);
+    }
+    .card-main:hover{
+        height: 284px;
+    }
+    .item-main-1{
+        display: none;
+    }
+    .img-card-1{
+        margin: 36px 0 !important;
+    }
+    .img-card-2{
+        margin: 34px 0!important;
+    }.img-card-3{
+            margin: 57px 0!important;
+    }
+    .gameconsole-1 {
+        margin-top: 40px;
+    }
+    .add-ab{
+        top: 100%;
+        left: 41%;
+    }
+    .gameconsole {
+        margin-bottom: 10px;
+    }
+    .nav-link{
+        font-size: 14px;
+    }
+    /* sale */
+    .h1-sale {
+        font-size: 28px;
+    }
+    .sale{
+        height: 270px;
+    }
+    /* chuyen muc */
+    .body-left{
+
+    }
+    .menu-seacrh{
+        font-size: 14px;
+    }
+    .item-search{
+        font-size: 12px;
+    }
+    .icon-list-menu{
+
+    }
+    .game-list{
+
+    }
+    .col-3-1{
+        padding: 0 6px 0 0;
+    }
+    /* news */
+    .col-2-2{
+        width: 33%;
+        margin-bottom: 20px;
+    }
+    .tab-123{
+        margin-top: 8px !important;
+    }
+    /*  */
+    /* .baner-bot-1{
+        width: 769px;
+        height: 265px;
+        Object-fit: cover;
+        overflow: hidden;
+    } */
+}
+
+@media (max-width: 767px){
+    .box{
+        font-size: 10px;
+        padding: 4px;
+    }
+    .item-main{
+        width: 33%;
+        padding: 6px;
+    }
+    .card-main{
+        padding: 6px;
+        width: 100%;
+        height: 263px;
+    }
+    .card-img{
+
+    }
+    .card-title{
+        transform: translateY(-5px);
+        font-size: 7px;
+    }
+    .shjt{
+       
+    }
+    .card-price{
+        font-size: 16px;
+        left: 41%;
+        bottom: 159px;
+    }
+    .card-price-sale{
+        font-size: 10px;
+        transform: translate(18px, -12px);
+    }
+    .card-color {
+        transform: translate(3px, -20px);
+        margin-bottom: 0px;
+    }
+    .card-action{
+        font-size: 10px;
+    }
+    .row-info-item{
+        padding: 0;
+        width: 106%;
+        height: 290px;
+    }
+
+    .card-main:hover .card-title{
+        transform: translateY(-45px);
+        font-size: 8px;
+    }
+    /* color-mau */
+    .color-h6{
+        font-size: 8px;
+    }
+    .card-color-black{
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 29px !important;
+    }
+    .card-color-white{
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 29px !important;
+    }
+    .card-color{
+        transform: translate(3px, -19px);
+    }
+    /*  */
+    /* button */
+    .card-action button {
+        font-size: 6px;
+    }
+    /*  */
+    .card-main:hover .card-price-sale{
+        font-size: 7px;
+        transform: translate(0px, -40px);
+    }
+    .card-main:hover .card-price{
+        font-size: 10px ;
+        left: 47%;
+        bottom: 54px;
+    }
+    .card-main:hover .shjt{
+        display: block;
+        left: 42%;
+        top: 98px;
+        font-size: 8px;
+    }
+    .card-main:hover .card-color{
+        transform: translate(-11px, -46px);
+        margin-bottom: 0px;
+    }
+    .card-main:hover .card-action{
+        transform: translateY(-66px);
+    }
+    .card-main:hover{
+        height: 165px;
+    }
+    /*  */
+    .item-main-1{
+        display: none;
+    }
+    .img-card-1{
+        margin: 18px 0 !important;
+    }
+    .img-card-2{
+        margin: 17px 0!important;
+    }.img-card-3{
+            margin: 28px 0!important;
+    }
+    .gameconsole-1 {
+        margin-top: 40px;
+    }
+    .add-ab{
+        top: 100%;
+        left: 41%;
+    }
+    .gameconsole {
+        margin-bottom: 10px;
+    }
+    .nav-link{
+        font-size: 14px;
+    }
+    /* sale */
+    .h1-sale {
+        font-size: 28px;
+    }
+    .sale{
+        height: 170px;
+    }
+    /* chuyen muc */
+    .body-left{
+
+    }
+    .menu-seacrh{
+        font-size: 14px;
+    }
+    .item-search{
+        font-size: 12px;
+    }
+    .icon-list-menu{
+
+    }
+    .game-list{
+
+    }
+    .col-3-1{
+        display: none;
+    }
+    .col-9-1{
+        width: 100%;
+    }
+    /* news */
+    .col-2-2{
+        width: 33%;
+        margin-bottom: 20px;
+    }
+    .tab-123{
+        margin-top: 8px !important;
+    }
+    /*  */
+    /* .baner-bot-1{
+        width: 769px;
+        height: 265px;
+        Object-fit: cover;
+        overflow: hidden;
+    } */
+
+    .card-main {
+        border-radius: 10px;
+        height: 141px;
+    }
+    /* sale icon */
+    .sale-of-list-item {
+        width: 22px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: yellow;
+        border-radius: 10px 0 10px 0;
+    }
+    .sale-of-list-item span{
+        font-size: 8px  !important;
+    color: orangered  !important;
+    font-weight: 500  !important;
+    }
+    .card-main:hover .love {
+        visibility: visible;
+        opacity: 100;
+        top: 2px;
+        right: 8px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 374px)and(min-width:314){
+    .card-main:hover .card-title{
+        transform: translateY(-45px);
+        font-size: 8px;
+    }
+        .card-main:hover .card-price-sale{
+            font-size: 7px;
+            transform: translate(0px, -40px);
+        }
+        .card-main:hover .card-price{
+            font-size: 10px ;
+            left: 47%;
+            bottom: 54px;
+        }
+        .card-main:hover .shjt{
+            display: block;
+            left: 42%;
+            top: 98px;
+            font-size: 8px;
+        }
+        .card-main:hover .card-color{
+            transform: translate(-11px, -46px);
+            margin-bottom: 0px;
+        }
+        .card-main:hover .card-action{
+            transform: translateY(-66px);
+        }
+        .card-main:hover{
+            height: 165px;
+        }
+}
+/* col-lg-4 col-md-6 col-sm-6 col-12 */

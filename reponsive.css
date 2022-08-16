@@ -762,10 +762,7 @@
         .gameconsole-1 {
             margin-top: 40px;
         }
-        .add-ab{
-            top: 100%;
-            left: 41%;
-        }
+       
         .gameconsole {
             margin-bottom: 10px;
         }
@@ -918,7 +915,7 @@
                 margin-top: 40px;
             }
             .add-ab{
-                top: 100%;
+                top: 106%;
                 left: 41%;
             }
             .gameconsole {
@@ -1217,7 +1214,7 @@
         left: 161px !important;
     }
     .all-icon{
-        font-size: 12px !important;
+        font-size: 10px !important;
     }
     .all-box-tab{
         padding-top: 60px;
@@ -1245,15 +1242,59 @@
     .hr-11{
         margin:20px 0;
     }
+    .hr-container-new{
+        margin: 0 !important;
+    }
     .img-fluid {
         margin: 20px 0 10px 0 !important;
     }
     .text-up{
-        font-size: 6px;
+        font-size: 5px !important;
     }
     .text-dow{
-        font-size: 4px;
+        font-size: 4px !important;
     }
+    .box-feedback{
+        font-size: 10px;
+    }
+    .row-service{
+        margin: 10px 0;
+    }
+    .a-item{
+        /* padding: 0 6px 0 0; */
+    }
+    .login span{
+        font-size: 12px;
+    }
+    .login a{
+        font-size: 10px;
+    }
+    .input-email {
+        font-size: 10px !important;
+        padding: 6px;
+        width: 200px !important;
+        margin: 20px 0;
+    }
+    .btn-login-email{
+        padding: 6px;
+        font-size: 10px;
+        font-size: 10px;
+}
+.creat-acc-1{
+    font-size: 14px;
+}
+.creat-acc div{
+    font-size: 12px;
+}
+.text-adress {
+    font-size: 6px !important;
+}
+.text-feedback{
+    font-size: 14px;
+}
+.all-info{
+    padding:4px 10px 10px 10px;
+}
 }
 /* @media (max-width: 374px) and (min-width:314){
     .card-main:hover .card-title{

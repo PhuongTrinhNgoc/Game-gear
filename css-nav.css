@@ -5,6 +5,9 @@
     /* flex-direction: row; */
     /* flex-wrap: nowrap; */
   }
+  .t-center{
+    text-align: center;
+  }
   .fl-wrap{
     flex-wrap: wrap;
   }
@@ -152,10 +155,10 @@
         left: 265px;
     }
     .amount-item span{
-        font-size: 12px;
+        font-size: 10px;
     }
     .sort-by span{
-        font-size: 14px;
+        font-size: 10px;
     }
     .btn-search{
       left: 40px;

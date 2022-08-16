@@ -1,5 +1,6 @@
 
-@media (max-width: 767px) and (min-width:314px){
+
+@media (max-width: 767px) and (min-width:600px){
     .box{
         font-size: 10px;
         padding: 4px;
@@ -313,9 +314,9 @@
             margin-top: 8px !important;
         }
         /* box */
-      .sapxep{
-          font-size: 14px;
-      }
+     .sort-by{
+         font-size: 10px;
+     }
       .new--{
           font-size: 10px;
       }
@@ -351,7 +352,7 @@
             right: 7px;
         }
         .h5-bgr{
-            font-size: 14px;
+            font-size: 12px;
             margin-bottom: 20px;
         }
     /* title-body */
@@ -472,6 +473,7 @@
     }
     .gameconsole-1 {
         margin-top: 40px;
+        font-size: 14px;
     }
     .add-ab{
         top: 100%;
@@ -556,7 +558,412 @@
         right: 7px;
     }
 }
-
+@media (max-width: 559px) and (min-width:314px){
+    .tille-body {
+        font-size: 10px;
+        margin: 5px 0;
+    }
+    .card-main-news{
+        padding: 5px;
+    }
+        .box{
+            font-size: 10px;
+            padding: 4px;
+        }
+        .all-tab-nav{
+            display: none !important;
+            font-size: 15px;
+        }
+        .item-main{
+            width: 33%;
+            padding: 6px;
+        }
+        .card-main{
+            padding: 6px;
+            width: 100%;
+            height: 263px;
+        }
+        .card-img{
+    
+        }
+      
+        .shjt{
+           
+        }
+        .card-price{
+            font-size: 16px;
+            left: 41%;
+            bottom: 159px;
+        }
+        .card-price-sale{
+            font-size: 10px;
+            transform: translate(18px, -12px);
+        }
+        .card-color {
+            transform: translate(3px, -20px);
+            margin-bottom: 0px;
+        }
+        .card-action{
+            font-size: 10px;
+        }
+        .row-info-item{
+            padding: 0;
+            width: 106%;
+            height: 290px;
+        }
+    
+        .card-main:hover .card-title{
+            transform: translateY(-51px);
+            font-size: 11px;
+        }
+        /* color-mau */
+        .color-h6{
+            font-size: 8px;
+        }
+        .card-color-black{
+            width: 10px !important;
+            height: 10px !important;
+            border-radius: 29px !important;
+        }
+        .card-color-white{
+            width: 10px !important;
+            height: 10px !important;
+            border-radius: 29px !important;
+        }
+        .card-color{
+            transform: translate(3px, -19px);
+        }
+        /*  */
+        /* button */
+        .card-action button {
+            font-size: 10px;
+        }
+        /*  */
+        .card-main:hover .card-price-sale{
+            font-size: 8px;
+            transform: translate(0px, -45px);
+        }
+        .card-main:hover .card-price{
+            font-size: 13px;
+            left: 42%;
+            bottom: 62px;
+        }
+        .card-main:hover .shjt{
+            left: 38%;
+            top: 119px;
+            font-size: 10px;
+        }
+        .card-main:hover .card-color{
+            transform: translate(-20px, -49px);
+            margin-bottom: 0px;
+        }
+        .card-main:hover .card-action{
+            transform: translateY(-62px);
+        }
+        .card-main:hover{
+            height: 184px;
+        }
+        /*  */
+        .item-main-1{
+            display: none;
+        }
+     
+        .gameconsole-1 {
+            margin-top: 40px;
+        }
+        .add-ab{
+            top: 100%;
+            left: 41%;
+        }
+        .gameconsole {
+            margin-bottom: 10px;
+        }
+        .nav-link{
+            font-size: 14px;
+        }
+        /* sale */
+        .h1-sale {
+            font-size: 28px;
+        }
+        .sale{
+            height: 170px;
+        }
+        .item-img-none{
+            display: none;
+        }
+        .row-sale-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+        /* chuyen muc */
+        .body-left{
+    
+        }
+        .menu-seacrh{
+            font-size: 14px;
+        }
+        .item-search{
+            font-size: 12px;
+        }
+        .icon-list-menu{
+    
+        }
+        .game-list{
+    
+        }
+        .col-3-1{
+            display: none;
+        }
+        .col-9-1{
+            width: 100%;
+        }
+        /* news */
+        .col-2-2{
+            width: 33%;
+            margin-bottom: 20px;
+        }
+        .tab-123{
+            margin-top: 8px !important;
+        }
+        /*  */
+        /* .baner-bot-1{
+            width: 769px;
+            height: 265px;
+            Object-fit: cover;
+            overflow: hidden;
+        } */
+    
+    
+        /* sale icon */
+        .sale-of-list-item {
+            width: 22px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+            border-radius: 10px 0 10px 0;
+        }
+        .sale-of-list-item span{
+            font-size: 8px  !important;
+        color: orangered  !important;
+        font-weight: 500  !important;
+        }
+        .card-main:hover .love {
+            visibility: visible;
+            opacity: 100;
+            top: 2px;
+            right: 8px;
+            font-size: 12px;
+        }
+            .all-icon-main{
+                width: 20%;
+            }
+            .all-tab-nav{
+                font-size: 14px;
+            }
+            .item-main{
+                width: 33%;
+                padding: 6px;
+            }
+            .bars{
+                display: none;
+            }
+            .card-main{
+                padding: 6px;
+                width: 100%;
+                height: 173px;
+            }
+            .card-img{
+        
+            }
+            .card-title{
+                transform: translateY(-5px);
+                font-size: 10px;
+            }
+            .shjt{
+               
+            }
+            .card-price{
+                font-size: 16px;
+                left: 41%;
+                bottom: 159px;
+            }
+            .card-price-sale{
+                font-size: 16px;
+                transform: translate(46px, -19px);
+            }
+            .card-color {
+                transform: translate(1px, -23px);
+                margin-bottom: 0px;
+            }
+            .card-action{
+            }
+            .row-info-item{
+                padding: 0;
+                width: 106%;
+                height: 206px;
+            }
+    
+            .card-main:hover{
+                height: 197px;
+            }
+            .item-main-1{
+                display: none;
+            }
+            .img-card-1{
+                margin: 23px 0 !important;
+            }
+            .img-card-2{
+                margin: 22px 0 !important;
+            }.img-card-3{
+                    margin: 36px 0!important;
+            }
+            .gameconsole-1 {
+                margin-top: 40px;
+            }
+            .add-ab{
+                top: 100%;
+                left: 41%;
+            }
+            .gameconsole {
+                margin-bottom: 10px;
+            }
+            .nav-link{
+                font-size: 14px;
+            }
+            /* sale */
+            .h1-sale {
+                font-size: 28px;
+            }
+            .sale{
+                height: 270px;
+            }
+            /* chuyen muc */
+            .body-left{
+        
+            }
+            .menu-seacrh{
+                font-size: 14px;
+            }
+            .item-search{
+                font-size: 12px;
+            }
+            .icon-list-menu{
+        
+            }
+            .game-list{
+        
+            }
+            .col-3-1{
+                padding: 0 6px 0 0;
+            }
+            /* news */
+            .col-2-2{
+                width: 33%;
+                margin-bottom: 20px;
+            }
+            .tab-123{
+                margin-top: 8px !important;
+            }
+            /* box */
+          .sapxep{
+              font-size: 14px;
+          }
+          .new--{
+              font-size: 10px;
+          }
+        
+            /* sale */
+            .sale{
+                font-size: 7px;
+              right: 0px;
+                     height: 206px;
+            }
+            .all-info {
+                text-align: start;
+            }
+            .text-bot{
+                font-size: 6px;
+            }
+            .price{
+                font-size: 7px;
+            }
+            .all-info {
+                text-align: start;
+            }
+            .price-1{
+                font-size: 9px;
+            }
+            .space{
+                margin: 0px 3px;
+            }
+            .price{
+                font-size: 9px;
+            }
+            .item-img{
+                padding: 0 6px;
+                width: 23%;
+            }
+            .info-item{
+                width: 100%;
+            }
+            .deal{
+                font-size: 7px;
+                  right: 0px;
+            }
+            .h5-bgr{
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+        /* title-body */
+        .tille-body{
+            font-size: 13px;
+            margin: 5px 0;
+        }
+        .tille-head{
+            font-size: 9px;
+        }
+        .tille-fotter{
+            font-size: 8px;
+        }
+        .tille-fotter-1{
+            font-size: 8px;
+        }
+        .card-main-news{
+            height: 184px;
+        }
+        .tab-content{
+            height: 235px;
+        }
+        .feedback {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 196px;
+        }
+        .box-search{
+            margin-top: 0;
+        }
+        .amount-item{
+             
+        }
+        .card-action .btn-card{
+            font-size: 9px;
+        }
+        .card-price-sale{
+            transform: translate(16px, -16px);
+        }
+        .h5-high{
+            font-size: 16px;
+        }
+        .nav-link{
+            padding: 6px;
+            font-size: 12px;
+        }
+}
 
 
 /* @media (max-width: 374px) and (min-width:314){

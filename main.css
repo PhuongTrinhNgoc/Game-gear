@@ -15,7 +15,6 @@ li{
     list-style: none;
 }
 .main{
-    margin-bottom: 100px;
     background-color: #F5F7FF;
 }
 .center-all{
@@ -589,6 +588,7 @@ color: gray;
     transition: 0.4s;
     padding-top: 20px;
     cursor: pointer;
+    
 }
 .card-main-news:hover .img-card{
     transform: scale(1.1)  ;
@@ -653,4 +653,70 @@ color: gray;
     border-radius: 4px 10px 4px 4px;
     right: 16px;
     color: #EF3B3C;
+}
+
+/* sevice */
+.row-service{
+    margin: 30px 0;
+}
+
+/* ;login */
+.bgr-fotter{
+    background-color: #DADADA;
+}
+.btn-login-email{
+    outline: none;
+    border: none;
+    background-color: #000000;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+}
+.input-email{
+    outline: none;
+    border: none;
+    padding: 4px;
+    border-radius: 5px;
+    width: 360px;
+    border: 1px solid gray;
+    font-size: 12px;
+    padding: 8px;
+    margin: 30px 0;
+}
+
+.creat-acc{
+ 
+}
+.login{
+    margin: 30px 0;
+}
+.hr-container-new{
+    margin-top: 20px !important;
+    margin-bottom: 0;
+}
+.icon-fotter{
+    margin-right: 10px;
+}
+.adress{
+    border-right: 1px solid gray;
+    padding-right: 20px;
+
+    margin-left: 20px;;
+}.adress-1{
+    border-right: none;
+}
+.h5-adress{
+    margin: 30px 0;
+}
+.all-adress{
+    margin-bottom: 30px;
+}
+.icon-mxh{
+   
+    
+}
+.icon-mxh-child{
+    font-size: 25px;
+    padding: 0 20px;
+    margin-bottom: 20px;
 }

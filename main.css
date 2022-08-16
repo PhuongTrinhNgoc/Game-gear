@@ -554,6 +554,7 @@ hr{
 .add-ab{
     top: 95%;
     left: 45%;
+    width: 40%;
 }
 /* news */
 .tille-head{
@@ -719,4 +720,31 @@ color: gray;
     font-size: 25px;
     padding: 0 20px;
     margin-bottom: 20px;
+}
+/* loc */
+.btn-danhmuc{
+
+}
+.btn-thuonghieu{
+
+}
+.btn-loc{
+
+}
+.all-search{
+    display: none;
+}
+.sort-item{
+    padding:6px;
+    border-radius: 6px;
+    border: 1px solid gray;
+    text-align: center;
+}
+.tab-box{
+    padding:4px 8px;
+    background: #fff;
+    border: 0.5px solid gray;
+    text-decoration: none;
+    margin: 0 3px;
+    border-radius: 5px;
 }

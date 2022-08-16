@@ -1,6 +1,24 @@
 
 
+
 @media (max-width: 767px) and (min-width:600px){
+   .col-9-1{
+       padding: 0 34px;
+   }
+   .box-search{
+
+   }
+   .container-body{
+    /* padding: 0 24px; */
+   }
+   .amount-item{
+    padding: 4px 0;
+}
+    .ctn-body-child{
+        padding: 0;
+    }
+    
+  
     .box{
         font-size: 10px;
         padding: 4px;
@@ -84,12 +102,12 @@
     .card-main:hover .card-price{
         font-size: 18px;
         left: 37%;
-        bottom: 65px;
+        bottom: 71px;
     }
     .card-main:hover .shjt{
         display: block;
-        left: 33%;
-        top: 202px;
+        left: 34%;
+        top: 197px;
         font-size: 8px;
     }
     .card-main:hover .card-color{
@@ -111,7 +129,7 @@
         margin-top: 40px;
     }
     .add-ab{
-        top: 100%;
+        top: 106%;
         left: 41%;
     }
     .gameconsole {
@@ -167,13 +185,6 @@
     .tab-123{
         margin-top: 8px !important;
     }
-    /*  */
-    /* .baner-bot-1{
-        width: 769px;
-        height: 265px;
-        Object-fit: cover;
-        overflow: hidden;
-    } */
 
     .card-main {
         border-radius: 10px;
@@ -259,18 +270,18 @@
             display: none;
         }
         .img-card-1{
-            margin: 41px 0 !important;
+            margin: 40px 0 !important;
         }
         .img-card-2{
-            margin: 38px 0!important;
+            margin: 37px 0!important;
         }.img-card-3{
-                margin: 63px 0!important;
+                margin: 61px 0!important;
         }
         .gameconsole-1 {
             margin-top: 40px;
         }
         .add-ab{
-            top: 100%;
+            top: 106%;
             left: 41%;
         }
         .gameconsole {
@@ -314,8 +325,9 @@
             margin-top: 8px !important;
         }
         /* box */
-     .sort-by{
+     .amount-item .sort-by{
          font-size: 10px;
+         /* display: none; */
      }
       .new--{
           font-size: 10px;
@@ -380,18 +392,78 @@
         align-items: center;
         margin-top: 196px;
     }
+    .btn-danhmuc,
+    .btn-thuonghieu,
+    .btn-loc{
+        font-size: 10px !important;
+        padding: 4px 6px;
+        border-radius: 5px;
+        background: #fff;
+        border: 1px solid gray;
+    }
+    .arr-right{
+        margin-left: 6px;
+    }
+    .btn-thuonghieu{
+        font-size: 13px;
+    }
+    .btn-loc{
+        font-size: 13px;
+    }
+    .h5-adress {
+        font-size: 14px;
+    }
+    .text-feedback{
+        font-size: 15px;
+    }
+    .sort-item{
+        padding: 4px;
+    }
+    .all-box-tab{
+        padding-top: 200px;
+    }
+  
+  
     /*  */
 }
 @media(max-width:1024px) and (min-width:768px){
     .all-icon-main{
         width: 20%;
     }
+    .all-search{
+        display: none;
+    }
+    .h5-bgr{
+        font-size: 16px;
+    }
     .all-tab-nav{
         font-size: 14px;
+    }
+    /* dich vu */
+    .all-icon{
+        font-size: 26px;
+    }
+    .text-up{
+        font-size: 11px;
+    }
+    .text-dow{
+        font-size: 8px;
     }
     .item-main{
         width: 33%;
         padding: 6px;
+    }
+
+/* login */
+   .login{
+       font-size: 14px;
+   }
+   .all-adress{
+       font-size: 12px;
+   }
+    /*  */
+    .tab-nav-item{
+        margin:0 9px !important;
     }
     .bars{
         display: none;
@@ -430,6 +502,7 @@
         padding: 0;
         width: 106%;
         height: 290px;
+        margin-bottom: 20px;
     }
 
     .card-main:hover .card-title{
@@ -464,7 +537,7 @@
         display: none;
     }
     .img-card-1{
-        margin: 36px 0 !important;
+        margin: 40px 0 !important;
     }
     .img-card-2{
         margin: 34px 0!important;
@@ -472,13 +545,10 @@
             margin: 57px 0!important;
     }
     .gameconsole-1 {
-        margin-top: 40px;
+        margin-top: 48px;
         font-size: 14px;
     }
-    .add-ab{
-        top: 100%;
-        left: 41%;
-    }
+
     .gameconsole {
         margin-bottom: 10px;
     }
@@ -557,6 +627,23 @@
         font-size: 12px;
         right: 7px;
     }
+    .add-ab{
+        top: 104%;
+        font-size: 14px;
+    }
+    .h5-adress{
+        font-size: 14px;
+    }
+    .text-feedback{
+        font-size: 14px;
+    }
+    .sort-item{
+        padding:6px;
+        border-radius: 6px;
+        border: 1px solid gray;
+        text-align: center;
+        font-size: 12px;
+    }
 }
 @media (max-width: 559px) and (min-width:314px){
     .tille-body {
@@ -565,6 +652,10 @@
     }
     .card-main-news{
         padding: 5px;
+    }
+    .all-search{
+        display: block;
+
     }
         .box{
             font-size: 10px;
@@ -761,6 +852,7 @@
         }
             .all-icon-main{
                 width: 20%;
+                margin-right: 10px;
             }
             .all-tab-nav{
                 font-size: 14px;
@@ -947,9 +1039,7 @@
         .box-search{
             margin-top: 0;
         }
-        .amount-item{
-             
-        }
+       
         .card-action .btn-card{
             font-size: 9px;
         }
@@ -963,9 +1053,208 @@
             padding: 6px;
             font-size: 12px;
         }
+/* tim` kiem */
+        .nav_overlay{
+
+        }
+        .btn-search-1{
+           
+        }
 }
+@media (max-width: 767px) {
+    .container {
+      max-width: 700px;
+      margin: auto;
+    }
+    /* .nav-1-1 {
+        display: none;
+      } */
+    .mini_text_all_1 {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 95%;
+    }
+    .mini_text_2 {
+      margin-left: 5px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 95%;
+    }
+    .mini_text_3 {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 95%;
+      margin-left: 5px;
+    }
+    .class_P {
+      padding-left: 10px;
+    }
+    /* dich vu */
+    .text-up {
+      font-size: 7px;
+    }
+    .text-dow {
+      font-size: 6px;
+    }
+    .all-icon {
+      font-size: 30px;
+      margin-right: 10px;
+    }
+    .input-email {
+      width: 300px;
+    }
+    .text-adress {
+      font-size: 11px;
+    }
+    .icon-mxh-child {
+      font-size: 13px;
+    }
+    /* baner */
+    .img-fluid {
+      margin: 70px 0 10px 0;
+    }
+    /*  */
+    .container_fix {
+      width: 100%;
+    }
+  
+    .menu {
+      margin-left: -21%;
+    }
+    .class_p_3 {
+      padding-left: 0;
+    }
+    .ranking-item-thumbnail {
+      width: 126%;
+    }
+  
+    .clol-3_hover:hover .all_icon_none {
+      display: none;
+    }
+    .all_icon_10 {
+      display: none;
+    }
+    .ranking-item-thumbnail {
+      width: 126%;
+    }
+    .nav-1-1 {
+      padding-left: 15px;
+    }
+    .search-box {
+      display: none;
+    }
+    .overlay {
+      display: none;
+    }
+  
+    .bars:hover {
+      cursor: pointer;
+    }
+    .class_P_3 {
+      padding-left: 0;
+    }
+    .mini_text_all_10_10 {
+      top: 20px;
+    }
+  }
+  
+@media (max-width: 375px){
+    .sort-item{
+        font-size: 7px !important;
+    }
+    .amount-item{
+        padding-bottom: 4px;
+    }
+    .btn-danhmuc,
+    .btn-thuonghieu,
+    .btn-loc{
+        font-size: 10px !important;
+        padding: 4px 6px;
+        border-radius: 5px;
+        background: #fff;
+        border: 1px solid gray;
+    }
+    .arr-right{
+        margin-left: 6px;
+    }
+    .btn-thuonghieu{
+        font-size: 13px;
+    }
+    .btn-loc{
+        font-size: 13px;
+    }
+    .h5-adress {
+        font-size: 14px;
+    }
+    .text-feedback{
+        font-size: 15px;
+    }
+    .tille-body {
+        font-size: 7px !important;
+        margin: 5px 0;
+    }
+    .tille-head{
+        font-size: 6px !important;
+    }
+    .tille-fotter {
+        font-size: 4px !important;
+    }
+    .tille-fotter-1 {
+        font-size: 6px !important;
+    }
+    .card-main-news {
+        height: 136px;
+        border-radius: 6px;
+      
+    }
+    .card-main-news:hover{
+        height: 159px;
+    }
+    .x {
+        left: 161px !important;
+    }
+    .all-icon{
+        font-size: 12px !important;
+    }
+    .all-box-tab{
+        padding-top: 60px;
+    }
+    .tab-box{
 
-
+    }
+    .tab-box {
+        padding: 2px 6px;
+        background: #fff;
+        border: 0.5px solid gray;
+        text-decoration: none;
+        margin: 0 3px;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+    .feedback {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px !important;
+    }
+    .hr-10{
+        margin: 20px 0;
+    }
+    .hr-11{
+        margin:20px 0;
+    }
+    .img-fluid {
+        margin: 20px 0 10px 0 !important;
+    }
+    .text-up{
+        font-size: 6px;
+    }
+    .text-dow{
+        font-size: 4px;
+    }
+}
 /* @media (max-width: 374px) and (min-width:314){
     .card-main:hover .card-title{
         transform: translateY(-45px);

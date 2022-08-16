@@ -19,6 +19,7 @@
 
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="reponsive.css">
+    <link rel="stylesheet" href="css-nav.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -33,56 +34,125 @@
   </head>
   <body>
     <div class="main">
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img class="nav-img" src="img-gamegear/logo.png" alt="Logo" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
+        <header class="header fixed">
+            <div class="container container_fix">
+              <div class="d-flex j-space-beetwen a-center">
+                <div class="logo-box">
+                  <img class="nav-img" src="img-gamegear/logo.png" alt="" />
+                </div>
+                <div onclick="onBars()" class="bars">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+            
+                <div class="overlay" >
+                  
+                  <div class="nav_overlay">
+                    <div class="nav_overlay_item">
+                  <div class="logo-box_2">
+                    <img class="nav-img" src="img-gamegear/logo.png" alt="" />
+                    <div onclick="closeX()" class="x">
+                      <i class="fa-solid fa-xmark"></i>
+                    </div>
+                  </div>
+        
+        
+                  <div class="search-box_2">
+                    <form action="" class="search-form">
+                      <div class="form-group relative">
+                        <input class="input-search2 input-search2_3" type="text" placeholder="Tìm kiếm anime">
+        
+                        <button class="btn-search absolute">
+                          <i class="bi bi-search"></i>
+                        </button>
+                      </div>
+                    </form>
+        
+                    <div class="search-results"></div>
+                 
+              </div>
+        
+        
+              <div class="list_cartool">
+                <ul class="cartool">
+                  <li class="li_items d-flex">
+                    <div class="li_item_icon">
+                      <i class="fa-solid fa-film"></i>
+                    </div>
+                    <div class="li_item_text li_item_text3">
+                    Trang Chủ
+                      </div>
+                      
+                  </li>
+                  <li class="li_items d-flex">
+                    <div class="li_item_icon">
+                      <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <div class="li_item_text li_item_text3">
+                     Bàn Phím
+                      </div>
+                      
+                  </li>
+                  <li class="li_items d-flex">
+                    <div class="li_item_icon">
+                      <i class="fa-solid fa-memo">
+                        <i class="fa-solid fa-file-lines"></i>
+                      </i>
+                    </div>
+                    <div class="li_item_text li_item_text2">
+                    Màn Hình
+                      </div>
+                      
+                  </li>
+                  <li class="li_items d-flex">
+                    <div class="li_item_icon">
+                      <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="li_item_text">
+                    Phụ Kiện
+                      </div>
+                      
+                  </li>
+                  <li class="li_items d-flex">
+                    <div class="li_item_icon">
+                      <i class="fa-solid fa-ranking-star"></i>
+                    </div>
+                    <div class="li_item_text">
+                      Khác
+                      </div>
+                      
                   </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+              </div>
+        
+            </div>
+        
+        
+          
+                </div>
+             
+              </div>
+              <div class="all-tab-nav d-flex j-center a-center">
+                <div class="tab-nav-item">trang Chủ</div>
+                <div class="tab-nav-item">Bàn Phím</div>
+        
+                <div class="tab-nav-item">Màn Hình</div>
+        
+                <div class="tab-nav-item">Phụ Kiện</div>
+        
+                <div class="tab-nav-item">Tin Tức</div>
+        
+              </div>
+        
+                <div class="all-icon-main d-flex j-center a-center">
+                  <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+                  <div class="gio-hang"><i class="fa-solid fa-bag-shopping"></i></div>
+                  <div class="user"><i class="fa-solid fa-user"></i></div>
+                </div>
+              
+              </div>
+            </div>
+          </header>
+        
 
       <img src="img-gamegear/image 51.png" class="img-fluid" alt="..." />
       <div class="sale">
@@ -104,7 +174,123 @@
             </div>
          
             <!-- item sale -->
-
+            <div class="row row-sale-1">
+                <a class="col-2 item-img p-relative" href="./info-item.html">
+                    <div class="deal">-30%</div>
+                  <div class="title-img">
+                    <img
+                      class="img"
+                      src="img-gamegear/image 101.jpg"
+                      alt=""
+                    />
+                    <div class="all-info">
+                        <div class="text-bot"
+                        >SteelSeries Rival 5 Gaming Mouse</div
+                      >
+                        <div class="all-price">
+                       
+                          <div class="price">430.000đ</div>
+                        </div>
+                    </div>
+                  </div>                  
+                </a>
+                <a class="col-2 item-img p-relative" href="./info-item.html">
+                    <div class="deal">-30%</div>
+                  <div class="title-img">
+                    <img
+                      class="img"
+                      src="img-gamegear/image 101.jpg"
+                      alt=""
+                    />
+                    <div class="all-info">
+                        <div class="text-bot"
+                        >SteelSeries Rival 5 Gaming Mouse</div
+                      >
+                        <div class="all-price">
+                       
+                          <div class="price">430.000đ</div>
+                        </div>
+                    </div>
+                  </div>                  
+                </a>
+                <a class="col-2 item-img p-relative" href="./info-item.html">
+                    <div class="deal">-30%</div>
+                  <div class="title-img">
+                    <img
+                      class="img"
+                      src="img-gamegear/image 101.jpg"
+                      alt=""
+                    />
+                    <div class="all-info">
+                        <div class="text-bot"
+                        >SteelSeries Rival 5 Gaming Mouse</div
+                      >
+                        <div class="all-price">
+                       
+                          <div class="price">430.000đ</div>
+                        </div>
+                    </div>
+                  </div>                  
+                </a>
+                <a class="col-2 item-img p-relative" href="./info-item.html">
+                    <div class="deal">-30%</div>
+                  <div class="title-img">
+                    <img
+                      class="img"
+                      src="img-gamegear/image 101.jpg"
+                      alt=""
+                    />
+                    <div class="all-info">
+                        <div class="text-bot"
+                        >SteelSeries Rival 5 Gaming Mouse</div
+                      >
+                        <div class="all-price">
+                       
+                          <div class="price">430.000đ</div>
+                        </div>
+                    </div>
+                  </div>                  
+                </a>
+                <a class="col-2 item-img p-relative item-img-none" href="./info-item.html">
+                    <div class="deal">-30%</div>
+                  <div class="title-img">
+                    <img
+                      class="img"
+                      src="img-gamegear/image 101.jpg"
+                      alt=""
+                    />
+                    <div class="all-info">
+                        <div class="text-bot"
+                        >SteelSeries Rival 5 Gaming Mouse</div
+                      >
+                        <div class="all-price">
+                       
+                          <div class="price">430.000đ</div>
+                        </div>
+                    </div>
+                  </div>                  
+                </a>
+                <a class="col-2 item-img p-relative item-img-none" href="./info-item.html">
+                    <div class="deal">-30%</div>
+                  <div class="title-img">
+                    <img
+                      class="img"
+                      src="img-gamegear/image 101.jpg"
+                      alt=""
+                    />
+                    <div class="all-info">
+                        <div class="text-bot"
+                        >SteelSeries Rival 5 Gaming Mouse</div
+                      >
+                        <div class="all-price">
+                       
+                          <div class="price">430.000đ</div>
+                        </div>
+                    </div>
+                  </div>                  
+                </a>
+           
+              </div>
             <!-- row -->
           </div>
         </div>
@@ -173,7 +359,7 @@
                       <span>sản phẩm</span>
                     </div>
                     <div class="Sort-by">
-                      <span>sắp xếp theo</span>
+                      <span cals>sắp xếp theo</span>
                       <span>
                         <button class="btn-seacrh">mới nhất</button>
                       </span>
@@ -582,7 +768,7 @@
           <hr />
           <h5 style="margin-bottom:20px ;">Thương Hiệu Và Sản Phẩm Nổi Bật</h5>
           <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <div class="nav nav-tabs " id="nav-tab" role="tablist">
               <button
                 class="nav-link active"
                 id="nav-home-tab"
@@ -720,7 +906,7 @@
             <div class="hader-new">
               <div class="item-new">
                 <ul
-                  class="nav nav-pills mb-3 nav-tab-2"
+                  class="nav nav-pills mb-3 nav-tab-2 nav-1-1"
                   id="pills-tab"
                   role="tablist"
                 >
@@ -1543,7 +1729,7 @@
       <!-- main -->
     </div>
   </body>
-
+<script src="js.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

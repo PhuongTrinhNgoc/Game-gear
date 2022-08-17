@@ -52,8 +52,8 @@
         bottom: 159px;
     }
     .card-price-sale{
-        font-size: 10px;
-        transform: translate(18px, -12px);
+        font-size: 14px !important;
+        transform: translate(56px, -17px) !important;
     }
     .card-color {
         transform: translate(3px, -20px);
@@ -96,26 +96,26 @@
     }
     /*  */
     .card-main:hover .card-price-sale{
-        font-size: 12px;
-    transform: translate(0px, -47px);
+        font-size: 12px !important;
+    transform: translate(0px, -47px) !important;
     }
     .card-main:hover .card-price{
-        font-size: 18px;
-        left: 37%;
-        bottom: 71px;
+        font-size: 18px !important;
+        left: 37% !important;
+        bottom: 52px !important;
     }
     .card-main:hover .shjt{
         display: block;
-        left: 34%;
-        top: 197px;
-        font-size: 8px;
+        left: 34% !important;
+        top: 197px !important;
+        font-size: 8px !important;
     }
     .card-main:hover .card-color{
         transform: translate(-58px, -50px);
         margin-bottom: 0px;
     }
     .card-main:hover .card-action{
-        transform: translateY(-62px);
+        transform: translateY(-62px) ;
     }
     .card-main:hover{
         height: 184px;
@@ -232,15 +232,10 @@
             width: 100%;
             height: 263px;
         }
-        .card-img{
-    
-        }
+ 
         .card-title{
             transform: translateY(-18px);
             font-size: 14px;
-        }
-        .shjt{
-           
         }
         .card-price{
             font-size: 16px;
@@ -421,6 +416,9 @@
     }
     .all-box-tab{
         padding-top: 200px;
+    }
+    .card-main{
+        height: 265px !important;
     }
   
   
@@ -1305,6 +1303,14 @@
         width: 100%;
         height: 173px;
     }
+    .img-card-1{
+        margin: 26px 0 !important;
+    }
+    .img-card-2{
+        margin: 25px 0 !important;
+    }.img-card-3{
+            margin: 41px 0!important;
+    }
     .tille-head{
         font-size: 7px;
     }
@@ -1471,6 +1477,9 @@
 }
 .hr-container-new{
     margin: 0 !important;
+}
+.x {
+    left: 184px !important;
 }
 }
 

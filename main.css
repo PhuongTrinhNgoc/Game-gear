@@ -551,6 +551,13 @@ hr{
     padding: 5px;
     border-radius: 10px;
 }
+.user{
+    color: black;
+}
+.user:hover{
+    color: #EF3B3C;
+    transition: none;
+}
 .add-ab{
     top: 95%;
     left: 45%;
@@ -747,4 +754,40 @@ color: gray;
     text-decoration: none;
     margin: 0 3px;
     border-radius: 5px;
+}
+.all-icon-overlay{
+    width: 30px;
+    height: 30px;
+}
+.search-nav{
+  background-color:#9cb5b4;
+  width: 300px;
+  padding:8px;
+  border-radius: 5px;
+  top: 52px;
+  right: 30px;
+  display: none !important;
+}
+.input-search-1{
+    font-size: 12px;
+    padding: 4px;
+    width: 300px;
+    margin-right: 10px;
+}
+.search-icon-1{
+    padding: 6px;
+    background: #fff;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.search:hover .search-nav{
+    display: block;
+}
+.btn-focus{
+    outline: none;
+    border: none;
+    background:none;
+}
+.btn-focus:focus .search-nav{
+ display: block;
 }

@@ -107,7 +107,7 @@
   cursor: pointer;
 }
 .li_item_text {
-  margin-left: 20px;
+  margin-left: 10px;
   /* padding-left: 10px; */
 }
 .x {
@@ -131,11 +131,22 @@
 .bars {
   display: none;
 }
+.btn-search-1{
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid gray;
+  width: 30%;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-left: 4px;
+}
+.input-search2_3{
+  width: 70%;
+  font-size: 12px;
+}
 
 @media (max-width: 767px) and (min-width: 314px) {
-  .all-search{
-    display: block;
-  }
+
   .bars {
     display: block;
     margin-left: -30px;
@@ -148,9 +159,7 @@
     width: 52%;
     height: 70%;
   }
-  .x {
-    left: 265px;
-  }
+ 
   .amount-item span {
     font-size: 10px;
   }
@@ -289,6 +298,9 @@
     position: relative;
     margin-top: 80px;
   }
+  .hr-11{
+    margin-top: 20px;
+  }
 }
 
 /*  */
@@ -353,105 +365,6 @@
 }
 
 
-@media (max-width: 767px) {
-  .container {
-    max-width: 700px;
-    margin: auto;
-  }
-  /* .nav-1-1 {
-      display: none;
-    } */
-  .mini_text_all_1 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 95%;
-  }
-  .mini_text_2 {
-    margin-left: 5px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 95%;
-  }
-  .mini_text_3 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 95%;
-    margin-left: 5px;
-  }
-  .class_P {
-    padding-left: 10px;
-  }
-  /* dich vu */
-  .text-up {
-    font-size: 7px;
-  }
-  .text-dow {
-    font-size: 6px;
-  }
-  .all-icon {
-    font-size: 30px;
-    margin-right: 10px;
-  }
-  .input-email {
-    width: 300px;
-  }
-  .text-adress {
-    font-size: 11px;
-  }
-  .icon-mxh-child {
-    font-size: 13px;
-  }
-  /* baner */
-  .img-fluid {
-    margin: 70px 0 10px 0;
-  }
-  /*  */
-  .container_fix {
-    width: 100%;
-  }
-
-  .menu {
-    margin-left: -21%;
-  }
-  .class_p_3 {
-    padding-left: 0;
-  }
-  .ranking-item-thumbnail {
-    width: 126%;
-  }
-
-  .clol-3_hover:hover .all_icon_none {
-    display: none;
-  }
-  .all_icon_10 {
-    display: none;
-  }
-  .ranking-item-thumbnail {
-    width: 126%;
-  }
-  .nav-1-1 {
-    padding-left: 15px;
-  }
-  .search-box {
-    display: none;
-  }
-  .overlay {
-    display: none;
-  }
-
-  .bars:hover {
-    cursor: pointer;
-  }
-  .class_P_3 {
-    padding-left: 0;
-  }
-  .mini_text_all_10_10 {
-    top: 20px;
-  }
-}
 
 .search,
 .gio-hang,

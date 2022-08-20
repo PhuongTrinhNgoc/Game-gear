@@ -34,714 +34,643 @@
     />
   </head>
   <body>
-    <div class="main">
-      <header class="header fixed">
-        <div class="container container_fix">
-          <div class="d-flex j-space-beetwen a-center p-relative">
-           <div class="search-nav-">
-            <div class="search-nav p-absolute d-flex j-center a-center">
-              <input class="input-search-1" type="text"
-              placeholder="Tìm Kiếm">
-              <span class=""></span><i class="fa-solid fa-magnifying-glass search-icon-1"></i></span>
-            </div>
-          </div>
+    <!-- nav -->
+    <nav class="navbar fixed-top">
+      <div class="container-fluid relative">
+        <a class="navbar-brand" href="#">
+          <img class="nav-img" src="img-gamegear/logo.png" alt=""
+        /></a>
+        <div class="item-navbar center-all">
+          <ul class="navbar-all-item d-flex j-c">
+            <li class="item-navbar">Trang Chủ</li>
+            <li class="item-navbar">Bàn Phím - Chuột</li>
+            <li class="item-navbar">Màn Hình</li>
+            <li class="item-navbar">Phụ Kiện</li>
+            <li class="item-navbar">Khác</li>
+          </ul>
+        </div>
+        <div class="all-icon-main d-flex j-center a-center">
+          <button class="btn-nav-n">
+            <i
+              class="fa-solid fa-magnifying-glass all-icon-nav all-icon-nav-1"
+            ></i>
 
-            <div class="logo-box">
+            <div class="form-none">
+              <form
+                class="form-none form-inline my-2 my-lg-0 form-inline-1 d-flex"
+              >
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Search"
+                />
+                <div
+                  class="btn btn-outline-success btn-outline-success-2 my-2 my-sm-0"
+                  type="submit"
+                >
+                  Search
+                </div>
+              </form>
+            </div>
+          </button>
+
+          <div class="gio-hang">
+            <i class="fa-solid fa-bag-shopping all-icon-nav"></i>
+          </div>
+          <a href="/dang-ky.html" class="user">
+            <i class="fa-solid fa-user all-icon-nav"></i
+          ></a>
+        </div>
+        <button
+          class="navbar-toggler navbar-toggler-1"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
               <img class="nav-img" src="img-gamegear/logo.png" alt="" />
-            </div>
-            <div onclick="onBars()" class="bars">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-
-            <div class="overlay">
-              <div class="nav_overlay">
-                <div class="nav_overlay_item">
-                  <div class="logo-box_2">
-                    <img class="nav-img" src="img-gamegear/logo.png" alt="" />
-                    <div onclick="closeX()" class="x x-1">
-                      <i class="fa-solid fa-xmark"></i>
-                    </div>
-                  </div>
-
-                  <div class="search-box_2">
-                    <form action="" class="search-form">
-                      <div class="form-group relative d-flex">
-                        <input
-                          class="input-search2  "
-                          type="text"
-                          placeholder="Tìm kiếm"
-                        />
-
-                        <button class="btn-search-1">
-                         Tìm Kiếm
-                        </button>
-                      </div>
-                    </form>
-
-                    <div class="search-results"></div>
-                  </div>
-
-                  <div class="list_cartool">
-                    <ul class="cartool">
-                      <li class="li_items d-flex">
-                        <div class="li_item_icon">
-                          <i class="all-icon-overlay fa-solid fa-film"></i>
-                        </div>
-                        <div class="li_item_text li_item_text3">Trang Chủ</div>
-                      </li>
-                      <li class="li_items d-flex">
-                        <div class="li_item_icon">
-                          <i class="all-icon-overlay fa-solid fa-camera"></i>
-                        </div>
-                        <div class="li_item_text li_item_text3">Bàn Phím</div>
-                      </li>
-                      <li class="li_items d-flex">
-                        <div class="li_item_icon">
-                            <i class="all-icon-overlay fa-solid fa-file-lines"></i>
-                          </i>
-                        </div>
-                        <div class="li_item_text li_item_text2">Màn Hình</div>
-                      </li>
-                      <li class="li_items d-flex">
-                        <div class="li_item_icon">
-                          <i class="all-icon-overlay fa-solid fa-book-open"></i>
-                        </div>
-                        <div class="li_item_text">Phụ Kiện</div>
-                      </li>
-                      <li class="li_items d-flex">
-                        <div class="li_item_icon">
-                          <i class="all-icon-overlay fa-solid fa-ranking-star"></i>
-                        </div>
-                        <div class="li_item_text">Khác</div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="all-tab-nav d-flex j-center a-center">
-              <div class="tab-nav-item">trang Chủ</div>
-              <div class="tab-nav-item">Bàn Phím</div>
-
-              <div class="tab-nav-item">Màn Hình</div>
-
-              <div class="tab-nav-item">Phụ Kiện</div>
-
-              <div class="tab-nav-item">Tin Tức</div>
-            </div>
-
-            <div class="all-icon-main d-flex j-center a-center ">
-              <div class="search">
-                <button class="btn-focus"><i class="fa-solid fa-magnifying-glass"></i></button>
-              </div>
-           
-            
-              <div class="gio-hang">
-                <i class="fa-solid fa-bag-shopping"></i>
-              </div>
-              <a href="/dang-ky.html" class="user">
-                <i class="fa-solid fa-user"></i></a>
-            </div>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
           </div>
-        </div>
-      </header>
-
-      <img src="img-gamegear/image 51.png" class="img-fluid" alt="..." />
-      <div class="sale">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 title-sale">
-              <h1 class="h1-sale">flash sale</h1>
-              <div class="all-time-sale">
-                <div class="box">
-                  <div class="time-sale">09</div>
-                </div>
-                <div class="box">
-                  <div class="time-sale">09</div>
-                </div>
-                <div class="box">
-                  <div class="time-sale">09</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- item sale -->
-            <div class="row row-sale-1">
-              <a class="col-2 item-img p-relative" href="./info-item.html">
-                <div class="deal">-30%</div>
-                <div class="title-img">
-                  <img class="img" src="img-gamegear/image 101.jpg" alt="" />
-                  <div class="all-info">
-                    <div class="text-bot">SteelSeries Rival 5 Gaming Mouse</div>
-                    <div class="all-price">
-                      <div class="price">430.000đ</div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a class="col-2 item-img p-relative" href="./info-item.html">
-                <div class="deal">-30%</div>
-                <div class="title-img">
-                  <img class="img" src="img-gamegear/image 101.jpg" alt="" />
-                  <div class="all-info">
-                    <div class="text-bot">SteelSeries Rival 5 Gaming Mouse</div>
-                    <div class="all-price">
-                      <div class="price">430.000đ</div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a class="col-2 item-img p-relative" href="./info-item.html">
-                <div class="deal">-30%</div>
-                <div class="title-img">
-                  <img class="img" src="img-gamegear/image 101.jpg" alt="" />
-                  <div class="all-info">
-                    <div class="text-bot">SteelSeries Rival 5 Gaming Mouse</div>
-                    <div class="all-price">
-                      <div class="price">430.000đ</div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a class="col-2 item-img p-relative" href="./info-item.html">
-                <div class="deal">-30%</div>
-                <div class="title-img">
-                  <img class="img" src="img-gamegear/image 101.jpg" alt="" />
-                  <div class="all-info">
-                    <div class="text-bot">SteelSeries Rival 5 Gaming Mouse</div>
-                    <div class="all-price">
-                      <div class="price">430.000đ</div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a
-                class="col-2 item-img p-relative item-img-none"
-                href="./info-item.html"
-              >
-                <div class="deal">-30%</div>
-                <div class="title-img">
-                  <img class="img" src="img-gamegear/image 101.jpg" alt="" />
-                  <div class="all-info">
-                    <div class="text-bot">SteelSeries Rival 5 Gaming Mouse</div>
-                    <div class="all-price">
-                      <div class="price">430.000đ</div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a
-                class="col-2 item-img p-relative item-img-none"
-                href="./info-item.html"
-              >
-                <div class="deal">-30%</div>
-                <div class="title-img">
-                  <img class="img" src="img-gamegear/image 101.jpg" alt="" />
-                  <div class="all-info">
-                    <div class="text-bot">SteelSeries Rival 5 Gaming Mouse</div>
-                    <div class="all-price">
-                      <div class="price">430.000đ</div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- row -->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
           </div>
         </div>
       </div>
+    </nav>
+    <div class="brg-for-nav"></div>
 
-      <!-- nav-seacrh -->
-     
+    <video class="video-bb media-block__video media-block__video@tablet lozad lazy-loaded" autobuffer="true" muted="true" autoplay="true" playsinline="true" webkit-playsinline="true" data-poster="https://gmedia.playstation.com/is/image/SIEPDC/only-on-playstation-background-block-desktop-01-ps4-29jul20$en" poster="https://gmedia.playstation.com/is/image/SIEPDC/only-on-playstation-background-block-desktop-01-ps4-29jul20$en" data-loaded="true">
+      <source type="video/mp4" data-src="" src="img-gamegear/ghost-of-tsushima-video-hero-02-ps4-en-01may20.mp4">
+  </video>
 
-      <div class="container-body">
-        <div style="padding-top: 20px" class="container ctn-body-child">
-          <div class="row">
+    <h2 class="h1-you-need p-absolute">Ở Đây Chúng Tôi Có Mọi Thứ Bạn Cần! <br> Khám Phá Ngay Thôi!!!</h2>
+    <!-- bgr -->
+    <div class="bgr-main">
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item  active" data-bs-interval="10000">
+            <img
+              src="img-gamegear/baner-fotter-2.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption carousel-item-1 d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+              <button type="button" class="btn btn-danger">Khám Phá</button>
+            </div>
+          </div>
+          <div class="carousel-item " data-bs-interval="2000">
+            <img
+              src="img-gamegear/baner-top-5.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption carousel-item-2 d-none d-md-block">
+              <h5>PlayStation®5PlayStation®5</h5>
+              <p>
+                PlayStation®5 Xử Lý Tốt Mọi Game Trên Thị Trường
+              </p>
+              <button type="button" class="btn btn-danger">Khám Phá</button>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <img
+              src="img-gamegear/baner-top2.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption carousel-item-3 d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+              <button type="button" class="btn btn-danger">Khám Phá</button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
 
-            <div class="col-3 col-3-1">
-              <div class="body-left body-left-1">
-                <ul class="list-menu">
-                  <h5 class="menu-seacrh li-search-1">Chuyên Mục</h5>
 
-                  <li class="item-search li-search li-search-1">
-                    <i class="fa-solid fa-display icon-list-menu"></i>
+   
 
-                    <span class="game-list">Màn Hình</span>
-                  </li>
-                  <li class="item-search li-search li-search-1">
-                    <i class="fa-solid fa-headphones icon-list-menu"></i>
-                    <span class="game-list">Tai Nghe</span>
-                  </li>
-                  <li class="item-search li-search li-search-1">
-                    <i class="fa-solid fa-gamepad icon-list-menu"></i>
-                    <span class="game-list"> Game PS</span>
-                  </li>
-                  <li class="item-search li-search li-search-1">
-                    <i class="fa-solid fa-keyboard icon-list-menu"></i>
-                    <span class="game-list"> Phụ Kiện</span>
-                  </li>
-                </ul>
+    <div class="card-1 text-bg-white-1">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active p-relative">
+            <img
+              src="/img-gamegear/image 182.png"
+              class="card-img-1"
+              alt="..."
+            />
+            <video autobuffer="true" autoplay="true" class="video-dual5 media-block__video lozad lazy-loaded" data-poster="https://gmedia.playstation.com/is/image/SIEPDC/TEST-gw3-hero-thumbnail?$800px$" loop="true" muted="true" playsinline="true" webkit-playsinline="true" poster="https://gmedia.playstation.com/is/image/SIEPDC/TEST-gw3-hero-thumbnail?$800px$" data-loaded="true">
+              <source data-src="https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/testing/lucy-test-assets/gw3/TEST-gw3-hero.mp4" type="video/mp4" src="img-gamegear/dualsense-thumbnail-ps5-01-en-04aug20.mp4">
+          </video>
+            <div class="card-img-overlay-1 p-absolute">
+              <h5 class="card-title-1">PlayStation®5</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural<br>
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">Last updated 3 mins ago</p>
+              <button type="button" class="btn btn-danger">Khám Phá</button>
+            </div>
+          </div>
+       
+          <!-- <div class="carousel-item">
+            <img
+              src="/img-gamegear/image 182.png"
+              class="card-img-1"
+              alt="..."
+            />
+            <div class="card-img-overlay-1 p-absolute">
+              <h5 class="card-title-1">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/img-gamegear/image 182.png"
+              class="card-img-1"
+              alt="..."
+            />
+            <div class="card-img-overlay-1 p-absolute">
+              <h5 class="card-title-1">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+          </div> -->
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--  -->
+    </div>
+    <div class="you-want d-flex j-center text-center">
+<h1><i class="fa-solid fa-gamepad icon-rote"></i>Tìm Mọi  Thứ Bạn Muốn<br> Ở Đây !!!</h1>
+</div>
+
+    <div class="container-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="body-left">
+              <ul class="search-body-left d-flex">
+                <h5 class="filter-item">Tìm Kiếm Theo</h5>
+                <select
+                  class="form-select form-select-sm"
+                  aria-label=".form-select-sm example"
+                >
+                  <option selected>Sản Phẩm</option>
+                  <option value="1">Game Console</option>
+                  <option value="2">Màn Hình Gaming</option>
+                  <option value="3">Chuột</option>
+                  <option value="4">Lót Chuột</option>
+
+                  <option value="5">Phụ Kiện game mobie</option>
+
+                  <option value="6">Bàn Phím Gaming</option>
+                </select>
+                <select
+                  class="form-select form-select-sm"
+                  aria-label=".form-select-sm example"
+                >
+                  <option selected>Đơn Giá</option>
+                  <option value="1">500.000đ</option>
+                  <option value="2">1.000.000đ</option>
+                  <option value="3">1.500.000đ</option>
+                  <option value="3">1.500.000đ</option>
+
+                  <option value="3">1.500.000đ</option>
+
+                  <option value="3">1.500.000đ</option>
+
+                  <option value="3">1.500.000đ</option>
+                </select>
+                <select
+                  class="form-select form-select-sm"
+                  aria-label=".form-select-sm example"
+                >
+                  <option selected>Năm Phát Hành</option>
+                  <option value="1">2020</option>
+                  <option value="2">2021</option>
+                  <option value="3">2022</option>
+                </select>
+                <a class="a-filter" href="">Lọc</a>
+              </ul>
+            </div>
+            <div class="filter d-flex a-center j-fle">
+              <div class="rels">
+                <p class="rels-1">(15.500 Sản Phẩm)</p>
               </div>
-              <div class="body-left body-left-2">
-                <ul class="list-menu">
-                  <h5 class="menu-seacrh li-search li-search-1">Nhãn Hiệu</h5>
-                  <li class="item-search li-search li-search-1">
-                    <input type="checkbox" name="" id="" />
-                    <span class="accesst"> Nhãn Hiệu</span>
-                  </li>
-                  <li class="item-search li-search li-search-1">
-                    <input type="checkbox" name="" id="" />
-                    <span class="accesst"> Nhãn Hiệu</span>
-                  </li>
-                  <li class="item-search li-search li-search-1">
-                    <input type="checkbox" name="" id="" />
-                    <span class="accesst"> Nhãn Hiệu</span>
-                  </li>
-                  <li class="item-search li-search li-search-1">
-                    <input type="checkbox" name="" id="" />
-                    <span class="accesst"> Nhãn Hiệu</span>
-                  </li>
-                  <li class="item-search li-search li-search-1">
-                    <input type="checkbox" name="" id="" />
-                    <span class="accesst"> Nhãn Hiệu</span>
-                  </li>
-                </ul>
+
+              <div class="filter-1 d-flex a-center">
+                <h4 class="filter-by">Sắp Xếp Theo</h4>
+                <select
+                  class="form-select-1 form-select-sm form-select-1"
+                  aria-label=".form-select-sm example"
+                >
+                  <option selected>Mới Nhất</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
               </div>
             </div>
-            <div class="col-9 col-9-1">
-              <div class="row row-right p-relative">
-                
-                <div class="col-12">
-                  <div class="box-search">
-                    <div class="amount-item">
-                      <span>16,730</span>
-                      <span>sản phẩm</span>
-                      <span class="sort-item">
-                        
-                        Sắp Xếp Theo
-                        <i class="fa-solid fa-angle-right"></i>
-                      </span>
+          </div>
+          <div class="col-12"></div>
+        </div>
+      </div>
+    
+    
+        <div class="list-item list-item-up">
+          <div class="row row-item-1">
+            <div class="title-sale">
+              <div class="container">
+              <div class="title-sale-child  a-center">
+                <h4 class="h4-sale">Siêu Mới</h4> 
+               <h3 class="h3-sale">Các Sản Phẩm Mới Ra Mắt </h3>
+              </div>
+            </div>
+              <div class="all-sale-item center-all">
+                <div id="wrapper" class="wrapper-2 wrapper-3">
+                  <div id="carousel">
+                    <div id="content" class="content-class">
+                      <div class="item-1">
+                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
+                        <div class="item-text-1">
+                        <h6 class="h6-name-item">may choi gamemay choi gamemay choi game</h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                      </div>
+                      <div class="item-1">
+                        <img id="1" class="item" src="img-gamegear/ps-2.png" />
+                        <div class="item-text-1">
+                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                      </div>
+                      <div class="item-1">
+                        <img id="1" class="item" src="img-gamegear/ps-3.png" />
+                        <div class="item-text-1">
+                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                      </div>
+                      <div class="item-1">
+                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
+                        <div class="item-text-1">
+                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                      </div>
+                      <div class="item-1">
+                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
+                        <div class="item-text-1">
+                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                      </div>
+                      <div class="item-1">
+                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
+                        <div class="item-text-1">
+                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                      </div>
+                      <div class="item-1">
+                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
+                        <div class="item-text-1">
+                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                      </div>
+                      <div class="item-1">
+                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
+                        <div class="item-text-1">
+                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                      </div>
+                      <div class="item-1">
+                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
+                        <div class="item-text-1">
+                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                      </div>
                     </div>
-                    <div class="all-search">
-                      <button class="btn-danhmuc">Danh Mục<i class="fa-solid fa-angle-right arr-right"></i></button>
-                      <button class="btn-thuonghieu">Thương Hiệu<i class="fa-solid fa-angle-right arr-right"></i></button>
-                      <button class="btn-loc">Lọc</button>
-                    </div>
-                    <!-- <div class="Sort-by">
-                      <span calss="sapxep">sắp xếp theo</span>
-                      <span>
-                        <button class="btn-seacrh">mới nhất</button>
-                      </span>
-                    </div> -->
+               
                   </div>
-                  <div class="container">
-                  <div class="container gameconsole">gameconsole</div>
-                  <div class="row row-info-item p-relative">
-                    <div class="item-main col-3">
-                      <div class="card-main p-relative">
-                        <div class="icon-card p-absolute">
-                          <div class="sale-of-list-item">
-                            <span
-                              style="
-                                font-size: 12px;
-                                color: orangered;
-                                font-weight: 500;
-                              "
-                              >sale</span
-                            >
-                          </div>
-                        </div>
-                        <div class="love p-absolute">
-                          <i class="fa-solid fa-heart"></i>
-                        </div>
-
-                        <div class="card-img">
-                          <img
-                            src="img-gamegear/ps5.png"
-                            class="img-thumbnail img-card"
-                            alt="..."
-                          />
-                        </div>
-                        <div class="card-title">
-                          Tay cầm chơi game Ps4 chính hãng
-                        </div>
-
-                        <div class="card-price-sale">980.000D</div>
-                        <span class="shjt p-absolute" style="color: black"
-                          >-</span
-                        >
-                        <span class="card-price p-absolute"> 980.000D </span>
-
-                        <div class="card-color">
-                          <h6 class="color-h6">màu:</h6>
-                          <span class="card-color-black"></span>
-                          <span class="card-color-white"></span>
-                        </div>
-                        <div class="card-action">
-                          <button class="btn-card">Buy Now</button>
-                          <button class="btn-card">Add Cart</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item-main col-3">
-                      <div class="card-main p-relative">
-                        <div class="icon-card p-absolute">
-                          <div class="sale-of-list-item">
-                            <span
-                              style="
-                                font-size: 12px;
-                                color: orangered;
-                                font-weight: 500;
-                              "
-                              >sale</span
-                            >
-                          </div>
-                        </div>
-                        <div class="love p-absolute">
-                          <i class="fa-solid fa-heart"></i>
-                        </div>
-
-                        <div class="card-img">
-                          <img
-                            class="img-card"
-                            src="img-gamegear/ps-2.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="card-title">
-                          Tay cầm chơi game Ps4 chính hãng
-                        </div>
-
-                        <div class="card-price-sale">980.000D</div>
-                        <span class="shjt p-absolute" style="color: black"
-                          >-</span
-                        >
-                        <span class="card-price p-absolute"> 980.000D </span>
-
-                        <div class="card-color">
-                          <h6 class="color-h6">màu:</h6>
-                          <span class="card-color-black"></span>
-                          <span class="card-color-white"></span>
-                        </div>
-                        <div class="card-action">
-                          <button class="btn-card">Buy Now</button>
-                          <button class="btn-card">Add Cart</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item-main col-3">
-                      <div class="card-main p-relative">
-                        <div class="icon-card p-absolute">
-                          <div class="sale-of-list-item">
-                            <span
-                              style="
-                                font-size: 12px;
-                                color: orangered;
-                                font-weight: 500;
-                              "
-                              >sale</span
-                            >
-                          </div>
-                        </div>
-                        <div class="love p-absolute">
-                          <i class="fa-solid fa-heart"></i>
-                        </div>
-
-                        <div class="card-img">
-                          <img
-                            class="img-card"
-                            src="img-gamegear/ps-8.jpeg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="card-title">
-                          Tay cầm chơi game Ps4 chính hãng
-                        </div>
-
-                        <div class="card-price-sale">980.000D</div>
-                        <span class="shjt p-absolute" style="color: black"
-                          >-</span
-                        >
-                        <span class="card-price p-absolute"> 980.000D </span>
-
-                        <div class="card-color">
-                          <h6 class="color-h6">màu:</h6>
-                          <span class="card-color-black"></span>
-                          <span class="card-color-white"></span>
-                        </div>
-                        <div class="card-action">
-                          <button class="btn-card">Buy Now</button>
-                          <button class="btn-card">Add Cart</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item-main item-main-1 col-3">
-                      <div class="card-main p-relative">
-                        <div class="icon-card p-absolute">
-                          <div class="sale-of-list-item">
-                            <span
-                              style="
-                                font-size: 12px;
-                                color: orangered;
-                                font-weight: 500;
-                              "
-                              >sale</span
-                            >
-                          </div>
-                        </div>
-                        <div class="love p-absolute">
-                          <i class="fa-solid fa-heart"></i>
-                        </div>
-
-                        <div class="card-img">
-                          <img
-                            class="img-card"
-                            src="img-gamegear/image 43.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="card-title">
-                          Tay cầm chơi game Ps4 chính hãng
-                        </div>
-
-                        <div class="card-price-sale">980.000D</div>
-                        <span class="shjt p-absolute" style="color: black"
-                          >-</span
-                        >
-                        <span class="card-price p-absolute"> 980.000D </span>
-
-                        <div class="card-color">
-                          <h6 class="color-h6">màu:</h6>
-                          <span class="card-color-black"></span>
-                          <span class="card-color-white"></span>
-                        </div>
-                        <div class="card-action">
-                          <button class="btn-card">Buy Now</button>
-                          <button class="btn-card">Add Cart</button>
-                        </div>
-                      </div>
-                    </div>
-                    <a class="p-absolute add-ab">Xem Thêm</a>
-                  </div>
-                  <div class="gameconsole gameconsole-1">gameconsole</div>
-                  <div class="row row-info-item p-relative">
-                    <div class="item-main col-3">
-                      <div class="card-main p-relative">
-                        <div class="icon-card p-absolute">
-                          <div class="sale-of-list-item">
-                            <span
-                              style="
-                                font-size: 12px;
-                                color: orangered;
-                                font-weight: 500;
-                              "
-                              >sale</span
-                            >
-                          </div>
-                        </div>
-                        <div class="love p-absolute">
-                          <i class="fa-solid fa-heart"></i>
-                        </div>
-
-                        <div class="card-img">
-                          <img
-                            style="margin: 44px 0"
-                            class="img-card img-card-1"
-                            src="img-gamegear/image 138.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="card-title">
-                          Tay cầm chơi game Ps4 chính hãng
-                        </div>
-
-                        <div class="card-price-sale">980.000D</div>
-                        <span class="shjt p-absolute" style="color: black"
-                          >-</span
-                        >
-                        <span class="card-price p-absolute"> 980.000D </span>
-
-                        <div class="card-color">
-                          <h6 class="color-h6">màu:</h6>
-                          <span class="card-color-black"></span>
-                          <span class="card-color-white"></span>
-                        </div>
-                        <div class="card-action">
-                          <button class="btn-card">Buy Now</button>
-                          <button class="btn-card">Add Cart</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item-main col-3">
-                      <div class="card-main p-relative">
-                        <div class="icon-card p-absolute">
-                          <div class="sale-of-list-item">
-                            <span
-                              style="
-                                font-size: 12px;
-                                color: orangered;
-                                font-weight: 500;
-                              "
-                              >sale</span
-                            >
-                          </div>
-                        </div>
-                        <div class="love p-absolute">
-                          <i class="fa-solid fa-heart"></i>
-                        </div>
-
-                        <div class="card-img">
-                          <img
-                            style="margin: 44px 0"
-                            class="img-card img-card-2"
-                            src="img-gamegear/image 135.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="card-title">
-                          Tay cầm chơi game Ps4 chính hãng
-                        </div>
-
-                        <div class="card-price-sale">980.000D</div>
-                        <span
-                          class="shjt p-absolute shjt-1"
-                          style="color: black"
-                          >-</span
-                        >
-                        <span class="card-price p-absolute card-price-1">
-                          980.000D
-                        </span>
-
-                        <div class="card-color">
-                          <h6 class="color-h6">màu:</h6>
-                          <span class="card-color-black"></span>
-                          <span class="card-color-white"></span>
-                        </div>
-                        <div class="card-action">
-                          <button class="btn-card">Buy Now</button>
-                          <button class="btn-card">Add Cart</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item-main col-3">
-                      <div class="card-main p-relative">
-                        <div class="icon-card p-absolute">
-                          <div class="sale-of-list-item">
-                            <span
-                              style="
-                                font-size: 12px;
-                                color: orangered;
-                                font-weight: 500;
-                              "
-                              >sale</span
-                            >
-                          </div>
-                        </div>
-                        <div class="love p-absolute">
-                          <i class="fa-solid fa-heart"></i>
-                        </div>
-
-                        <div class="card-img">
-                          <img
-                            style="margin: 70px 0"
-                            class="img-card img-card-3"
-                            src="img-gamegear/image 136.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="card-title">
-                          Tay cầm chơi game Ps4 chính hãng
-                        </div>
-
-                        <div class="card-price-sale">980.000D</div>
-                        <span
-                          class="shjt p-absolute shjt-1"
-                          style="color: black"
-                          >-</span
-                        >
-                        <span class="card-price p-absolute card-price-1">
-                          980.000D
-                        </span>
-
-                        <div class="card-color">
-                          <h6 class="color-h6">màu:</h6>
-                          <span class="card-color-black"></span>
-                          <span class="card-color-white"></span>
-                        </div>
-                        <div class="card-action">
-                          <button class="btn-card">Buy Now</button>
-                          <button class="btn-card">Add Cart</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="item-main item-main-1 col-3">
-                      <div class="card-main p-relative">
-                        <div class="icon-card p-absolute">
-                          <div class="sale-of-list-item">
-                            <span
-                              style="
-                                font-size: 12px;
-                                color: orangered;
-                                font-weight: 500;
-                              "
-                              >sale</span
-                            >
-                          </div>
-                        </div>
-                        <div class="love p-absolute">
-                          <i class="fa-solid fa-heart"></i>
-                        </div>
-
-                        <div class="card-img">
-                          <img
-                            style="margin: 50px 0"
-                            class="img-card img-card-4"
-                            src="img-gamegear/image 132.png"
-                            alt=""
-                          />
-                        </div>
-                        <div class="card-title">
-                          Tay cầm chơi game Ps4 chính hãng
-                        </div>
-
-                        <div class="card-price-sale">980.000D</div>
-                        <span
-                          class="shjt p-absolute shjt-1"
-                          style="color: black"
-                          >-</span
-                        >
-                        <span class="card-price p-absolute card-price-1">
-                          980.000D
-                        </span>
-
-                        <div class="card-color">
-                          <h6 class="color-h6">màu:</h6>
-                          <span class="card-color-black"></span>
-                          <span class="card-color-white"></span>
-                        </div>
-                        <div class="card-action">
-                          <button class="btn-card">Buy Now</button>
-                          <button class="btn-card">Add Cart</button>
-                        </div>
-                      </div>
-                    </div>
-                    <a class="p-absolute add-ab">Xem Thêm</a>
-                  </div>
-
-                  </div>
+                  <button id="prev">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path fill="none" d="M0 0h24v24H0V0z" />
+                      <path
+                        d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
+                      />
+                    </svg>
+                  </button>
+                  <button id="next">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path fill="none" d="M0 0h24v24H0V0z" />
+                      <path
+                        d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
+                      />
+                    </svg>
+                  </button>
                 </div>
+             
+              </div>
+
+
+              <div class="container">
+                <div class="title-sale-child  a-center">
+                  <h4 class="h4-sale">Siêu Mới</h4> 
+                 <h3 class="h3-sale">Các Sản Phẩm Mới Ra Mắt </h3>
+                </div>
+              </div>
+              <div class="all-sale-item center-all">
+                <div id="wrapper" class="wrapper-2 wrapper-3">
+                  <div id="carousel3">
+                    <div id="content3" class="content-class-3">
+                      <div class="item-1">
+                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
+                        <div class="item-text-1">
+                        <h6 class="h6-name-item">may choi gamemay choi gamemay choi game</h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                      </div>
+                      <div class="item-1">
+                        <img id="1" class="item" src="img-gamegear/ps-2.png" />
+                        <div class="item-text-1">
+                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                      </div>
+                      <div class="item-1">
+                        <img id="1" class="item" src="img-gamegear/ps-3.png" />
+                        <div class="item-text-1">
+                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                      </div>
+                      <div class="item-1">
+                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
+                        <div class="item-text-1">
+                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                      </div>
+                      <div class="item-1">
+                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
+                        <div class="item-text-1">
+                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                      </div>
+                      <div class="item-1">
+                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
+                        <div class="item-text-1">
+                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                      </div>
+                      <div class="item-1">
+                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
+                        <div class="item-text-1">
+                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                      </div>
+                      <div class="item-1">
+                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
+                        <div class="item-text-1">
+                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                      </div>
+                      <div class="item-1">
+                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
+                        <div class="item-text-1">
+                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                      </div>
+                    </div>
+               
+                  </div>
+                  <button id="prev3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path fill="none" d="M0 0h24v24H0V0z" />
+                      <path
+                        d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
+                      />
+                    </svg>
+                  </button>
+                  <button id="next3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path fill="none" d="M0 0h24v24H0V0z" />
+                      <path
+                        d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+             
               </div>
             </div>
           </div>
         </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="highlight">
+              Thuơng Hiệu Và Sản Phẩm Nổi Bật
+              <hr class="hr1" />
+            </h2>
+          </div>
+          </div>
+        </div>
+
+
+
+     <div class="sale-baner">
+
+      <img class="img-sale-baner" src="img-gamegear/baner-sale.png" alt="">
+
+      <div class="baner-text">
+        <div class="logo-name">
+          <img src="" alt="">
+          <p>GameGear.org</p>
+        </div>
+        
+        <h4 class="h4-sale-1">Tiết kiệm mới trên
+          Game-Gear Store</h4>
+        <h5 class="h4-sale-1">
+          Khám phá các chương trình giảm giá mới nhất và
+giảm giá theo mùa trên các trò chơi và tiện ích 
+bổ sung tuyệt vời dành cho PS5 và PS4.
+        </h5>
+
       </div>
-      <div class="highlight">
-        <div class="container">
-          <hr class="hr-14" />
-          <h5 class="h5-high" style="margin-bottom: 20px">
-            Thương Hiệu Và Sản Phẩm Nổi Bật
-          </h5>
-          <nav>
+     </div>
+
+          <!-- nav-tab -->
+        
+          <nav class="nav-new">
+            <div class="container">    
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
               <button
                 class="nav-link active"
@@ -764,6 +693,7 @@
                 role="tab"
                 aria-controls="nav-profile"
                 aria-selected="false"
+                tabindex="-1"
               >
                 Bàn Phím Gaming
               </button>
@@ -776,6 +706,7 @@
                 role="tab"
                 aria-controls="nav-contact"
                 aria-selected="false"
+                tabindex="-1"
               >
                 Chuột
               </button>
@@ -789,11 +720,15 @@
                 role="tab"
                 aria-controls="nav-add"
                 aria-selected="false"
+                tabindex="-1"
               >
                 Màn Hình
               </button>
             </div>
+          </div>
+            
           </nav>
+           
           <div class="tab-content" id="nav-tabContent">
             <div
               class="tab-pane fade show active"
@@ -803,16 +738,102 @@
               tabindex="0"
             >
               <div class="container-bgr">
-                <img
-                  style="width: 100%"
-                  src="img-gamegear/image 17.png"
-                  class="img-fluid"
-                  alt="..."
-                />
-                <h5 class="h5-bgr">
-                  Bộ điều khiển PS4 Elite không dây Sonicon w / 4 Tấm đệm lưng
-                  có thể thay đổi
-                </h5>
+                <div
+                  id="carouselExampleDark5"
+                  class="carousel carousel-dark slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark5"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark5"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark5"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                      <img
+                        src="img-gamegear/baner0console-1.png"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>
+                          Some representative placeholder content for the first
+                          slide.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img
+                        src="img-gamegear/baner-console-2.png"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>
+                          Some representative placeholder content for the second
+                          slide.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="img-gamegear/baner-console.png"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>
+                          Some representative placeholder content for the third
+                          slide.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleDark5"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleDark5"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
               </div>
             </div>
             <div
@@ -822,17 +843,101 @@
               aria-labelledby="nav-profile-tab"
               tabindex="0"
             >
-              <div class="container-bgr">
-                <img
-                  style="width: 100%"
-                  src="img-gamegear/baner-key.png"
-                  class="img-fluid"
-                  alt="..."
-                />
-                <h5 class="h5-bgr">
-                  Bộ điều khiển PS4 Elite không dây Sonicon w / 4 Tấm đệm lưng
-                  có thể thay đổi
-                </h5>
+              <div
+                id="carouselExampleDark1"
+                class="carousel carousel-dark slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark1"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark1"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark1"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="img-gamegear/baner0console-1.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>
+                        Some representative placeholder content for the first
+                        slide.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="img-gamegear/baner-console-2.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>
+                        Some representative placeholder content for the second
+                        slide.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img-gamegear/baner-console.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>
+                        Some representative placeholder content for the third
+                        slide.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleDark1"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleDark1"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
             <div
@@ -842,17 +947,101 @@
               aria-labelledby="nav-contact-tab"
               tabindex="0"
             >
-              <div class="container-bgr">
-                <img
-                  style="width: 100%"
-                  src="img-gamegear/Frame 1800.png"
-                  class="img-fluid"
-                  alt="..."
-                />
-                <h5 class="h5-bgr">
-                  Bộ điều khiển PS4 Elite không dây Sonicon w / 4 Tấm đệm lưng
-                  có thể thay đổi
-                </h5>
+              <div
+                id="carouselExampleDark2"
+                class="carousel carousel-dark slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark2"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark2"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark2"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="img-gamegear/baner0console-1.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>
+                        Some representative placeholder content for the first
+                        slide.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="img-gamegear/baner-console-2.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>
+                        Some representative placeholder content for the second
+                        slide.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img-gamegear/baner-console.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>
+                        Some representative placeholder content for the third
+                        slide.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleDark2"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleDark2"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
             <div
@@ -862,908 +1051,924 @@
               aria-labelledby="nav-add-tab"
               tabindex="0"
             >
-              <div class="container-bgr">
-                <img
-                  style="width: 100%"
-                  src="img-gamegear/baner-manhinjh-1.png"
-                  class="img-fluid"
-                  alt="..."
-                />
-                <h5 class="h5-bgr">
-                  Bộ điều khiển PS4 Elite không dây Sonicon w / 4 Tấm đệm lưng
-                  có thể thay đổi
-                </h5>
+              <div
+                id="carouselExampleDark6"
+                class="carousel carousel-dark slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark6"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark6"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark6"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="img-gamegear/baner0console-1.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>
+                        Some representative placeholder content for the first
+                        slide.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="img-gamegear/baner-console-2.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>
+                        Some representative placeholder content for the second
+                        slide.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img-gamegear/baner-console.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>
+                        Some representative placeholder content for the third
+                        slide.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleDark6"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleDark6"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
           </div>
-          <hr class="hr11"/>
-          <div class="container-new">
-            <div class="hader-new">
-              <div class="item-new">
-                <ul
-                  class="nav nav-pills mb-3 nav-tab-2 nav-1-1"
-                  id="pills-tab"
-                  role="tablist"
-                >
-                  <h5>tin moi</h5>
-                  <div class="all-">
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link active"
-                        id="pills-home-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-home"
-                        type="button"
-                        role="tab"
-                        aria-controls="pills-home"
-                        aria-selected="true"
-                      >
-                        Home
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link"
-                        id="pills-profile-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-profile"
-                        type="button"
-                        role="tab"
-                        aria-controls="pills-profile"
-                        aria-selected="false"
-                      >
-                        Profile
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link"
-                        id="pills-contact-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-contact"
-                        type="button"
-                        role="tab"
-                        aria-controls="pills-contact"
-                        aria-selected="false"
-                      >
-                        Contact
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link"
-                        id="pills-disabled-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-disabled"
-                        type="button"
-                        role="tab"
-                        aria-controls="pills-disabled"
-                        aria-selected="false"
-                      >
-                        Disabled
-                      </button>
-                    </li>
-                  </div>
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
-                  <div
-                    class="tab-pane fade show active"
-                    id="pills-home"
-                    role="tabpanel"
-                    aria-labelledby="pills-home-tab"
-                    tabindex="0"
+          <!--  -->
+       
+
+
+      <div class="container container-new">
+        <div class="hader-new">
+          <div class="item-new">
+            <ul
+              class="nav nav-pills mb-3 nav-tab-2"
+              id="pills-tab"
+              role="tablist"
+            >
+              <h5>tin moi</h5>
+              <div class="all- d-flex">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
                   >
-                    <div class="all-new-1">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <!--  -->
+                    Home
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                    tabindex="-1"
+                  >
+                    Profile
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-contact"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                    tabindex="-1"
+                  >
+                    Contact
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-disabled-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-disabled"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-disabled"
+                    aria-selected="false"
+                    tabindex="-1"
+                  >
+                    Disabled
+                  </button>
+                </li>
+              </div>
+            </ul>
+            <hr class="hr-2" />
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-home"
+                role="tabpanel"
+                aria-labelledby="pills-home-tab"
+                tabindex="0"
+              >
+                <div class="all-new-1">
+                  <div id="wrapper" class="wrapper-2">
+                    <div id="carousel1">
+                      <div id="content2" class="content-class">
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/ps-2.png"
+                          />
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                       </div>
                     </div>
+                    <button id="prev1" style="display: flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path
+                          d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button id="next1" style="display: none">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path
+                          d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
+                        ></path>
+                      </svg>
+                    </button>
                   </div>
-                  <div
-                    class="tab-pane fade"
-                    id="pills-profile"
-                    role="tabpanel"
-                    aria-labelledby="pills-profile-tab"
-                    tabindex="0"
-                  >
-                    <div class="all-new-1">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <!--  -->
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-profile"
+                role="tabpanel"
+                aria-labelledby="pills-profile-tab"
+                tabindex="0"
+              >
+                <div class="all-new-1">
+                  <div id="wrapper" class="wrapper-2">
+                    <div id="carousel1">
+                      <div id="content2" class="content-class">
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
                         </div>
                       </div>
                     </div>
+                    <button id="prev1" style="display: flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path
+                          d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button id="next1" style="display: none">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path
+                          d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
+                        ></path>
+                      </svg>
+                    </button>
                   </div>
-                  <div
-                    class="tab-pane fade"
-                    id="pills-contact"
-                    role="tabpanel"
-                    aria-labelledby="pills-contact-tab"
-                    tabindex="0"
-                  >
-                    <div class="all-new-1">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <!--  -->
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-contact"
+                role="tabpanel"
+                aria-labelledby="pills-contact-tab"
+                tabindex="0"
+              >
+                <div class="all-new-1">
+                  <div id="wrapper" class="wrapper-2">
+                    <div id="carousel1">
+                      <div id="content2" class="content-class">
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
                         </div>
                       </div>
                     </div>
+                    <button id="prev1" style="display: flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path
+                          d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button id="next1" style="display: none">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path
+                          d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
+                        ></path>
+                      </svg>
+                    </button>
                   </div>
-                  <div
-                    class="tab-pane fade"
-                    id="pills-disabled"
-                    role="tabpanel"
-                    aria-labelledby="pills-disabled-tab"
-                    tabindex="0"
-                  >
-                    <div class="all-new-1">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-
-                          <div class="col-2 col-2-2">
-                            <a class="a-news" href="#">
-                              <div class="p-relative card-main-news">
-                                <div class="card-img">
-                                  <img
-                                    class="img-card"
-                                    src="img-gamegear/ps-8.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div class="card-title">
-                                  <p class="tille-head">hướng dẫn sử dụng</p>
-                                  <h4 class="tille-body">
-                                    Tay cầm chơi game Ps4 chính hãng
-                                  </h4>
-                                  <span class="tille-fotter"
-                                    >tháng4 18,2022 bởi
-                                    <span class="tille-fotter-1"
-                                      >phuonghehe</span
-                                    ></span
-                                  >
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <!--  -->
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-disabled"
+                role="tabpanel"
+                aria-labelledby="pills-disabled-tab"
+                tabindex="0"
+              >
+                <div class="all-new-1">
+                  <div id="wrapper" class="wrapper-2">
+                    <div id="carousel1">
+                      <div id="content2" class="content-class">
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
+                        </div>
+                        <div class="item-1">
+                          <img
+                            id="2"
+                            class="item"
+                            src="img-gamegear/sale-1.png"
+                          />
+                          <h6 class="h6-name-item">may choi game</h6>
+                          <h5 class="h5-price-item">1.350.000đ</h5>
                         </div>
                       </div>
                     </div>
+                    <button id="prev1" style="display: flex">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path
+                          d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <button id="next1" style="display: none">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path
+                          d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
+                        ></path>
+                      </svg>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <hr />
+      </div>
 
-            <div
-              style="margin-top: 50px"
-              class="all-box-tab d-flex j-center tab-123"
-            >
-              
-                <a href="#" class=" tab-box">1</a>
-                <a href="#" class=" tab-box">2</a>
-                <a href="#" class=" tab-box">3</a>
-             
-            </div>
-            <div class="feedback d-flex">
-              <h5 class="text-feedback">Chúng tôi rất muốn nghe những gì bạn nghĩ!</h5>
-              <div class="d-flex j-center a-center">
-                <img
-                  class="nav-img-feedback"
-                  src="img-gamegear/logo.png"
-                  alt="Logo"
-                />
-                <span class="box-feedback">Phản Hồi</span>
+    
+
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img-gamegear/banner-footer.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img-gamegear/baner-fotter-2.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img-gamegear/banner-footer.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="end-foter p-relative">
+        <div class="p-absolute foter-abs">
+          <div
+          class="row mb-0 pt-5 row-2 justify-content-md-around justify-content-center text-center"
+        >
+          <div class="col-auto">
+            <figure class="figure">
+              <i class="fa-solid fa-gamepad"></i>
+              <figcaption class="figure-caption">
+                Giao Hàng Nhanh Chóng
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-auto">
+            <figure class="figure">
+              <i class="fa-solid fa-gamepad"></i>
+              <figcaption class="figure-caption">Hỗ Trợ 24/7</figcaption>
+            </figure>
+          </div>
+          <div class="col-auto">
+            <figure class="figure">
+              <i class="fa-solid fa-gamepad"></i>
+              <figcaption class="figure-caption">Giá Cả Hợp Lý</figcaption>
+            </figure>
+          </div>
+          <div class="col-auto">
+            <figure class="figure">
+              <i class="fa-solid fa-gamepad"></i>
+              <figcaption class="figure-caption">Mô Tả Chi Tiết</figcaption>
+            </figure>
+          </div>
+          <div class="col-auto">
+            <figure class="figure">
+              <i class="fa-solid fa-gamepad"></i>
+              <figcaption class="figure-caption">Sản Phẩm Xu Hướng</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="card- py-5 border-0 px-0 mx-0 d-flex j-center">
+          <div class="card-body text-center">
+            <div class="row justify-content-center">
+              <div class="col-auto">
+                <h6><b>Bạn vẫn còn nhiều câu hỏi?</b></h6>
+                <small class="text-muted"
+                  >Gọi/Nhắn Tin <span class="mx-2"><b>+84.16341999</b></span
+                  >Để Được Hỗ Trợ</small
+                >
+                <div class="row justify-content-center">
+                  <div class="col-10">
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-lg btn-block my-5"
+                    >
+                      <i class="fa-solid fa-comments"></i>
+                      Liên Hệ TRực Tiếp
+                    </button>
+                    <h6><b>Đảm bảo hoàn tiền 100%</b></h6>
+                    <small class="text-muted"
+                      >Hoàn Lại Toàn Bộ Tiền Cho Khách Hàng Nếu Sản Phẩm
+                      Lỗi</small
+                    >
+                  </div>
+                </div>
               </div>
             </div>
-            <hr class="hr-10" />
           </div>
+        </div>
+  
+        <div class="container-fluid justify-content-center p-0 mx-0">
+          <footer class="">
+            <div class="container">
+              <div
+                class="row row-fotter-1 mb-0 mt-5 mx-4 row-2 justify-content-xl-around justify-content-sm-between f-d-rv"
+              >
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 pt-4 order-1">
+                  <ul class="list-unstyled">
+                    <li class="mt-md-0 mt-4">Giải Pháp Của Chúng Tôi</li>
+                    <li>Bảo mật nền tảng tích hợp</li>
+                    <li>CTính năng cốt lõi</li>
+                    <li>Tính năng sản phẩm và dịch vụ</li>
+                    <li>Định giá</li>
+                  </ul>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 pt-4 order-2">
+                  <ul class="list-unstyled">
+                    <li class="mt-md-0 mt-4">Bạn Cần</li>
+                    <li>Bảo MẬt Nền TảngTảng Tích Hợp</li>
+                    <li>Tính Năng Cốt Lõi</li>
+                    <li>Tính Nănng Sản Phẩm</li>
+                    <li>Định Giá</li>
+                    <li>Tính Năng Sản Phẩm</li>
+                  </ul>
+                </div>
+                <div
+                  class="col-xl-3 col-lg-6 col-md-6 pt-4 col-sm-6 my-sm-0 order-md-3 order-sm-1 d-flex"
+                >
+                  <ul class="list-unstyled">
+                    <li class="mt-md-0 mt-4">Dịch Vụ</li>
+                    <li>Bảo mật tích hợp</li>
+                    <li>Tính năng cốt lõi</li>
+                    <li>Tính năng sản phẩm</li>
+                    <li>Bảo mật tích hợp</li>
+                    <li>Định giá</li>
+                  </ul>
+                </div>
+                <div
+                  class="col-xl-3 text-left col-lg-4 col-md-4 col-sm-6 col-12 pt-4 my-sm-0 order-6 my-auto"
+                >
+                  <div class="input-group-lg input-group mb-3 mt-md-0 mt-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter your e-mail address"
+                      aria-label="Recipient's username"
+                      aria-describedby="button-addon2"
+                    />
+                    <div class="input-group-append">
+                      <button
+                        class="btn btn-success"
+                        type="button"
+                        id="button-addon2"
+                      >
+                        <b>Join</b>
+                      </button>
+                    </div>
+                  </div>
+                  <ul class="list-unstyled">
+                    <li>
+                      <p class="mb-0 pb-0 mt-5">THEO DÕI CHÚNG TÔI TẠI:</p>
+                    </li>
+                    <li class="d-flex">
+                      <a class="fa"><i class="fa-brands fa-facebook"></i></a
+                      ><a class="fa"><i class="fa-brands fa-twitter"></i></a
+                      ><a class="fa"><i class="fa-brands fa-instagram"></i></a
+                      ><a class="fa"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+  
+              <hr class="line" />
+              <div
+                class="row row-fotter justify-content-lg-around mx-xl-5 mx-lg-4 mx-3 py-3 f-d-rv"
+              >
+                <div class="col order-1 align-self-center">
+                  <p class="mb-0 text-uppercase">Địa Chỉ Shop</p>
+                  <small
+                    ><i class="fa-solid fa-envelope adress-icon"></i>
+                    Email:phuongxu@gmail.com<br /><i
+                      class="fa-solid fa-location-dot adress-icon"
+                    ></i>
+                    Số 79 - Thanh Xuân Hà Nội <br /><i
+                      style="margin-right: 8px"
+                      class="fa-solid fa-phone adress-icon"
+                    ></i
+                    >Số Điện Thoại : +84 90-421-3600
+                  </small>
+                </div>
+                <div class="col-auto my-sm-0 order-6 my-auto pt-sm-0 pt-3 d-flex j-center a-center">
+                  <ul class="list-inline third-row first">
+                    <li class="list-inline-item active-1">
+                      <span>Mua Hàng Online</span>
+                    </li>
+                    <li class="list-inline-item"><span>Thử Ngay</span></li>
+                  </ul>
+                </div>
+              </div>
+              <hr class="line" />
+              <div class="row text-center py-3">
+                <div class="col">
+                  <p class="text-muted">
+                    <b
+                      >© 2022 - Bản Quyền Thuộc
+                      <a href="index.html"></a> GameGear</b
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+  
         </div>
       </div>
 
-      <!--  -->
-
-      <img
-        style="width: 100%"
-        src="img-gamegear/baner-bot.png"
-        class="img-fluid baner-bot-1"
-        alt="..."
-      />
-
-
-        <div class="row row-service">
-          <div class="col-3 d-flex j-center a-item">
-            <div class="icon-foter">
-              <i class="fa-solid fa-plane-departure all-icon"></i>
-            </div>
-            <div>
-              <p class="text-up">miễn phí vận chuyển</p>
-              <p class="text-dow">miễn phí vận chuyển</p>
-            </div>
-          </div>
-          <div class="col-3 d-flex j-center a-item">
-            <div class="icon-foter">
-              <i class="fa-solid fa-arrows-rotate all-icon"></i>
-            </div>
-            <div>
-              <p class="text-up">miễn phí vận chuyển</p>
-              <p class="text-dow">miễn phí vận chuyển</p>
-            </div>
-          </div>
-          <div class="col-3 d-flex j-center a-item">
-            <div class="icon-foter">
-              <i class="fa-solid fa-hand-holding-dollar all-icon"></i>
-            </div>
-            <div>
-              <p class="text-up">miễn phí vận chuyển</p>
-              <p class="text-dow">miễn phí vận chuyển</p>
-            </div>
-          </div>
-          <div class="col-3 d-flex j-center a-item">
-            <div class="icon-foter">
-              <i class="fa-regular fa-comments all-icon"></i>
-            </div>
-            <div>
-              <p class="text-up">miễn phí vận chuyển</p>
-              <p class="text-dow">miễn phí vận chuyển</p>
-            </div>
-          </div>
-        </div>
+   
     
-      <hr class="hr-container-new" />
-
-      <!-- main -->
+      
+      <script src="js.js"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"
+      ></script>
     </div>
-    <footer>
-      <div class="d-flex j-center a-center t-center bgr-fotter">
-        <div class="login">
-          <a href="#"> Đăng Ký/</a><a href="#">Đăng Nhập</a>
-          <span>Để Nhận Nhiều Ưu Đãi Hơn</span>
-          <div class="input-button">
-            <input
-              class="input-email"
-              type="text"
-              name=""
-              id=""
-              placeholder="Nhập Email"
-            />
-            <button class="btn-login-email">Đăng Nhập</button>
-          </div>
-          <div class="creat-acc">
-            <div class="creat-acc-1">Bạn Chưa Có Tài Khoản? <a href="#">Đăng Ký</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="fotter-end t-center">
-        <h5 class="h5-adress">Liên Hệ Với Chúng Tôi</h5>
-       <div class="all-adress d-flex j-center a-center">
-        <div class="adress d-flex j-center a-center">
-          <i class="fa-solid fa-location-dot icon-fotter"></i>
-          <p class="text-adress">
-            số 123- Yên Xá - Thanh Trì -Hà Nội
-          </p>
-        </div>
-        <div class="adress d-flex j-center a-center">
-          <i class="fa-solid fa-phone icon-fotter"></i>
-          <p class="text-adress">
-            +84 1234567
-          </p>
-        </div>
-        <div class="adress adress-1 d-flex j-center a-center">
-          <i class="fa-solid fa-envelope icon-fotter"></i>
-          <p class="text-adress">
-           phuongxu@gmail.com
-          </p>
-        </div>
-      </div>
-      </div>
-      <div class="icon-mxh d-flex j-center a-center">
-        <i class="fa-brands fa-facebook icon-mxh-child"></i>
-        <i class="fa-brands fa-youtube icon-mxh-child"></i>
-        <i class="fa-brands fa-twitter icon-mxh-child"></i>
-        <i class="fa-brands fa-instagram icon-mxh-child"></i>
-      </div>
-    </footer>
   </body>
-  <script src="js.js"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"
-  ></script>
 </html>
+Tìm Mọi Thứ Bạn Muốn
+Ở Đây !!!

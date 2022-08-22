@@ -120,7 +120,7 @@
   .filter-by {
     margin-right: 10px;
     margin-bottom: 0;
-    font-size: 13px;
+    font-size: 14px;
   }
 
   #prev1,
@@ -271,6 +271,17 @@
     font-weight: 600;
     color: #000c;
     left: 3rem;
+}
+
+.btn-primary-baner {
+  background: #fff;
+  color: #ef3b3c;
+  border: 0.5px solid #ef3b3c;
+  margin-right: 11px;
+  font-size: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 }
 @media (max-width: 767px) {
@@ -677,4 +688,9 @@
   .btn-danger{
     font-size: 10px;
   }
+  .filter-by {
+    margin-right: 10px;
+    margin-bottom: 0;
+    font-size: 10px;
+}
 }

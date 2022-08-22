@@ -190,7 +190,7 @@ li {
   padding: 6px;
 }
 .form-select-1 {
-  width: 47%;
+  width: 28%;
 }
 .filter {
   /* margin-bottom: 14px; */
@@ -198,12 +198,12 @@ li {
 
 .filter-1 {
   justify-content: end;
-  width: 23%;
+  width: 60%;
 }
 .filter-by {
   margin-right: 10px;
   margin-bottom: 0;
-  font-size: 13px;
+  font-size: 14px;
 }
 .rels-1 {
   margin-bottom: 0;
@@ -654,7 +654,7 @@ figure img {
 }
 
 .form-select {
-  width: 14%;
+  width: 20%;
   margin: 0 10px;
 }
 .filter-item {

@@ -98,7 +98,7 @@ li {
   margin: 0 10px;
 }
 
-.item-navbar {
+.item-navbar-child {
   margin: 0 10px;
   color: #fff;
   font-weight: bold;
@@ -198,6 +198,7 @@ li {
 
 .filter-1 {
   justify-content: end;
+  width: 23%;
 }
 .filter-by {
   margin-right: 10px;
@@ -509,7 +510,7 @@ figure img {
 }
 .card-img-overlay-1 {
   position: absolute;
-  top: 6rem;
+  top: 3rem;
   right: 64px;
   z-index: 200;
 }
@@ -768,10 +769,11 @@ figure img {
   right: 65%;
   bottom: 1.25rem;
   left: 15%;
+  width: 80%;
 }
 .carousel-item-3 {
   right: -24%;
-  bottom: 25.25rem;
+  bottom: 5.25rem;
   left: 15%;
 }
 .video-bb {
@@ -800,11 +802,12 @@ figure img {
  height: 100%;
 } */
 .title-web {
-  top: 20%;
+  top: 14rem;
   /* left: 40px; */
   text-align: center;
   font-weight: 600;
   color: #000c;
+  left: 8rem;
 }
 .h1-you-need {
   font-size: 2rem;
@@ -849,7 +852,7 @@ figure img {
   border-radius: 10px;
 }
 .a-input{
-  padding: 0.53rem 1.9rem;
+  padding: 0.43rem 1.9rem;
   color: #fff;
   background-color: #ef3b3c;
   margin-left: -126px;
@@ -955,7 +958,7 @@ figure img {
     color: #4d4d4d;
 }
 .title-bo-game{
-  margin: 60px 0;
+  margin-top: 40px;
 }
 .title-bo-game .title-text-bo-game {
   margin-top: 20px;
@@ -988,6 +991,25 @@ figure .gamepad-2{
   font-size: 1rem;
   background-color: #ef3b3c;
   border: none;
+  --bs-btn-padding-y: 0.5rem;
+  --bs-btn-padding-x: 1rem;
+  --bs-btn-font-size: 1.25rem;
+  --bs-btn-border-radius: 0.5rem;
+  margin-top: 3rem!important;
+  margin-bottom: 3rem!important;
+  border-color:none !important;
+  --bs-btn-focus-shadow-rgb: none !important;
+  --bs-btn-active-border-color: none !important;
+
+}
+.btn-call-me::after{
+  display: none;
+}
+.btn.show{
+  background-color:#ef3b3c !important;
+}
+.btn-primany{
+ 
 }
 .btn-call-me:hover{
   background-color: #a72323;
@@ -1006,7 +1028,7 @@ use:hover{
 .user:hover .all-icon-nav{
   color: #ef3b3c;
 }
-.item-navbar:hover{
+.item-navbar-child:hover{
   color: #ef3b3c;
   cursor: pointer;
 
@@ -1032,24 +1054,24 @@ use:hover{
   width: 50%;
 }
 .carousel-caption1-2{
-  left: 16rem;
-  top: 1rem;
+  left: 21rem;
+  bottom: 4.25rem;
   width: 50%;
 }
 
 .carousel-caption-9{
-  left: 21rem;
-  bottom: 21.25rem;
-  width: 50%;
+  left: 15rem;
+    bottom: 13.25rem;
+    width: 50%;
 }
 .carousel-caption-10{
-  left: 0;
-  bottom: 21.25rem;
+  left: 9rem;
+  bottom: 4.25rem;
   width: 50%;
 }
 .carousel-caption2{
-  left: 41rem;
-  bottom: 17.25rem;
+  left: 40rem;
+  bottom: 19.25rem;
   width: 50%;
   color: #181818;
 }
@@ -1059,8 +1081,8 @@ use:hover{
   color: #fff;
 }
 .carousel-caption2-5{
-  left: 20rem;
-  bottom: 9rem;
+  left: 16rem;
+  bottom: 6rem;
   width: 50%;
 }
 .carousel-caption3{
@@ -1083,7 +1105,7 @@ use:hover{
 }
 .carousel-caption2-4{
   top: 0;
-  right: -26rem;
+  right: -20rem;
 }
 .carousel-caption-11{
   left: 3rem;
@@ -1156,6 +1178,9 @@ color: #181818;
 }
 .info-item-1{
   width: 100%;
+}
+.h5-sale-1{
+  font-size: 1rem;
 }
 .h5-info-item-1,
 .p-info-item-1,
@@ -1232,6 +1257,9 @@ color: #181818;
   border-color: var(--bs-nav-tabs-link-active-border-color);
  
 
+}
+.main-bo-game-1{
+  margin-top: 2rem;
 }
 .nav-pills {
   --bs-nav-pills-border-radius: 0.375rem;

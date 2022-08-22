@@ -134,3 +134,54 @@ $(document).ready(function(){
 });
 
 });
+
+const elsu = document.getElementById('navbar');
+var scrollableElement = document.body; //document.getElementById('scrollableElement');
+
+scrollableElement.addEventListener('wheel', checkScrollDirection);
+
+function checkScrollDirection(event) {
+  if (checkScrollDirectionIsUp(event)) {
+    elsu.style.top = "0"
+  } else {
+    elsu.style.top = "-71px"
+  }
+}
+
+function checkScrollDirectionIsUp(event) {
+  if (event.wheelDelta) {
+    return event.wheelDelta > 0;
+  }
+  return event.deltaY < 0;
+}
+
+
+
+// // mpdol
+// const exampleModal = document.getElementById('exampleModal3')
+// exampleModal.addEventListener('show.bs.modal', event => {
+//   // Button that triggered the modal
+//   const button = event.relatedTarget
+//   // Extract info from data-bs-* attributes
+//   const recipient = button.getAttribute('data-bs-whatever')
+//   // If necessary, you could initiate an AJAX request here
+//   // and then do the updating in a callback.
+//   //
+//   // Update the modal's content.
+//   const modalTitle = exampleModal.querySelector('.modal-title-1')
+//   // const modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+//   modalTitle.textContent = `New message to ${recipient}`
+//   modalBodyInput.value = recipient
+// })
+
+// function showModal2(event){
+//   const exampleModal3 = document.querySelector('.modal-fix')
+//   exampleModal3.style = `display: block;visibility:visible`
+//   window.setTimeout(myFunction,1000);
+// function myFunction(){
+//   document.querySelector('.modal-fix').style.display="none";
+//   // document.querySelector('.modal-fix').style.visibility="hidden";
+// }
+// }
+

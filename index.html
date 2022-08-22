@@ -35,130 +35,189 @@
   </head>
   <body>
     <!-- nav -->
-    <nav class="navbar fixed-top">
-      <div class="container-fluid relative">
-        <a class="navbar-brand" href="#">
-          <img class="nav-img" src="img-gamegear/logo.png" alt=""
-        /></a>
-        <div class="item-navbar center-all">
-          <ul class="navbar-all-item d-flex j-c">
-            <li class="item-navbar">Trang Chủ</li>
-            <li class="item-navbar">Bàn Phím - Chuột</li>
-            <li class="item-navbar">Màn Hình</li>
-            <li class="item-navbar">Phụ Kiện</li>
-            <li class="item-navbar">Khác</li>
-          </ul>
-        </div>
-        <div class="all-icon-main d-flex j-center a-center">
-          <button class="btn-nav-n">
-            <i
-              class="fa-solid fa-magnifying-glass all-icon-nav all-icon-nav-1"
-            ></i>
-
-            <div class="form-none">
-              <form
-                class="form-none form-inline my-2 my-lg-0 form-inline-1 d-flex"
-              >
-                <input
-                  class="form-control mr-sm-2"
-                  type="search"
-                  placeholder="Search"
-                />
-                <div
-                  class="btn btn-outline-success btn-outline-success-2 my-2 my-sm-0"
-                  type="submit"
-                >
-                  Search
-                </div>
-              </form>
-            </div>
-          </button>
-
-          <div class="gio-hang">
-            <i class="fa-solid fa-bag-shopping all-icon-nav"></i>
-          </div>
-          <a href="/dang-ky.html" class="user">
-            <i class="fa-solid fa-user all-icon-nav"></i
-          ></a>
-        </div>
-        <button
-          class="navbar-toggler navbar-toggler-1"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              <img class="nav-img" src="img-gamegear/logo.png" alt="" />
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
+    <div class="container">
+      <nav id="navbar" class="navbar fixed-top">
+        <div class="container-fluid relative">
+          <a class="navbar-brand" href="#">
+            <img class="nav-img" src="img-gamegear/logo.png" alt=""
+          /></a>
+          <div class="item-navbar center-all">
+            <ul class="navbar-all-item d-flex j-c">
+              <a href="index.html" class="item-navbar">Trang Chủ</a>
+              <a href="" class="item-navbar">Bàn Phím - Chuột</a>
+              <a href="" class="item-navbar">Màn Hình</a>
+              <a href="" class="item-navbar">Phụ Kiện</a>
+              <div class="dropdown-center dropdow-center-1">
+                <button
+                  class="btn btn-secondary dropdown-toggle dropdown-toggle-1"
+                  type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
-                </a>
+                  Khác
+                </button>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
+                  <li><a class="dropdown-item" href="#">Action two</a></li>
+                  <li><a class="dropdown-item" href="#">Action three</a></li>
                 </ul>
-              </li>
+              </div>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+          </div>
+          <div class="all-icon-main d-flex j-center a-center">
+            <button class="btn-nav-n">
+              <i
+                class="fa-solid fa-magnifying-glass all-icon-nav all-icon-nav-1"
+              ></i>
+
+              <div class="form-none">
+                <form
+                  class="form-none form-inline my-2 my-lg-0 form-inline-1 d-flex"
+                >
+                  <input
+                    class="form-control mr-sm-2"
+                    type="search"
+                    placeholder="Search"
+                  />
+                  <div
+                    class="btn btn-outline-success btn-outline-success-2 my-2 my-sm-0"
+                    type="submit"
+                  >
+                    Search
+                  </div>
+                </form>
+              </div>
+            </button>
+
+            <div class="gio-hang">
+              <i class="fa-solid fa-bag-shopping all-icon-nav"></i>
+            </div>
+            <a href="/dang-nhap.html" class="user">
+              <i class="fa-solid fa-user all-icon-nav"></i
+            ></a>
+          </div>
+          <button
+            class="navbar-toggler navbar-toggler-1"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img
+                  class="nav-img nav-img-2"
+                  src="img-gamegear/logo.png"
+                  alt=""
+                />
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
           </div>
         </div>
+      </nav>
+    </div>
+
+    <video
+      class="video-bb media-block__video media-block__video@tablet lozad lazy-loaded"
+      autobuffer="true"
+      muted="true"
+      autoplay="true"
+      playsinline="true"
+      webkit-playsinline="true"
+      data-poster="https://gmedia.playstation.com/is/image/SIEPDC/only-on-playstation-background-block-desktop-01-ps4-29jul20$en"
+      poster="https://gmedia.playstation.com/is/image/SIEPDC/only-on-playstation-background-block-desktop-01-ps4-29jul20$en"
+      data-loaded="true"
+    >
+      <source
+        type="video/mp4"
+        data-src=""
+        src="img-gamegear/ghost-of-tsushima-video-hero-02-ps4-en-01may20.mp4"
+      />
+    </video>
+    <div class="title-web p-absolute">
+      <h2 class="h1-you-need">
+        Thoả Thích Chinh Phục Thế Giới Game <br />
+        Và Còn Nhiều Hơn Thế Nữa
+      </h2>
+
+      <div class="login-email">
+        <p class="p-input">
+          <span> Nhập Email Để Xem Với Tư Cách Là Khách - Hoặc</span>
+          <a href="dang-nhap.html" class="a-longin-up" href="">Đăng Nhập</a>
+          <span> Để Nhận Nhiều Ưu Đãi Hơn</span>
+        </p>
+        <div class="form-input-main">
+          <input
+            placeholder="Nhập Mail"
+            class="input-main"
+            type="text"
+            name=""
+            id=""
+          />
+          <a class="a-input" href="#">Bắt Đầu </a>
+        </div>
       </div>
-    </nav>
-    <div class="brg-for-nav"></div>
-
-    <video class="video-bb media-block__video media-block__video@tablet lozad lazy-loaded" autobuffer="true" muted="true" autoplay="true" playsinline="true" webkit-playsinline="true" data-poster="https://gmedia.playstation.com/is/image/SIEPDC/only-on-playstation-background-block-desktop-01-ps4-29jul20$en" poster="https://gmedia.playstation.com/is/image/SIEPDC/only-on-playstation-background-block-desktop-01-ps4-29jul20$en" data-loaded="true">
-      <source type="video/mp4" data-src="" src="img-gamegear/ghost-of-tsushima-video-hero-02-ps4-en-01may20.mp4">
-  </video>
-
-    <h2 class="h1-you-need p-absolute">Ở Đây Chúng Tôi Có Mọi Thứ Bạn Cần! <br> Khám Phá Ngay Thôi!!!</h2>
+    </div>
     <!-- bgr -->
     <div class="bgr-main">
       <div
@@ -189,7 +248,7 @@
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item  active" data-bs-interval="10000">
+          <div class="carousel-item active" data-bs-interval="10000">
             <img
               src="img-gamegear/baner-fotter-2.png"
               class="d-block w-100"
@@ -203,7 +262,7 @@
               <button type="button" class="btn btn-danger">Khám Phá</button>
             </div>
           </div>
-          <div class="carousel-item " data-bs-interval="2000">
+          <div class="carousel-item" data-bs-interval="2000">
             <img
               src="img-gamegear/baner-top-5.png"
               class="d-block w-100"
@@ -211,13 +270,11 @@
             />
             <div class="carousel-caption carousel-item-2 d-none d-md-block">
               <h5>PlayStation®5PlayStation®5</h5>
-              <p>
-                PlayStation®5 Xử Lý Tốt Mọi Game Trên Thị Trường
-              </p>
+              <p>PlayStation®5 Xử Lý Tốt Mọi Game Trên Thị Trường</p>
               <button type="button" class="btn btn-danger">Khám Phá</button>
             </div>
           </div>
-          <div class="carousel-item ">
+          <div class="carousel-item">
             <img
               src="img-gamegear/baner-top2.png"
               class="d-block w-100"
@@ -253,9 +310,6 @@
       </div>
     </div>
 
-
-   
-
     <div class="card-1 text-bg-white-1">
       <div
         id="carouselExampleControls"
@@ -269,13 +323,30 @@
               class="card-img-1"
               alt="..."
             />
-            <video autobuffer="true" autoplay="true" class="video-dual5 media-block__video lozad lazy-loaded" data-poster="https://gmedia.playstation.com/is/image/SIEPDC/TEST-gw3-hero-thumbnail?$800px$" loop="true" muted="true" playsinline="true" webkit-playsinline="true" poster="https://gmedia.playstation.com/is/image/SIEPDC/TEST-gw3-hero-thumbnail?$800px$" data-loaded="true">
-              <source data-src="https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/testing/lucy-test-assets/gw3/TEST-gw3-hero.mp4" type="video/mp4" src="img-gamegear/dualsense-thumbnail-ps5-01-en-04aug20.mp4">
-          </video>
-            <div class="card-img-overlay-1 p-absolute">
-              <h5 class="card-title-1">PlayStation®5</h5>
+            <video
+              autobuffer="true"
+              autoplay="true"
+              class="video-dual5 media-block__video lozad lazy-loaded"
+              data-poster="https://gmedia.playstation.com/is/image/SIEPDC/TEST-gw3-hero-thumbnail?$800px$"
+              loop="true"
+              muted="true"
+              playsinline="true"
+              webkit-playsinline="true"
+              poster="https://gmedia.playstation.com/is/image/SIEPDC/TEST-gw3-hero-thumbnail?$800px$"
+              data-loaded="true"
+            >
+              <source
+                data-src="https://gmedia.playstation.com/is/content/SIEPDC/global_pdc/en/testing/lucy-test-assets/gw3/TEST-gw3-hero.mp4"
+                type="video/mp4"
+                src="img-gamegear/dualsense-thumbnail-ps5-01-en-04aug20.mp4"
+              />
+            </video>
+            <div class="card-img-overlay-1 p-absolute text-center">
+              <div class="logo-baner d-flex j-center a-center">
+                <h5 class="card-title-1">PlayStation®5</h5>
+              </div>
               <p class="card-text">
-                This is a wider card with supporting text below as a natural<br>
+                This is a wider card with supporting text below as a natural<br />
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
@@ -283,39 +354,6 @@
               <button type="button" class="btn btn-danger">Khám Phá</button>
             </div>
           </div>
-       
-          <!-- <div class="carousel-item">
-            <img
-              src="/img-gamegear/image 182.png"
-              class="card-img-1"
-              alt="..."
-            />
-            <div class="card-img-overlay-1 p-absolute">
-              <h5 class="card-title-1">Card title</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <p class="card-text">Last updated 3 mins ago</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/img-gamegear/image 182.png"
-              class="card-img-1"
-              alt="..."
-            />
-            <div class="card-img-overlay-1 p-absolute">
-              <h5 class="card-title-1">Card title</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <p class="card-text">Last updated 3 mins ago</p>
-            </div>
-          </div> -->
         </div>
         <button
           class="carousel-control-prev"
@@ -339,8 +377,11 @@
       <!--  -->
     </div>
     <div class="you-want d-flex j-center text-center">
-<h1><i class="fa-solid fa-gamepad icon-rote"></i>Tìm Mọi  Thứ Bạn Muốn<br> Ở Đây !!!</h1>
-</div>
+      <h1>
+        <i class="fa-solid fa-gamepad icon-rote"></i>Tìm Mọi Thứ Bạn Muốn<br />
+        Ở Đây !!!
+      </h1>
+    </div>
 
     <div class="container-body">
       <div class="container">
@@ -348,7 +389,7 @@
           <div class="col-12">
             <div class="body-left">
               <ul class="search-body-left d-flex">
-                <h5 class="filter-item">Tìm Kiếm Theo</h5>
+                <h5 class="filter-item">Tìm</h5>
                 <select
                   class="form-select form-select-sm"
                   aria-label=".form-select-sm example"
@@ -383,10 +424,19 @@
                   class="form-select form-select-sm"
                   aria-label=".form-select-sm example"
                 >
-                  <option selected>Năm Phát Hành</option>
+                  <option selected>Năm</option>
                   <option value="1">2020</option>
                   <option value="2">2021</option>
                   <option value="3">2022</option>
+                </select>
+                <select
+                  class="form-select form-select-sm"
+                  aria-label=".form-select-sm example"
+                >
+                  <option selected>Dành Cho</option>
+                  <option value="1">PC/Điện Thoại</option>
+                  <option value="2">PC</option>
+                  <option value="3">Điện Thoại</option>
                 </select>
                 <a class="a-filter" href="">Lọc</a>
               </ul>
@@ -413,226 +463,335 @@
           <div class="col-12"></div>
         </div>
       </div>
-    
-    
-        <div class="list-item list-item-up">
-          <div class="row row-item-1">
-            <div class="title-sale">
-              <div class="container">
-              <div class="title-sale-child  a-center">
-                <h4 class="h4-sale">Siêu Mới</h4> 
-               <h3 class="h3-sale">Các Sản Phẩm Mới Ra Mắt </h3>
+
+      <div class="list-item list-item-up">
+        <div class="row-item-1">
+          <div class="title-sale">
+            <div class="container">
+              <div class="title-sale-child a-center">
+                <h3 class="h3-sale">Các Sản Phẩm Mới Ra Mắt</h3>
+
+                <a class="view-all" href="#">Xem Tất Cả</a>
               </div>
             </div>
-              <div class="all-sale-item center-all">
-                <div id="wrapper" class="wrapper-2 wrapper-3">
-                  <div id="carousel">
-                    <div id="content" class="content-class">
-                      <div class="item-1">
-                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
-                        <div class="item-text-1">
-                        <h6 class="h6-name-item">may choi gamemay choi gamemay choi game</h6>
-                        <h5 class="h5-price-item">1.350.000đ</h5>
-                      </div>
-                      </div>
-                      <div class="item-1">
-                        <img id="1" class="item" src="img-gamegear/ps-2.png" />
-                        <div class="item-text-1">
-                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
-                        <h5 class="h5-price-item">1.350.000đ</h5>
-                      </div>
-                      </div>
-                      <div class="item-1">
-                        <img id="1" class="item" src="img-gamegear/ps-3.png" />
-                        <div class="item-text-1">
-                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
-                        <h5 class="h5-price-item">1.350.000đ</h5>
-                      </div>
-                      </div>
-                      <div class="item-1">
-                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
-                        <div class="item-text-1">
-                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
-                        <h5 class="h5-price-item">1.350.000đ</h5>
-                      </div>
-                      </div>
-                      <div class="item-1">
-                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
-                        <div class="item-text-1">
-                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
-                        <h5 class="h5-price-item">1.350.000đ</h5>
-                      </div>
-                      </div>
-                      <div class="item-1">
-                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
-                        <div class="item-text-1">
-                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
-                        <h5 class="h5-price-item">1.350.000đ</h5>
-                      </div>
-                      </div>
-                      <div class="item-1">
-                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
-                        <div class="item-text-1">
-                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
-                        <h5 class="h5-price-item">1.350.000đ</h5>
-                      </div>
-                      </div>
-                      <div class="item-1">
-                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
-                        <div class="item-text-1">
-                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
-                        <h5 class="h5-price-item">1.350.000đ</h5>
-                      </div>
-                      </div>
-                      <div class="item-1">
-                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
-                        <div class="item-text-1">
-                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
-                        <h5 class="h5-price-item">1.350.000đ</h5>
-                      </div>
+            <div class="container all-sale-item center-all">
+              <div id="wrapper" class="wrapper-2 wrapper-3">
+                <div id="carousel">
+                  <div id="content" class="content-class">
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/item10.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          Máy Chơi Game PlayStation®5
+                        </h6>
+                        <h5 class="h5-price-item">1.850.000đ</h5>
                       </div>
                     </div>
-               
-                  </div>
-                  <button id="prev">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path fill="none" d="M0 0h24v24H0V0z" />
-                      <path
-                        d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
-                      />
-                    </svg>
-                  </button>
-                  <button id="next">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path fill="none" d="M0 0h24v24H0V0z" />
-                      <path
-                        d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-             
-              </div>
-
-
-              <div class="container">
-                <div class="title-sale-child  a-center">
-                  <h4 class="h4-sale">Siêu Mới</h4> 
-                 <h3 class="h3-sale">Các Sản Phẩm Mới Ra Mắt </h3>
-                </div>
-              </div>
-              <div class="all-sale-item center-all">
-                <div id="wrapper" class="wrapper-2 wrapper-3">
-                  <div id="carousel3">
-                    <div id="content3" class="content-class-3">
-                      <div class="item-1">
-                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
-                        <div class="item-text-1">
-                        <h6 class="h6-name-item">may choi gamemay choi gamemay choi game</h6>
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/item12.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          Gamepad X360 USB cho máy tính
+                        </h6>
                         <h5 class="h5-price-item">1.350.000đ</h5>
-                      </div>
-                      </div>
-                      <div class="item-1">
-                        <img id="1" class="item" src="img-gamegear/ps-2.png" />
-                        <div class="item-text-1">
-                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
-                        <h5 class="h5-price-item">1.350.000đ</h5>
-                      </div>
-                      </div>
-                      <div class="item-1">
-                        <img id="1" class="item" src="img-gamegear/ps-3.png" />
-                        <div class="item-text-1">
-                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
-                        <h5 class="h5-price-item">1.350.000đ</h5>
-                      </div>
-                      </div>
-                      <div class="item-1">
-                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
-                        <div class="item-text-1">
-                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
-                        <h5 class="h5-price-item">1.350.000đ</h5>
-                      </div>
-                      </div>
-                      <div class="item-1">
-                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
-                        <div class="item-text-1">
-                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
-                        <h5 class="h5-price-item">1.350.000đ</h5>
-                      </div>
-                      </div>
-                      <div class="item-1">
-                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
-                        <div class="item-text-1">
-                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
-                        <h5 class="h5-price-item">1.350.000đ</h5>
-                      </div>
-                      </div>
-                      <div class="item-1">
-                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
-                        <div class="item-text-1">
-                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
-                        <h5 class="h5-price-item">1.350.000đ</h5>
-                      </div>
-                      </div>
-                      <div class="item-1">
-                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
-                        <div class="item-text-1">
-                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
-                        <h5 class="h5-price-item">1.350.000đ</h5>
-                      </div>
-                      </div>
-                      <div class="item-1">
-                        <img id="1" class="item" src="img-gamegear/sale-1.png" />
-                        <div class="item-text-1">
-                        <h6 class="h6-name-item">may choi  choi gamemay choi game</h6>
-                        <h5 class="h5-price-item">1.350.000đ</h5>
-                      </div>
                       </div>
                     </div>
-               
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/item13.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          Gamepad Bluetooth PS/4 Black cho máy tính
+                        </h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                    </div>
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/item-1.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          may choi choi gamemay choi game
+                        </h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                    </div>
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/item-2.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          may choi choi gamemay choi game
+                        </h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                    </div>
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/item-3.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          may choi choi gamemay choi game
+                        </h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                    </div>
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/item-4.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          may choi choi gamemay choi game
+                        </h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                    </div>
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/item11.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          may choi choi gamemay choi game
+                        </h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                    </div>
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/item6.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          may choi choi gamemay choi game
+                        </h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                    </div>
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/item7.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          may choi choi gamemay choi game
+                        </h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                    </div>
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/item9.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          may choi choi gamemay choi game
+                        </h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                    </div>
+                    <div class="item-1-2">
+                      <!-- <img id="1" class="item" src="img-gamegear/sale-1.png" /> -->
+                      <div class="item d-flex j-center a-center">
+                        <a class="text-center" href="#">Xem Tất Cả</a>
+                      </div>
+                    </div>
                   </div>
-                  <button id="prev3">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path fill="none" d="M0 0h24v24H0V0z" />
-                      <path
-                        d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
-                      />
-                    </svg>
-                  </button>
-                  <button id="next3">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path fill="none" d="M0 0h24v24H0V0z" />
-                      <path
-                        d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
-                      />
-                    </svg>
-                  </button>
                 </div>
-             
+                <button id="prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path
+                      d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
+                    />
+                  </svg>
+                </button>
+                <button id="next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path
+                      d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="title-sale-child a-center">
+                <h3 class="h3-sale">Các Sản Phẩm Bán Chạy</h3>
+                <a class="view-all" href="#">Xem Tất Cả</a>
+              </div>
+            </div>
+            <div class="container all-sale-item center-all">
+              <div id="wrapper" class="wrapper-2 wrapper-3">
+                <div id="carousel3">
+                  <div id="content3" class="content-class-3">
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/sale-1.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          may choi gamemay choi gamemay choi game
+                        </h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                    </div>
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/hot.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          may choi choi gamemay choi game
+                        </h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                    </div>
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/hot1.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          may choi choi gamemay choi game
+                        </h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                    </div>
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/hot3.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          may choi choi gamemay choi game
+                        </h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                    </div>
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/hot2.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          may choi choi gamemay choi game
+                        </h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                    </div>
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/hot6.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          may choi choi gamemay choi game
+                        </h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                    </div>
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/hot7.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          may choi choi gamemay choi game
+                        </h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                    </div>
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/hot9.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          may choi choi gamemay choi game
+                        </h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                    </div>
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/hot10.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          may choi choi gamemay choi game
+                        </h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                    </div>
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/hot11.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          may choi choi gamemay choi game
+                        </h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                    </div>
+                    <div class="item-1">
+                      <img id="1" class="item" src="img-gamegear/hot12.png" />
+                      <div class="item-text-1">
+                        <h6 class="h6-name-item">
+                          may choi choi gamemay choi game
+                        </h6>
+                        <h5 class="h5-price-item">1.350.000đ</h5>
+                      </div>
+                    </div>
+                    <div class="item-1-2">
+                      <!-- <img id="1" class="item" src="img-gamegear/sale-1.png" /> -->
+                      <div class="item d-flex j-center a-center">
+                        <a class="text-center" href="#">Xem Tất Cả</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button id="prev3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path
+                      d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
+                    />
+                  </svg>
+                </button>
+                <button id="next3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path
+                      d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="container sale-baner p-relative">
+        <img
+          class="img-sale-baner"
+          src="img-gamegear/baner-dichvu.png"
+          alt=""
+        />
+
+        <div class="baner-text p-absolute">
+          <!-- <div class="logo-name d-flex j-center a-center">
+            <img class="nav-img nav-img-3" src="img-gamegear/logo.png" alt="" />
+            <p>Deal </p>
+          </div> -->
+
+          <h4 class="h4-sale-1">Tiết kiệm mới trên Game-Gear Store</h4>
+          <h5 class="h5-sale-1">
+            Khám phá các chương trình giảm giá mới nhất và giảm giá theo mùa
+            trên các trò chơi và tiện ích bổ sung tuyệt vời dành cho PS5 và PS4.
+          </h5>
+          <div class="btn-sale-ps5">
+            <button type="button" class="btn btn-danger go-view">
+              Xem Ưu Đãi
+            </button>
+            <button type="button" class="btn btn-danger view-sale">
+              Khám Phá ps4/ps5
+            </button>
+          </div>
+        </div>
+      </div>
+
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -641,517 +800,1045 @@
               <hr class="hr1" />
             </h2>
           </div>
-          </div>
         </div>
-
-
-
-     <div class="sale-baner">
-
-      <img class="img-sale-baner" src="img-gamegear/baner-sale.png" alt="">
-
-      <div class="baner-text">
-        <div class="logo-name">
-          <img src="" alt="">
-          <p>GameGear.org</p>
-        </div>
-        
-        <h4 class="h4-sale-1">Tiết kiệm mới trên
-          Game-Gear Store</h4>
-        <h5 class="h4-sale-1">
-          Khám phá các chương trình giảm giá mới nhất và
-giảm giá theo mùa trên các trò chơi và tiện ích 
-bổ sung tuyệt vời dành cho PS5 và PS4.
-        </h5>
-
       </div>
-     </div>
+      <!-- nav-tab -->
+      <nav class="nav-new">
+        <div class="container">
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button
+              class="nav-link active"
+              id="nav-home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-home"
+              type="button"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+            >
+              game console
+            </button>
+            <button
+              class="nav-link"
+              id="nav-profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-profile"
+              type="button"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Bàn Phím Gaming
+            </button>
+            <button
+              class="nav-link"
+              id="nav-contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-contact"
+              type="button"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Chuột
+            </button>
 
-          <!-- nav-tab -->
-        
-          <nav class="nav-new">
-            <div class="container">    
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button
-                class="nav-link active"
-                id="nav-home-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-home"
-                type="button"
-                role="tab"
-                aria-controls="nav-home"
-                aria-selected="true"
+            <button
+              class="nav-link"
+              id="nav-add-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-add"
+              type="button"
+              role="tab"
+              aria-controls="nav-add"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Màn Hình
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+            tabindex="0"
+          >
+            <div class="container-bgr">
+              <div
+                id="carouselExampleDark5"
+                class="carousel carousel-dark slide"
+                data-bs-ride="carousel"
               >
-                game console
-              </button>
-              <button
-                class="nav-link"
-                id="nav-profile-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-profile"
-                type="button"
-                role="tab"
-                aria-controls="nav-profile"
-                aria-selected="false"
-                tabindex="-1"
-              >
-                Bàn Phím Gaming
-              </button>
-              <button
-                class="nav-link"
-                id="nav-contact-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-contact"
-                type="button"
-                role="tab"
-                aria-controls="nav-contact"
-                aria-selected="false"
-                tabindex="-1"
-              >
-                Chuột
-              </button>
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark5"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark5"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark5"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div
+                    class="carousel-item active p-relative"
+                    data-bs-interval="10000"
+                  >
+                    <img
+                      src="img-gamegear/console-baner-1.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
 
+                    <div
+                      class="carousel-caption carousel-caption1 d-none d-md-block"
+                    >
+                      <h5>First slide label</h5>
+                      <p>
+                        Some representative placeholder content for the first
+                        slide.
+                      </p>
+                      <div class="all-btn-item d-flex j-center a-center">
+                        <!-- Button trigger modal -->
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-primary-baner"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i
+                            class="fa-solid fa-magnifying-glass all-icon-nav all-icon-nav-1"
+                          ></i>
+                          Xem  Nhanh
+                        </button>
+
+                        <!-- Modal -->
+                        <div
+                          class="modal fade"
+                          id="exampleModal"
+                          tabindex="-1"
+                          aria-labelledby="exampleModalLabel1"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel1">
+                                  Thông Tin Sản Phẩm
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <img
+                                        class="info-item-1"
+                                        src="img-gamegear/info-item.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <div class="col-6 col-6-info-title">
+                                      <p class="p-title-info-item">
+                                        Thương hiệu:  SONY
+                                      </p>
+                                      <h5 class="h5-title-info-item">
+                                        Gamepad Không dây Bluetooth PS/4 Black
+                                      </h5>
+                                      <h6 class="h6-title-info-child">1.450.000đ</h6>
+
+                                    </div>
+                                  </div>
+                                  <h5 class="h5-info-item-1">Mô Tả Sản Phẩm</h5>
+                                  <p class="p-info-item-1">
+                                    - Gamepad Không dây Bluetooth cho máy tính -
+                                    điện thoại - máy game Console PS/4 <br />
+                                    - Trọn Bộ bao gồm Gamepad + Dây sạc USB<br />
+                                    - Thiết bị hỗ trợ : máy tính - Laptop - điện
+                                    thoại - Máy tính bảng - máy game Console
+                                    PS/4<br />
+                                    - Hệ điều Hành Hỗ trợ : Android + Window +
+                                    iphone , ipad iOS13 trở lên<br />
+                                    - Kết nối : Bluetooth hoặc cắm dây USB trực
+                                    tiếp<br />
+                                    - hỗ trợ đầy đủ tính năng ( cảm ứng + loa +
+                                    rung + led )<br />
+                                    - Pin Sạc 600 mah<br />
+                                    - Sản phẩm cho cảm giác thoải mái và hỗ trợ
+                                    nhiều game trên window<br />
+
+                                    <br />Hướng Dẫn Kết Nối Bluetooth (Yêu cầu
+                                    thiết bị phải có bluetooth , trên PC tải về
+                                    phần mềm " DS4Windows.zip " giải nén và cài
+                                    driver) :<br />
+                                    1/ Trên tay nhấn giữ trước " SHARE " --->
+                                    sau đó nhấn giữ thêm " PS " đến khi ( led
+                                    nháy nhịp đôi ) thì thả ra<br />
+                                    2/ Mở bluetooth trên thiết bị , dò và kết
+                                    nối<br />
+                                    3/ Ở lần kết nối thứ 2 trở đi chỉ cần nhấn "
+                                    PS " ( led nháy đều ) , không cần làm lại
+                                    bước " 1 "<br />
+                                    4/ Để ngắt kết nối tay cầm với thiết bị :
+                                    tắt bluetooth trên thiết bị hoặc nhấn giữ "
+                                    PS " trên tay game<br />
+                                    5/ Để test Tay game : - Trên máy tính vào
+                                    control panel --> devices and printer -->
+                                    chuột phải lên icon gamepad --> game
+                                    controler setting --> properties --> Test -
+                                    Trên điện thoại tải app PS4 Controller test
+                                  </p>
+                                  <img
+                                    class="info-1"
+                                    src="img-gamegear/info-1.png"
+                                    alt=""
+                                  /><br />
+                                  <img
+                                    class="info-1"
+                                    src="img-gamegear/info-2.png"
+                                    alt=""
+                                  /><br />
+                                  <br />
+                                  <p class="p-info-tip">
+                                    Giá sản phẩm trên Tiki đã bao gồm thuế theo
+                                    luật hiện hành. Bên cạnh đó, tuỳ vào loại
+                                    sản phẩm, hình thức và địa chỉ giao hàng mà
+                                    có thể phát sinh thêm chi phí khác như phí
+                                    vận chuyển, phụ phí hàng cồng kềnh, thuế
+                                    nhập khẩu (đối với đơn hàng giao từ nước
+                                    ngoài có giá trị trên 1 triệu đồng)
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                  data-bs-dismiss="modal"
+                                >
+                                  Đóng
+                                </button>
+
+                                <!-- Button trigger modal -->
+                      
+               <!-- Button trigger modal -->
+               <button type="button" class="btn btn-primary btn-primary-12" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModal1">Thêm Vào Giỏ</button>
+               
+
+                                <!--  -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                
+
+                        <!-- Button trigger modal -->
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-primary-baner"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal1"
+                        >
+                          <i
+                            class="fa-solid fa-bag-shopping all-icon-nav-baner all-icon-nav-baner-2"
+                          ></i>
+                          Thêm Vào Giỏ
+                        </button>
+
+                        <!-- Modal -->
+                        <div
+                          class="modal fade"
+                          id="exampleModal1"
+                          aria-labelledby="exampleModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                  <i
+                                    class="fa-solid fa-circle-check fa-circle-check-1"
+                                  ></i
+                                  >Đã Thêm
+                                </h5>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="img-gamegear/console-baner-2.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div
+                      class="carousel-caption carousel-caption2 d-none d-md-block"
+                    >
+                      <h5>Second slide label</h5>
+                      <p>
+                        Some representative placeholder content for the second
+                        slide.
+                      </p>
+                      <!--  -->
+
+                      <div class="all-btn-item d-flex j-center a-center">
+                        <!-- Button trigger modal -->
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-primary-baner"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal10"
+                        >
+                          <i
+                            class="fa-solid fa-magnifying-glass all-icon-nav all-icon-nav-1"
+                          ></i>
+                          Xem  Nhanh
+                        </button>
+
+                        <!-- Modal -->
+                        <div
+                          class="modal fade"
+                          id="exampleModal10"
+                          tabindex="-1"
+                          aria-labelledby="exampleModalLabel1"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel1">
+                                  Thông Tin Sản Phẩm
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <img
+                                        class="info-item-1"
+                                        src="img-gamegear/info-3.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <div class="col-6 col-6-info-title">
+                                      <p class="p-title-info-item">
+                                        Thương hiệu: OEM
+                                      </p>
+                                      <h5 class="h5-title-info-item">
+                                        Gamepad Không dây Bluetooth PS/4 Black
+                                      </h5>
+                                      <h6 class="h6-title-info-child">1.450.000đ</h6>
+
+                                    </div>
+                                  </div>
+                                  <h5 class="h5-info-item-1">Mô Tả Sản Phẩm</h5>
+                                  <p class="p-info-item-1">
+                                    - Gamepad Không dây Bluetooth cho máy tính -
+                                    điện thoại - máy game Console PS/4 <br />
+                                    - Trọn Bộ bao gồm Gamepad + Dây sạc USB<br />
+                                    - Thiết bị hỗ trợ : máy tính - Laptop - điện
+                                    thoại - Máy tính bảng - máy game Console
+                                    PS/4<br />
+                                    - Hệ điều Hành Hỗ trợ : Android + Window +
+                                    iphone , ipad iOS13 trở lên<br />
+                                    - Kết nối : Bluetooth hoặc cắm dây USB trực
+                                    tiếp<br />
+                                    - hỗ trợ đầy đủ tính năng ( cảm ứng + loa +
+                                    rung + led )<br />
+                                    - Pin Sạc 600 mah<br />
+                                    - Sản phẩm cho cảm giác thoải mái và hỗ trợ
+                                    nhiều game trên window<br />
+
+                                    <br />Hướng Dẫn Kết Nối Bluetooth (Yêu cầu
+                                    thiết bị phải có bluetooth , trên PC tải về
+                                    phần mềm " DS4Windows.zip " giải nén và cài
+                                    driver) :<br />
+                                    1/ Trên tay nhấn giữ trước " SHARE " --->
+                                    sau đó nhấn giữ thêm " PS " đến khi ( led
+                                    nháy nhịp đôi ) thì thả ra<br />
+                                    2/ Mở bluetooth trên thiết bị , dò và kết
+                                    nối<br />
+                                    3/ Ở lần kết nối thứ 2 trở đi chỉ cần nhấn "
+                                    PS " ( led nháy đều ) , không cần làm lại
+                                    bước " 1 "<br />
+                                    4/ Để ngắt kết nối tay cầm với thiết bị :
+                                    tắt bluetooth trên thiết bị hoặc nhấn giữ "
+                                    PS " trên tay game<br />
+                                    5/ Để test Tay game : - Trên máy tính vào
+                                    control panel --> devices and printer -->
+                                    chuột phải lên icon gamepad --> game
+                                    controler setting --> properties --> Test -
+                                    Trên điện thoại tải app PS4 Controller test
+                                  </p>
+                                  <img
+                                    class="info-1"
+                                    src="img-gamegear/info-1.png"
+                                    alt=""
+                                  /><br />
+                                  <img
+                                    class="info-1"
+                                    src="img-gamegear/info-2.png"
+                                    alt=""
+                                  /><br />
+                                  <br />
+                                  <p class="p-info-tip">
+                                    Giá sản phẩm trên Tiki đã bao gồm thuế theo
+                                    luật hiện hành. Bên cạnh đó, tuỳ vào loại
+                                    sản phẩm, hình thức và địa chỉ giao hàng mà
+                                    có thể phát sinh thêm chi phí khác như phí
+                                    vận chuyển, phụ phí hàng cồng kềnh, thuế
+                                    nhập khẩu (đối với đơn hàng giao từ nước
+                                    ngoài có giá trị trên 1 triệu đồng)
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                  data-bs-dismiss="modal"
+                                >
+                                  Đóng
+                                </button>
+
+                                <!-- Button trigger modal -->
+                      
+               <!-- Button trigger modal -->
+               <button type="button" class="btn btn-primary btn-primary-12" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModal2">Thêm Vào Giỏ</button>
+               
+
+                                <!--  -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                
+
+                        <!-- Button trigger modal -->
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-primary-baner"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal2"
+                        >
+                          <i
+                            class="fa-solid fa-bag-shopping all-icon-nav-baner all-icon-nav-baner-2"
+                          ></i>
+                          Thêm Vào Giỏ
+                        </button>
+
+                        <!-- Modal -->
+                        <div
+                          class="modal fade"
+                          id="exampleModal2"
+                          aria-labelledby="exampleModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                  <i
+                                    class="fa-solid fa-circle-check fa-circle-check-1"
+                                  ></i
+                                  >Đã Thêm
+                                </h5>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--  -->
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img-gamegear/console-baner.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div
+                      class="carousel-caption carousel-caption3 d-none d-md-block"
+                    >
+                      <h5>PlayStation®4 Pro</h5>
+                      <p>
+                        Làm mờ các dòng thực tế với bảng điều khiển PlayStation®4 Pro. Nhanh hơn, mạnh hơn và chơi game trên TV 4K 
+                      </p>
+                      <!--  -->
+                      <div class="all-btn-item d-flex j-center a-center">
+                        <!-- Button trigger modal -->
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-primary-baner"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal15"
+                        >
+                          <i
+                            class="fa-solid fa-magnifying-glass all-icon-nav all-icon-nav-1"
+                          ></i>
+                          Xem  Nhanh
+                        </button>
+
+                        <!-- Modal -->
+                        <div
+                          class="modal fade"
+                          id="exampleModal15"
+                          tabindex="-1"
+                          aria-labelledby="exampleModalLabel1"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel1">
+                                  Thông Tin Sản Phẩm
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <img
+                                        class="info-item-1"
+                                        src="img-gamegear/info-5.png"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <div class="col-6 col-6-info-title">
+                                      <p class="p-title-info-item">
+                                        Thương hiệu: OEM
+                                      </p>
+                                      <h5 class="h5-title-info-item">
+                                        PlayStation®4 Pro
+                                      </h5>
+                                      <h6 class="h6-title-info-child">17.450.000đ</h6>
+
+                                    </div>
+                                  </div>
+                                  <h5 class="h5-info-item-1">Mô Tả Sản Phẩm</h5>
+                                  <p class="p-info-item-1">
+                                    - Gamepad Không dây Bluetooth cho máy tính -
+                                    điện thoại - máy game Console PS/4 <br />
+                                    - Trọn Bộ bao gồm Gamepad + Dây sạc USB<br />
+                                    - Thiết bị hỗ trợ : máy tính - Laptop - điện
+                                    thoại - Máy tính bảng - máy game Console
+                                    PS/4<br />
+                                    - Hệ điều Hành Hỗ trợ : Android + Window +
+                                    iphone , ipad iOS13 trở lên<br />
+                                    - Kết nối : Bluetooth hoặc cắm dây USB trực
+                                    tiếp<br />
+                                    - hỗ trợ đầy đủ tính năng ( cảm ứng + loa +
+                                    rung + led )<br />
+                                    - Pin Sạc 600 mah<br />
+                                    - Sản phẩm cho cảm giác thoải mái và hỗ trợ
+                                    nhiều game trên window<br />
+
+                                    <br />Hướng Dẫn Kết Nối Bluetooth (Yêu cầu
+                                    thiết bị phải có bluetooth , trên PC tải về
+                                    phần mềm " DS4Windows.zip " giải nén và cài
+                                    driver) :<br />
+                                    1/ Trên tay nhấn giữ trước " SHARE " --->
+                                    sau đó nhấn giữ thêm " PS " đến khi ( led
+                                    nháy nhịp đôi ) thì thả ra<br />
+                                    2/ Mở bluetooth trên thiết bị , dò và kết
+                                    nối<br />
+                                    3/ Ở lần kết nối thứ 2 trở đi chỉ cần nhấn "
+                                    PS " ( led nháy đều ) , không cần làm lại
+                                    bước " 1 "<br />
+                                    4/ Để ngắt kết nối tay cầm với thiết bị :
+                                    tắt bluetooth trên thiết bị hoặc nhấn giữ "
+                                    PS " trên tay game<br />
+                                    5/ Để test Tay game : - Trên máy tính vào
+                                    control panel --> devices and printer -->
+                                    chuột phải lên icon gamepad --> game
+                                    controler setting --> properties --> Test -
+                                    Trên điện thoại tải app PS4 Controller test
+                                  </p>
+                                  <img
+                                    class="info-1"
+                                    src="img-gamegear/info-1.png"
+                                    alt=""
+                                  /><br />
+                                  <img
+                                    class="info-1"
+                                    src="img-gamegear/info-2.png"
+                                    alt=""
+                                  /><br />
+                                  <br />
+                                  <p class="p-info-tip">
+                                    Giá sản phẩm trên Tiki đã bao gồm thuế theo
+                                    luật hiện hành. Bên cạnh đó, tuỳ vào loại
+                                    sản phẩm, hình thức và địa chỉ giao hàng mà
+                                    có thể phát sinh thêm chi phí khác như phí
+                                    vận chuyển, phụ phí hàng cồng kềnh, thuế
+                                    nhập khẩu (đối với đơn hàng giao từ nước
+                                    ngoài có giá trị trên 1 triệu đồng)
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                  data-bs-dismiss="modal"
+                                >
+                                  Đóng
+                                </button>
+
+                                <!-- Button trigger modal -->
+                      
+               <!-- Button trigger modal -->
+               <button type="button" class="btn btn-primary btn-primary-12" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModal5">Thêm Vào Giỏ</button>
+               
+
+                                <!--  -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                
+
+                        <!-- Button trigger modal -->
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-primary-baner"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal5"
+                        >
+                          <i
+                            class="fa-solid fa-bag-shopping all-icon-nav-baner all-icon-nav-baner-2"
+                          ></i>
+                          Thêm Vào Giỏ
+                        </button>
+
+                        <!-- Modal -->
+                        <div
+                          class="modal fade"
+                          id="exampleModal5"
+                          aria-labelledby="exampleModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                  <i
+                                    class="fa-solid fa-circle-check fa-circle-check-1"
+                                  ></i
+                                  >Đã Thêm
+                                </h5>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <!--  -->
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleDark5"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleDark5"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-profile"
+            role="tabpanel"
+            aria-labelledby="nav-profile-tab"
+            tabindex="0"
+          >
+            <div
+              id="carouselExampleDark1"
+              class="carousel carousel-dark slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark1"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark1"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark1"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img
+                    src="img-gamegear/ban-phim-baner.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div
+                    class="carousel-caption carousel-caption1 d-none d-md-block"
+                  >
+                    <h5>First slide label</h5>
+                    <p>
+                      Some representative placeholder content for the first
+                      slide.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="img-gamegear/ban-phim-baner2.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div
+                    class="carousel-caption carousel-caption2 d-none d-md-block"
+                  >
+                    <h5>Second slide label</h5>
+                    <p>
+                      Some representative placeholder content for the second
+                      slide.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img-gamegear/ban-phim-baner3.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div
+                    class="carousel-caption carousel-caption3 d-none d-md-block"
+                  >
+                    <h5>Third slide label</h5>
+                    <p>
+                      Some representative placeholder content for the third
+                      slide.
+                    </p>
+                  </div>
+                </div>
+              </div>
               <button
-                class="nav-link"
-                id="nav-add-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-add"
+                class="carousel-control-prev"
                 type="button"
-                role="tab"
-                aria-controls="nav-add"
-                aria-selected="false"
-                tabindex="-1"
+                data-bs-target="#carouselExampleDark1"
+                data-bs-slide="prev"
               >
-                Màn Hình
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleDark1"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
               </button>
             </div>
           </div>
-            
-          </nav>
-           
-          <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade"
+            id="nav-contact"
+            role="tabpanel"
+            aria-labelledby="nav-contact-tab"
+            tabindex="0"
+          >
             <div
-              class="tab-pane fade show active"
-              id="nav-home"
-              role="tabpanel"
-              aria-labelledby="nav-home-tab"
-              tabindex="0"
+              id="carouselExampleDark2"
+              class="carousel carousel-dark slide"
+              data-bs-ride="carousel"
             >
-              <div class="container-bgr">
-                <div
-                  id="carouselExampleDark5"
-                  class="carousel carousel-dark slide"
-                  data-bs-ride="carousel"
-                >
-                  <div class="carousel-indicators">
-                    <button
-                      type="button"
-                      data-bs-target="#carouselExampleDark5"
-                      data-bs-slide-to="0"
-                      class="active"
-                      aria-current="true"
-                      aria-label="Slide 1"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carouselExampleDark5"
-                      data-bs-slide-to="1"
-                      aria-label="Slide 2"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carouselExampleDark5"
-                      data-bs-slide-to="2"
-                      aria-label="Slide 3"
-                    ></button>
-                  </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                      <img
-                        src="img-gamegear/baner0console-1.png"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>
-                          Some representative placeholder content for the first
-                          slide.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                      <img
-                        src="img-gamegear/baner-console-2.png"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>
-                          Some representative placeholder content for the second
-                          slide.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        src="img-gamegear/baner-console.png"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>
-                          Some representative placeholder content for the third
-                          slide.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExampleDark5"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExampleDark5"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="nav-profile"
-              role="tabpanel"
-              aria-labelledby="nav-profile-tab"
-              tabindex="0"
-            >
-              <div
-                id="carouselExampleDark1"
-                class="carousel carousel-dark slide"
-                data-bs-ride="carousel"
-              >
-                <div class="carousel-indicators">
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleDark1"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleDark1"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleDark1"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"
-                  ></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                    <img
-                      src="img-gamegear/baner0console-1.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>First slide label</h5>
-                      <p>
-                        Some representative placeholder content for the first
-                        slide.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img
-                      src="img-gamegear/baner-console-2.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Second slide label</h5>
-                      <p>
-                        Some representative placeholder content for the second
-                        slide.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="img-gamegear/baner-console.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>
-                        Some representative placeholder content for the third
-                        slide.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              <div class="carousel-indicators">
                 <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleDark1"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleDark1"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="nav-contact"
-              role="tabpanel"
-              aria-labelledby="nav-contact-tab"
-              tabindex="0"
-            >
-              <div
-                id="carouselExampleDark2"
-                class="carousel carousel-dark slide"
-                data-bs-ride="carousel"
-              >
-                <div class="carousel-indicators">
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleDark2"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleDark2"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleDark2"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"
-                  ></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                    <img
-                      src="img-gamegear/baner0console-1.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>First slide label</h5>
-                      <p>
-                        Some representative placeholder content for the first
-                        slide.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img
-                      src="img-gamegear/baner-console-2.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Second slide label</h5>
-                      <p>
-                        Some representative placeholder content for the second
-                        slide.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="img-gamegear/baner-console.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>
-                        Some representative placeholder content for the third
-                        slide.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev"
                   type="button"
                   data-bs-target="#carouselExampleDark2"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
                 <button
-                  class="carousel-control-next"
                   type="button"
                   data-bs-target="#carouselExampleDark2"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark2"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
               </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="nav-add"
-              role="tabpanel"
-              aria-labelledby="nav-add-tab"
-              tabindex="0"
-            >
-              <div
-                id="carouselExampleDark6"
-                class="carousel carousel-dark slide"
-                data-bs-ride="carousel"
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img
+                    src="img-gamegear/chuot-baner.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div
+                    class="carousel-caption carousel-caption1 d-none d-md-block"
+                  >
+                    <h5>First slide label</h5>
+                    <p>
+                      Some representative placeholder content for the first
+                      slide.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="img-gamegear/chuot-baner-1.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div
+                    class="carousel-caption carousel-caption2 d-none d-md-block"
+                  >
+                    <h5>Second slide label</h5>
+                    <p>
+                      Some representative placeholder content for the second
+                      slide.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img-gamegear/chuot-baner-2.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div
+                    class="carousel-caption carousel-caption3 d-none d-md-block"
+                  >
+                    <h5>Third slide label</h5>
+                    <p>
+                      Some representative placeholder content for the third
+                      slide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleDark2"
+                data-bs-slide="prev"
               >
-                <div class="carousel-indicators">
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleDark6"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleDark6"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleDark6"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"
-                  ></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                    <img
-                      src="img-gamegear/baner0console-1.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>First slide label</h5>
-                      <p>
-                        Some representative placeholder content for the first
-                        slide.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img
-                      src="img-gamegear/baner-console-2.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Second slide label</h5>
-                      <p>
-                        Some representative placeholder content for the second
-                        slide.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="img-gamegear/baner-console.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>
-                        Some representative placeholder content for the third
-                        slide.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleDark6"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleDark6"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleDark2"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
-          <!--  -->
-       
-
+          <div
+            class="tab-pane fade"
+            id="nav-add"
+            role="tabpanel"
+            aria-labelledby="nav-add-tab"
+            tabindex="0"
+          >
+            <div
+              id="carouselExampleDark6"
+              class="carousel carousel-dark slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark6"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark6"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark6"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img
+                    src="img-gamegear/man-baner.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div
+                    class="carousel-caption carousel-caption1 d-none d-md-block"
+                  >
+                    <h5>First slide label</h5>
+                    <p>
+                      Some representative placeholder content for the first
+                      slide.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="img-gamegear/man-baner2.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div
+                    class="carousel-caption carousel-caption2 d-none d-md-block"
+                  >
+                    <h5>Second slide label</h5>
+                    <p>
+                      Some representative placeholder content for the second
+                      slide.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img-gamegear/man-baner3.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div
+                    class="carousel-caption carousel-caption3 d-none d-md-block"
+                  >
+                    <h5>Third slide label</h5>
+                    <p>
+                      Some representative placeholder content for the third
+                      slide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleDark6"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleDark6"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
 
       <div class="container container-new">
         <div class="hader-new">
@@ -1161,7 +1848,7 @@ bổ sung tuyệt vời dành cho PS5 và PS4.
               id="pills-tab"
               role="tablist"
             >
-              <h5>tin moi</h5>
+              <h5>Tin</h5>
               <div class="all- d-flex">
                 <li class="nav-item" role="presentation">
                   <button
@@ -1174,7 +1861,7 @@ bổ sung tuyệt vời dành cho PS5 và PS4.
                     aria-controls="pills-home"
                     aria-selected="true"
                   >
-                    Home
+                    Tin Tức
                   </button>
                 </li>
                 <li class="nav-item" role="presentation">
@@ -1189,7 +1876,7 @@ bổ sung tuyệt vời dành cho PS5 và PS4.
                     aria-selected="false"
                     tabindex="-1"
                   >
-                    Profile
+                    Hướng Dẫn
                   </button>
                 </li>
                 <li class="nav-item" role="presentation">
@@ -1204,7 +1891,7 @@ bổ sung tuyệt vời dành cho PS5 và PS4.
                     aria-selected="false"
                     tabindex="-1"
                   >
-                    Contact
+                    Khuyến Mãi
                   </button>
                 </li>
                 <li class="nav-item" role="presentation">
@@ -1219,7 +1906,7 @@ bổ sung tuyệt vời dành cho PS5 và PS4.
                     aria-selected="false"
                     tabindex="-1"
                   >
-                    Disabled
+                    Diễn Đàn
                   </button>
                 </li>
               </div>
@@ -1236,12 +1923,12 @@ bổ sung tuyệt vời dành cho PS5 và PS4.
                 <div class="all-new-1">
                   <div id="wrapper" class="wrapper-2">
                     <div id="carousel1">
-                      <div id="content2" class="content-class">
+                      <div id="content2" class="">
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin.png"
                           />
                           <h6 class="h6-news-item">may choi game</h6>
                           <h5 class="h5-news-item">1.350.000đ</h5>
@@ -1249,8 +1936,8 @@ bổ sung tuyệt vời dành cho PS5 và PS4.
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/ps-2.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin1.png"
                           />
                           <h6 class="h6-news-item">may choi game</h6>
                           <h5 class="h5-news-item">1.350.000đ</h5>
@@ -1258,8 +1945,8 @@ bổ sung tuyệt vời dành cho PS5 và PS4.
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin3.png"
                           />
                           <h6 class="h6-news-item">may choi game</h6>
                           <h5 class="h5-news-item">1.350.000đ</h5>
@@ -1267,8 +1954,8 @@ bổ sung tuyệt vời dành cho PS5 và PS4.
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin4.png"
                           />
                           <h6 class="h6-news-item">may choi game</h6>
                           <h5 class="h5-news-item">1.350.000đ</h5>
@@ -1276,8 +1963,8 @@ bổ sung tuyệt vời dành cho PS5 và PS4.
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin5.png"
                           />
                           <h6 class="h6-news-item">may choi game</h6>
                           <h5 class="h5-news-item">1.350.000đ</h5>
@@ -1285,8 +1972,8 @@ bổ sung tuyệt vời dành cho PS5 và PS4.
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin6.png"
                           />
                           <h6 class="h6-news-item">may choi game</h6>
                           <h5 class="h5-news-item">1.350.000đ</h5>
@@ -1294,8 +1981,8 @@ bổ sung tuyệt vời dành cho PS5 và PS4.
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin9.png"
                           />
                           <h6 class="h6-news-item">may choi game</h6>
                           <h5 class="h5-news-item">1.350.000đ</h5>
@@ -1303,20 +1990,18 @@ bổ sung tuyệt vời dành cho PS5 và PS4.
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin8.png"
                           />
                           <h6 class="h6-news-item">may choi game</h6>
                           <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
-                          <img
-                            id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
-                          />
-                          <h6 class="h6-news-item">may choi game</h6>
-                          <h5 class="h5-news-item">1.350.000đ</h5>
+                          <div
+                            class="item item-child-1 d-flex j-center a-center"
+                          >
+                            <a class="text-center" href="#">Xem Thêm</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1359,87 +2044,85 @@ bổ sung tuyệt vời dành cho PS5 và PS4.
                 <div class="all-new-1">
                   <div id="wrapper" class="wrapper-2">
                     <div id="carousel1">
-                      <div id="content2" class="content-class">
+                      <div id="content2" class="">
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin1.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin3.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin4.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin5.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin6.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin9.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin8.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
-                          <img
-                            id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
-                          />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <div
+                            class="item item-child-1 d-flex j-center a-center"
+                          >
+                            <a class="text-center" href="#">Xem Thêm</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1482,87 +2165,85 @@ bổ sung tuyệt vời dành cho PS5 và PS4.
                 <div class="all-new-1">
                   <div id="wrapper" class="wrapper-2">
                     <div id="carousel1">
-                      <div id="content2" class="content-class">
+                      <div id="content2" class="">
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin1.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin3.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin4.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin5.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin6.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin9.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin8.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
-                          <img
-                            id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
-                          />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <div
+                            class="item item-child-1 d-flex j-center a-center"
+                          >
+                            <a class="text-center" href="#">Xem Thêm</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1605,87 +2286,85 @@ bổ sung tuyệt vời dành cho PS5 và PS4.
                 <div class="all-new-1">
                   <div id="wrapper" class="wrapper-2">
                     <div id="carousel1">
-                      <div id="content2" class="content-class">
+                      <div id="content2" class="">
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin1.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin3.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin4.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin5.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin6.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin9.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
                           <img
                             id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
+                            class="item item-child-1"
+                            src="img-gamegear/tin8.png"
                           />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <h6 class="h6-news-item">may choi game</h6>
+                          <h5 class="h5-news-item">1.350.000đ</h5>
                         </div>
                         <div class="item-1">
-                          <img
-                            id="2"
-                            class="item"
-                            src="img-gamegear/sale-1.png"
-                          />
-                          <h6 class="h6-name-item">may choi game</h6>
-                          <h5 class="h5-price-item">1.350.000đ</h5>
+                          <div
+                            class="item item-child-1 d-flex j-center a-center"
+                          >
+                            <a class="text-center" href="#">Xem Thêm</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1724,243 +2403,266 @@ bổ sung tuyệt vời dành cho PS5 và PS4.
         <hr />
       </div>
 
-    
+      <img class="screen-foter" src="img-gamegear/manhinh-footer.png" alt="" />
 
-      <div
-        id="carouselExampleFade"
-        class="carousel slide carousel-fade"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="img-gamegear/banner-footer.png"
-              class="d-block w-100"
-              alt="..."
-            />
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title-bo-game text-center">
+              <h2 class="title-text-bo-game">Khám Phá Thêm</h2>
+              <h5 class="title-text-bo-game">
+                Phụ Điện Đi Kèm , Tương Tác Với Hầu Hết Các Thiết Bị , Giúp Tối
+                Ưu Trải Nghiệm Ngừoi Dùng
+              </h5>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img
-              src="img-gamegear/baner-fotter-2.png"
-              class="d-block w-100"
-              alt="..."
-            />
+          <div class="col-4 d-flex j-center a-center">
+            <div class="body-bo-game">
+              <img
+                class="img-bo-game"
+                src="img-gamegear/bo-game-1.png"
+                alt=""
+              />
+              <div class="text-bo-game">
+                <h4 class="h4-bo-game">Playstation 4</h4>
+                <p class="p-bo-game">
+                  Các trò chơi đáng kinh ngạc phát trực tiếp trên PS4, với bộ
+                  nhớ 1TB.
+                </p>
+                <div class="btn-bo-game">
+                  <a href="#" class="main-btn"> Tìm Hiểu Thêm </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img
-              src="img-gamegear/banner-footer.png"
-              class="d-block w-100"
-              alt="..."
-            />
+
+          <div class="col-4 d-flex j-center a-center">
+            <div class="body-bo-game">
+              <img
+                class="img-bo-game"
+                src="img-gamegear/bo-game-2.png"
+                alt=""
+              />
+              <div class="text-bo-game text-bo-game-2">
+                <h4 class="h4-bo-game">Playstation 4</h4>
+                <p class="p-bo-game">
+                  Các trò chơi đáng kinh ngạc phát trực tiếp trên PS4, với bộ
+                  nhớ 1TB.
+                </p>
+                <div class="btn-bo-game d-flex j-center a-center">
+                  <div class="main-btn">Tìm Hiểu Thêm</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 d-flex j-center a-center">
+            <div class="body-bo-game">
+              <img class="img-bo-game" src="img-gamegear/bo-game.png" alt="" />
+              <div class="text-bo-game text-bo-game-1">
+                <h4 class="h4-bo-game">Playstation 4</h4>
+                <p class="p-bo-game">
+                  Các trò chơi đáng kinh ngạc phát trực tiếp trên PS4, với bộ
+                  nhớ 1TB.
+                </p>
+                <div class="btn-bo-game">
+                  <div class="main-btn">Tìm Hiểu Thêm</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleFade"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleFade"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
+
       <div class="end-foter p-relative">
         <div class="p-absolute foter-abs">
-          <div
-          class="row mb-0 pt-5 row-2 justify-content-md-around justify-content-center text-center"
-        >
-          <div class="col-auto">
-            <figure class="figure">
-              <i class="fa-solid fa-gamepad"></i>
-              <figcaption class="figure-caption">
-                Giao Hàng Nhanh Chóng
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-auto">
-            <figure class="figure">
-              <i class="fa-solid fa-gamepad"></i>
-              <figcaption class="figure-caption">Hỗ Trợ 24/7</figcaption>
-            </figure>
-          </div>
-          <div class="col-auto">
-            <figure class="figure">
-              <i class="fa-solid fa-gamepad"></i>
-              <figcaption class="figure-caption">Giá Cả Hợp Lý</figcaption>
-            </figure>
-          </div>
-          <div class="col-auto">
-            <figure class="figure">
-              <i class="fa-solid fa-gamepad"></i>
-              <figcaption class="figure-caption">Mô Tả Chi Tiết</figcaption>
-            </figure>
-          </div>
-          <div class="col-auto">
-            <figure class="figure">
-              <i class="fa-solid fa-gamepad"></i>
-              <figcaption class="figure-caption">Sản Phẩm Xu Hướng</figcaption>
-            </figure>
-          </div>
-        </div>
-        <div class="card- py-5 border-0 px-0 mx-0 d-flex j-center">
-          <div class="card-body text-center">
-            <div class="row justify-content-center">
+          <div class="container">
+            <div
+              class="row mb-0 pt-5 row-2 justify-content-md-around justify-content-center text-center"
+            >
               <div class="col-auto">
-                <h6><b>Bạn vẫn còn nhiều câu hỏi?</b></h6>
-                <small class="text-muted"
-                  >Gọi/Nhắn Tin <span class="mx-2"><b>+84.16341999</b></span
-                  >Để Được Hỗ Trợ</small
-                >
-                <div class="row justify-content-center">
-                  <div class="col-10">
-                    <button
-                      type="button"
-                      class="btn btn-primary btn-lg btn-block my-5"
-                    >
-                      <i class="fa-solid fa-comments"></i>
-                      Liên Hệ TRực Tiếp
-                    </button>
-                    <h6><b>Đảm bảo hoàn tiền 100%</b></h6>
-                    <small class="text-muted"
-                      >Hoàn Lại Toàn Bộ Tiền Cho Khách Hàng Nếu Sản Phẩm
-                      Lỗi</small
-                    >
-                  </div>
-                </div>
+                <figure class="figure">
+                  <i class="fa-solid fa-gamepad gamepad-2"></i>
+                  <figcaption class="figure-caption">
+                    Giao Hàng Nhanh Chóng
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-auto">
+                <figure class="figure">
+                  <i class="fa-solid fa-gamepad gamepad-2"></i>
+                  <figcaption class="figure-caption">Hỗ Trợ 24/7</figcaption>
+                </figure>
+              </div>
+              <div class="col-auto">
+                <figure class="figure">
+                  <i class="fa-solid fa-gamepad gamepad-2"></i>
+                  <figcaption class="figure-caption">Giá Cả Hợp Lý</figcaption>
+                </figure>
+              </div>
+              <div class="col-auto">
+                <figure class="figure">
+                  <i class="fa-solid fa-gamepad gamepad-2"></i>
+                  <figcaption class="figure-caption">Mô Tả Chi Tiết</figcaption>
+                </figure>
+              </div>
+              <div class="col-auto">
+                <figure class="figure">
+                  <i class="fa-solid fa-gamepad gamepad-2"></i>
+                  <figcaption class="figure-caption">
+                    Sản Phẩm Xu Hướng
+                  </figcaption>
+                </figure>
               </div>
             </div>
           </div>
-        </div>
-  
-        <div class="container-fluid justify-content-center p-0 mx-0">
-          <footer class="">
-            <div class="container">
-              <div
-                class="row row-fotter-1 mb-0 mt-5 mx-4 row-2 justify-content-xl-around justify-content-sm-between f-d-rv"
-              >
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 pt-4 order-1">
-                  <ul class="list-unstyled">
-                    <li class="mt-md-0 mt-4">Giải Pháp Của Chúng Tôi</li>
-                    <li>Bảo mật nền tảng tích hợp</li>
-                    <li>CTính năng cốt lõi</li>
-                    <li>Tính năng sản phẩm và dịch vụ</li>
-                    <li>Định giá</li>
-                  </ul>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 pt-4 order-2">
-                  <ul class="list-unstyled">
-                    <li class="mt-md-0 mt-4">Bạn Cần</li>
-                    <li>Bảo MẬt Nền TảngTảng Tích Hợp</li>
-                    <li>Tính Năng Cốt Lõi</li>
-                    <li>Tính Nănng Sản Phẩm</li>
-                    <li>Định Giá</li>
-                    <li>Tính Năng Sản Phẩm</li>
-                  </ul>
-                </div>
-                <div
-                  class="col-xl-3 col-lg-6 col-md-6 pt-4 col-sm-6 my-sm-0 order-md-3 order-sm-1 d-flex"
-                >
-                  <ul class="list-unstyled">
-                    <li class="mt-md-0 mt-4">Dịch Vụ</li>
-                    <li>Bảo mật tích hợp</li>
-                    <li>Tính năng cốt lõi</li>
-                    <li>Tính năng sản phẩm</li>
-                    <li>Bảo mật tích hợp</li>
-                    <li>Định giá</li>
-                  </ul>
-                </div>
-                <div
-                  class="col-xl-3 text-left col-lg-4 col-md-4 col-sm-6 col-12 pt-4 my-sm-0 order-6 my-auto"
-                >
-                  <div class="input-group-lg input-group mb-3 mt-md-0 mt-4">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Enter your e-mail address"
-                      aria-label="Recipient's username"
-                      aria-describedby="button-addon2"
-                    />
-                    <div class="input-group-append">
+          <div class="card- py-5 border-0 px-0 mx-0 d-flex j-center">
+            <div class="card-body text-center">
+              <div class="justify-content-center">
+                <div class="col-auto">
+                  <h6><b>Bạn vẫn còn nhiều câu hỏi?</b></h6>
+                  <small class="text-muted"
+                    >Gọi/Nhắn Tin <span class="mx-2"><b>+84.16341999</b></span
+                    >Để Được Hỗ Trợ</small
+                  >
+                  <div class="justify-content-center">
+                    <div class="col-12">
                       <button
-                        class="btn btn-success"
                         type="button"
-                        id="button-addon2"
+                        class="btn btn-primary btn-lg btn-block my-5 btn-call-me"
                       >
-                        <b>Join</b>
+                        <i class="fa-solid fa-comments call-me"></i>
+                        Liên Hệ TRực Tiếp
                       </button>
+                      <h6><b>Đảm bảo hoàn tiền 100%</b></h6>
+                      <small class="text-muted"
+                        >Hoàn Lại Toàn Bộ Tiền Cho Khách Hàng Nếu Sản Phẩm
+                        Lỗi</small
+                      >
                     </div>
                   </div>
-                  <ul class="list-unstyled">
-                    <li>
-                      <p class="mb-0 pb-0 mt-5">THEO DÕI CHÚNG TÔI TẠI:</p>
-                    </li>
-                    <li class="d-flex">
-                      <a class="fa"><i class="fa-brands fa-facebook"></i></a
-                      ><a class="fa"><i class="fa-brands fa-twitter"></i></a
-                      ><a class="fa"><i class="fa-brands fa-instagram"></i></a
-                      ><a class="fa"><i class="fa-brands fa-youtube"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-  
-              <hr class="line" />
-              <div
-                class="row row-fotter justify-content-lg-around mx-xl-5 mx-lg-4 mx-3 py-3 f-d-rv"
-              >
-                <div class="col order-1 align-self-center">
-                  <p class="mb-0 text-uppercase">Địa Chỉ Shop</p>
-                  <small
-                    ><i class="fa-solid fa-envelope adress-icon"></i>
-                    Email:phuongxu@gmail.com<br /><i
-                      class="fa-solid fa-location-dot adress-icon"
-                    ></i>
-                    Số 79 - Thanh Xuân Hà Nội <br /><i
-                      style="margin-right: 8px"
-                      class="fa-solid fa-phone adress-icon"
-                    ></i
-                    >Số Điện Thoại : +84 90-421-3600
-                  </small>
-                </div>
-                <div class="col-auto my-sm-0 order-6 my-auto pt-sm-0 pt-3 d-flex j-center a-center">
-                  <ul class="list-inline third-row first">
-                    <li class="list-inline-item active-1">
-                      <span>Mua Hàng Online</span>
-                    </li>
-                    <li class="list-inline-item"><span>Thử Ngay</span></li>
-                  </ul>
-                </div>
-              </div>
-              <hr class="line" />
-              <div class="row text-center py-3">
-                <div class="col">
-                  <p class="text-muted">
-                    <b
-                      >© 2022 - Bản Quyền Thuộc
-                      <a href="index.html"></a> GameGear</b
-                    >
-                  </p>
                 </div>
               </div>
             </div>
-          </footer>
-        </div>
-  
+          </div>
+
+          <div class="container-fluid justify-content-center p-0 mx-0">
+            <footer class="">
+              <div class="container">
+                <div
+                  class="row row-fotter-1 mb-0 mt-5 mx-4 row-2 justify-content-xl-around justify-content-sm-between f-d-rv"
+                >
+                  <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 pt-4 order-1">
+                    <ul class="list-unstyled">
+                      <li class="mt-md-0 mt-4">Giải Pháp Của Chúng Tôi</li>
+                      <li>Bảo mật nền tảng tích hợp</li>
+                      <li>CTính năng cốt lõi</li>
+                      <li>Tính năng sản phẩm và dịch vụ</li>
+                      <li>Định giá</li>
+                    </ul>
+                  </div>
+                  <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 pt-4 order-2">
+                    <ul class="list-unstyled">
+                      <li class="mt-md-0 mt-4">Bạn Cần</li>
+                      <li>Bảo MẬt Nền TảngTảng Tích Hợp</li>
+                      <li>Tính Năng Cốt Lõi</li>
+                      <li>Tính Nănng Sản Phẩm</li>
+                      <li>Định Giá</li>
+                      <li>Tính Năng Sản Phẩm</li>
+                    </ul>
+                  </div>
+                  <div
+                    class="col-xl-3 col-lg-6 col-md-6 pt-4 col-sm-6 my-sm-0 order-md-3 order-sm-1 d-flex"
+                  >
+                    <ul class="list-unstyled">
+                      <li class="mt-md-0 mt-4">Dịch Vụ</li>
+                      <li>Bảo mật tích hợp</li>
+                      <li>Tính năng cốt lõi</li>
+                      <li>Tính năng sản phẩm</li>
+                      <li>Bảo mật tích hợp</li>
+                      <li>Định giá</li>
+                    </ul>
+                  </div>
+                  <div
+                    class="col-xl-3 text-left col-lg-4 col-md-4 col-sm-6 col-12 pt-4 my-sm-0 order-6 my-auto"
+                  >
+                    <div class="input-group-lg input-group mb-3 mt-md-0 mt-4">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter your e-mail address"
+                        aria-label="Recipient's username"
+                        aria-describedby="button-addon2"
+                      />
+                      <div class="input-group-append">
+                        <button
+                          class="btn btn-success"
+                          type="button"
+                          id="button-addon2"
+                        >
+                          <b>Join</b>
+                        </button>
+                      </div>
+                    </div>
+                    <ul class="list-unstyled">
+                      <li>
+                        <p class="mb-0 pb-0 mt-5">THEO DÕI CHÚNG TÔI TẠI:</p>
+                      </li>
+                      <li class="d-flex">
+                        <a class="fa"><i class="fa-brands fa-facebook"></i></a
+                        ><a class="fa"><i class="fa-brands fa-twitter"></i></a
+                        ><a class="fa"><i class="fa-brands fa-instagram"></i></a
+                        ><a class="fa"><i class="fa-brands fa-youtube"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <hr class="line" />
+                <div
+                  class="row row-fotter justify-content-lg-around mx-xl-5 mx-lg-4 mx-3 py-3 f-d-rv"
+                >
+                  <div class="col order-1 align-self-center">
+                    <p class="mb-0 text-uppercase">Địa Chỉ Shop</p>
+                    <small
+                      ><i class="fa-solid fa-envelope adress-icon"></i>
+                      Email:phuongxu@gmail.com<br /><i
+                        class="fa-solid fa-location-dot adress-icon"
+                      ></i>
+                      Số 79 - Thanh Xuân Hà Nội <br /><i
+                        style="margin-right: 8px"
+                        class="fa-solid fa-phone adress-icon"
+                      ></i
+                      >Số Điện Thoại : +84 90-421-3600
+                    </small>
+                  </div>
+                  <div
+                    class="col-auto my-sm-0 order-6 my-auto pt-sm-0 pt-3 d-flex j-center a-center"
+                  >
+                    <ul class="list-inline third-row first">
+                      <li class="list-inline-item active-1">
+                        <span>Mua Hàng Online</span>
+                      </li>
+                      <li class="list-inline-item"><span>Thử Ngay</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <hr class="line" />
+                <div class="row text-center py-3">
+                  <div class="col">
+                    <p class="text-muted">
+                      <b
+                        >© 2022 - Bản Quyền Thuộc
+                        <a href="index.html"></a> GameGear</b
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div>
         </div>
       </div>
 
-   
-    
-      
       <script src="js.js"></script>
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -1970,5 +2672,4 @@ bổ sung tuyệt vời dành cho PS5 và PS4.
     </div>
   </body>
 </html>
-Tìm Mọi Thứ Bạn Muốn
-Ở Đây !!!
+Tìm Mọi Thứ Bạn Muốn Ở Đây !!!

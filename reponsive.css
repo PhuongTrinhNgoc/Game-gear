@@ -32,40 +32,207 @@
         position: absolute;
       }
       
-      #prev {
-        top: 50%;
-        left: 0;
-        transform: translate(50%, -50%);
-        display: none;
-      }
-      
-      #next {
-        top: 50%;
-        right: 16px;
-        transform: translate(-50%, -50%);
-      }
+ 
       
       #content {
         display: grid;
-        grid-gap: 16px;
+        grid-gap: 33px;
         grid-auto-flow: column;
         margin: auto;
         box-sizing: border-box;
       }
       
       .item {
-        width: 7.5rem;
-        height: 7.5rem;
-        background-color: #fff;
+        width: 100%;
+        height: 10rem;
+        /* background-color: #fff; */
         border-radius: 15px;
       }
       .item-1{
-          background-color: #fff;
+          /* background-color: #fff; */
           padding: 5px;
           border-radius: 20px;
-        
+        width: 10rem;
       }
+      .carousel-item-1 {
+        right: -12%;
+        bottom: 7.25rem;
+        left: 15%;
+      }
+      .carousel-item-2 {
+        right: 65%;
+        bottom: 1.25rem;
+        left: 15%;
+      }
+          .carousel-item-3 {
+            right: -24%;
+            bottom: 19rem;
+            left: 15%;
+        }
+        .h1-you-need {
+          top: 30%;
+          left: 40px;
+          text-align: center;
+          font-weight: 600;
+          color: #000c;
+      }
+      .card-img-overlay-1 {
+        position: absolute;
+        top: 1rem;
+    right: 33px;
+        z-index: 200;
+      }
+      .card-text {
+        color: black;
+      }
+      .card-text {
+        color: black;
+      }
+      .view-all {
+      }
+      .all-sale-item {
+        padding-bottom: 20px;
+      }
+      .wrapper-1{
+        max-width: 1140px !important;
+        }
+        .wrapper-3{
+          width: 100%;
+          max-width: 1084px;
+          position: relative;
+        }
+        .container-new{
+        margin-top: 30px;
+        }
+        #content2,
+        #content3 {
+        display: grid;
+        grid-gap: 27px;
+        grid-auto-flow: column;
+        margin: auto;
+        box-sizing: border-box;
+        }
+        .filter-by {
+          margin-right: 10px;
+          margin-bottom: 0;
+          font-size: 13px;
+        }
+     
+        #prev1, #next1 {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background: white;
+        border: none;
+        padding: 8px;
+        border-radius: 50%;
+        outline: 0;
+        cursor: pointer;
+        position: absolute;
+        }
+        #carousel1{
+        overflow: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        }
+        #carousel3 {
+          overflow: auto;
+          scroll-behavior: smooth;
+          scrollbar-width: none;
+        }
+        .line {
+          width: 100%;
+        }
+        .foter-abs {
+          width: 100%;
+        }
+        .view-all {
+        }
+        .baner-text {
+          width: 40%;
+          right: 9%;
+          top: 20%;
+          text-align: center;
+          color: #000c;
+        }
+        .go-view {
+        }
+        .view-sale {
+        }
+        .logo-name p {
+          margin-bottom: 0;
+        }
+        .justify-content-center {
+          justify-content: space-between !important;
+        }
+        .item-child-1 {
+          width: 15.5rem;
+          height: 15.5rem;
+        }
+        
+        /* bo game */
+        
+        .text-bo-game {
+          /* padding-right: 7rem; */
+        }
+        .text-bo-game-1 {
+          /* padding-right: 0;
+          padding-left: 7rem; */
+        }
+        .text-bo-game-2{
+          /* padding-right: 0;
+          padding-left: 2rem; */
+        }
+        .img-bo-game {
+          width: 73%;
+        }
+        .h4-bo-game {
+        }
+        .body-bo-game {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+        }
+        .p-bo-game {
+        }
+        .btn-bo-game {
+          padding: 1px;
+          border: 1px solid transparent;
+          /* width: 130px; */
+  margin: 0 80px;
 
+          font-size: 14px;
+          border-radius: 30px;
+        }
+        .btn-bo-game:hover{
+          border: 1px solid #2871c6;
+        }
+        
+        .main-btn {
+          padding: 8px;
+          background: #2871c6;
+          width: 50px;
+          text-align: center;
+          color: #fff;
+          border-radius: 30px;    padding: 8px;
+          background: #2871c6;
+          width: 100%;
+          text-align: center;
+          color: #fff;
+          border-radius: 30px;
+        };
+        .title-text-bo-game{
+            color: #4d4d4d;
+        }
+        .gamepad-2{
+          font-size: 2rem;
+        }
+        .pt-5{
+          margin-top: 5rem;
+          padding-top: 0 !important;
+
+        }
 }
 @media (max-width: 767px) and (min-width: 314px) {
     
@@ -77,4 +244,270 @@
     .item-navbar{
         display: none;
     }
+
+.carousel-item-1 {
+  right: -12%;
+  bottom: 7.25rem;
+  left: 15%;
+}
+.carousel-item-2 {
+  right: 65%;
+  bottom: 1.25rem;
+  left: 15%;
+}
+    .carousel-item-3 {
+      right: -24%;
+      bottom: 25.25rem;
+      left: 15%;
+  }
+  .title-web {
+    top: 20%;
+    /* left: 40px; */
+    text-align: center;
+    font-weight: 600;
+    color: #000c;
+  }
+  .h1-you-need {
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #f1f1f1;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    /* padding-inline: 0rem; */
+    
+  }
+  .h4-input-main{
+    font-weight: bolder;
+    color: white;
+    font-size: 1.4rem;
+  }
+  .login-email{
+    margin-top: 20px;
+  }
+  .p-input{
+    font-weight: bolder;
+    color: white;
+    font-size: 0.6rem;
+  
+  }
+  .form-input-main{
+  
+  }
+  .input-main{
+    width: 19rem;
+    /* height: 2rem; */
+    /* padding: 8px; */
+    height: 1rem;
+    padding: 20.5px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 0.7rem;
+  
+  }
+  .a-input{
+    padding: 0.53rem 1.9rem;
+    color: #fff;
+    background-color: #ef3b3c;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: -4px;
+  }
+  .d-none{
+    display: block !important;
+  }
+.card-img-overlay-1 {
+  position: absolute;
+  top: 1rem;
+  right: 10px;
+  z-index: 200;
+}
+.card-text {
+  color: black;
+  font-size: 14px;
+}
+
+.view-all {
+}
+.all-sale-item {
+  padding-bottom: 20px;
+}
+.line {
+  width: 100%;
+}
+.foter-abs {
+  width: 100%;
+}
+.view-all {
+}
+.baner-text {
+  width: 40%;
+  right: 9%;
+  top: 20%;
+  text-align: center;
+  color: #000c;
+}
+.go-view {
+  font-size: 10px;
+}
+.view-sale {
+  font-size: 10px;
+  
+}
+.logo-name p {
+  margin-bottom: 0;
+}
+.justify-content-center {
+  justify-content: space-between !important;
+}
+.item-child-1 {
+  width: 15.5rem;
+  height: 15.5rem;
+}
+
+/* bo game */
+
+.text-bo-game {
+  padding-right: 7rem;
+}
+.text-bo-game-1 {
+  padding-right: 0;
+  padding-left: 7rem;
+}
+.text-bo-game-2{
+  padding-right: 0;
+  padding-left: 2rem;
+}
+.img-bo-game {
+  width: 73%;
+}
+.h4-bo-game {
+}
+.body-bo-game {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.p-bo-game {
+}
+.btn-bo-game {
+  padding: 1px;
+  border: 1px solid transparent;
+  width: 130px;
+  font-size: 14px;
+  border-radius: 30px;
+}
+.btn-bo-game:hover{
+  border: 1px solid #2871c6;
+}
+
+.main-btn {
+  padding: 8px;
+  background: #2871c6;
+  width: 50px;
+  text-align: center;
+  color: #fff;
+  border-radius: 30px;    padding: 8px;
+  background: #2871c6;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  border-radius: 30px;
+};
+.title-text-bo-game{
+    color: #4d4d4d;
+}
+.form-select {
+  width: 32%;
+  margin: 0 2px;
+  font-size: 12px;
+}
+.form-select-1 {
+  font-size: 13px;
+  width: 47%;
+}
+
+.a-filter {
+padding: 4px 20px;
+}
+
+/* item */
+.item {
+  width: 9.5rem;
+  height: 9.5rem;
+  margin-bottom: 16px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 #00000029;
+}
+.item-1 {
+  text-align: center;
+  padding: 5px;
+  border-radius: 20px;
+}
+.item-1-2 {
+  background: none;
+}
+.item-text-1 {
+  /* background-color: #fff; */
+  padding: 0 6px;
+  text-align: start;
+}
+#content3 {
+  display: grid;
+  grid-gap: 26.5px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+#content {
+  display: grid;
+  grid-gap: 16.5px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+#content2 {
+  display: grid;
+  grid-gap: 2px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.h5-price-item {
+  color: #000c;
+  font-size: 13px;
+  color: #ef3b3c;
+}
+.h6-name-item{
+  font-size: 14px;
+}
+.nav-img-2{
+  width: 45px;
+}
+.nav-img-3{
+  width: 45px;
+}
+.h4-sale-1{
+  font-size: 12px;
+}
+.h5-sale-1{
+  font-size: 10px;
+}
+.h2-highlight{
+  font-size: 1.5rem;
+}
+.nav-link{
+font-size: 14px;
+}
+.container{
+  max-width: 740px;
+}
 }

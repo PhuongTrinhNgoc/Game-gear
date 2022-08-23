@@ -806,6 +806,33 @@
 }
 .btn-primary-baner {
   font-size: 6px;
+  padding: 4px 9px;
+}
+.form-control {
+  width: 141px;
+  font-size: 6px;
+}
+.btn-outline-success-2 {
+  background-color: green;
+  color: #fff;
+  font-size: 6px;
+}
+.you-want h1{
+  font-size: 1rem;
+}
+.my-2 {
+  margin-top: 0!important;
+  margin-bottom: 0!important;
+}
+.my-2 {
+  margin-top: 0!important;
+  margin-bottom: 0!important;
+}
+.form-none {
+  display: none;
+  position: absolute;
+  bottom: -13px;
+  right: 47px;
 }
 .all-icon-nav,
 .all-icon-nav-baner {

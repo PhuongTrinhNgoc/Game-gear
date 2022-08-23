@@ -906,4 +906,7 @@
   right: 0;
   bottom: 0;
 } */
+.container-fluid {
+  padding: 0 2rem;
+}
 }

@@ -945,3 +945,46 @@
   transition: transform .3s ease-in-out;
 }
 }
+/* @media (min-width: 280px) {
+  .title-web {
+    top: 8%;
+    text-align: center;
+    font-weight: 600;
+    color: #000c;
+    left: -8%;
+}
+.h1-you-need {
+  font-size: 65%;
+  font-weight: bolder;
+  color: #f1f1f1;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}.p-input {
+  font-weight: bolder;
+  color: white;
+  font-size: 0.4rem;
+}
+.form-input-main {
+}
+.input-main {
+  width: 47%;
+  height: 0%;
+  padding: 7px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 6px;
+}
+.a-input {
+  padding: 2px 9px;
+  color: #fff;
+  background-color: #ef3b3c;
+  margin-left: -53px;
+  border-radius: 7px;
+  font-size: 8px;
+}
+.login-email{
+  margin-top: 6px;
+}
+} */

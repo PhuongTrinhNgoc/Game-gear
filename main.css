@@ -1238,7 +1238,13 @@ color: #181818;
 .h6-title-info-child{
   color: #181818;
 }
+.container-theend{
 
+}
+.lazy-loaded{
+top: 0;
+right: 0;
+}
 .nav-link.active {
   color: #2871c6 !important;
   background-color: var(--bs-nav-tabs-link-active-bg);

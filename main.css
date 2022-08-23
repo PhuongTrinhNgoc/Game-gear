@@ -1069,12 +1069,14 @@ use:hover{
   bottom: 4.25rem;
   width: 50%;
 }
+
 .carousel-caption2{
-  left: 40rem;
-  bottom: 19.25rem;
+  left: 52%;
+  bottom: 54%;
   width: 50%;
   color: #181818;
 }
+
 .carousel-caption2-3,
 .carousel-caption2-4,
 .carousel-caption2-5{

@@ -439,6 +439,7 @@
   }
   .logo-name p {
     margin-bottom: 0;
+    display: none;
   }
   .justify-content-center {
     justify-content: space-between !important;
@@ -798,6 +799,7 @@
 .carousel-caption p {
   font-size: 8px;
   margin-bottom: 6px;
+  display: none;
 }
 .carousel-caption h5 {
   font-size: 10px;

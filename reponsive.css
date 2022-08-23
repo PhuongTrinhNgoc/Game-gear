@@ -820,6 +820,7 @@
 .you-want h1{
   font-size: 1rem;
 }
+
 .my-2 {
   margin-top: 0!important;
   margin-bottom: 0!important;
@@ -901,4 +902,8 @@
   color: #000c;
   left: -8%;
 }
+/* .lazy-loaded {
+  right: 0;
+  bottom: 0;
+} */
 }

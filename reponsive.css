@@ -837,7 +837,7 @@
 }
 .all-icon-nav,
 .all-icon-nav-baner {
-  font-size: 6px;
+  font-size: 12px;
   /* padding: 0 6px; */
 }
 .carousel-item-1 {
@@ -908,5 +908,40 @@
 } */
 .container-fluid {
   padding: 0 2rem;
+}
+.item {
+  width: 8.5rem;
+  height: 8.5rem;
+  margin-bottom: 16px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 #00000029;
+}
+#content {
+  display: grid;
+  grid-gap: 21px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+.item-1 {
+  text-align: center;
+  padding: 5px;
+  border-radius: 20px;
+}
+.offcanvas {
+  position: fixed;
+  bottom: 0;
+  z-index: 1045;
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  color: var(--bs-offcanvas-color);
+  visibility: hidden;
+  background-color: var(--bs-offcanvas-bg);
+  background-clip: padding-box;
+  outline: 0;
+  transition: transform .3s ease-in-out;
 }
 }

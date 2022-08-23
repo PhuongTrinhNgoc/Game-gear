@@ -864,5 +864,12 @@
 .nav-link{
   font-size: 10px;
 }
-
+.title-web {
+  top: 8%;
+  /* left: 40px; */
+  text-align: center;
+  font-weight: 600;
+  color: #000c;
+  left: -8%;
+}
 }

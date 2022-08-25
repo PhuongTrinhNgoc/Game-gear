@@ -48,7 +48,7 @@
 
   #content {
     display: grid;
-    grid-gap: 5rem;
+    grid-gap: 1rem;
     grid-auto-flow: column;
     margin: auto;
     box-sizing: border-box;
@@ -66,7 +66,7 @@
     /* background-color: #fff; */
     padding: 5px;
     border-radius: 20px;
-    width: 10rem;
+    width: 14rem;
   }
 
   .h1-you-need {
@@ -99,7 +99,7 @@
 
   #content3 {
     display: grid;
-    grid-gap: 5rem;
+    grid-gap: 1rem;
     grid-auto-flow: column;
     margin: auto;
     box-sizing: border-box;

@@ -1,0 +1,55 @@
+.img-item{
+    width: 100%;
+    transition:all 0.3s linear;
+
+}
+.main-item{
+    flex-wrap: wrap;
+}
+.all-star{
+    display: flex;
+    font-size: 10px;
+    color: rgb(253, 216, 54);
+}
+.main-dow{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+}
+.sold-cl{
+    margin-bottom: 0;
+    font-size:12px;
+}
+.all-icon-star{
+    padding-left:2px;
+}
+.row--1{
+
+}
+.container-main{
+    background-color: #ffffff;
+    margin-top: 50px;
+}
+.main-item-class:hover{
+    box-shadow: 0 2px 12px rgb(0 0 0 / 12%);
+    z-index: 1;
+  border-color: #2871c6;
+
+}
+.main-item-class:hover .img-item{
+    /* transition:all 0.5; */
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+.main-item-class:hover .sold-cl{
+color: black;
+}
+.main-item-class:hover .h6-price{
+    color:#ef3b3c;
+    }
+.main-item-class{
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    color: #000c;
+    
+}

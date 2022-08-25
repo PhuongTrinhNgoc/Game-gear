@@ -132,7 +132,7 @@ const myItem2 = [
     
       {
         id: 16,
-        name: "console16",
+        name: "máy chơi game1",
         img: "./img-gamegear/hot3.png",
         price: "1.900.000",
         sold:102
@@ -153,7 +153,7 @@ const myItem2 = [
     },
       {
         id: 19,
-        name: "console19",
+        name: "máy chơi game",
         img: "./img-gamegear/hot9.png",
         price: "1.900.000",
         sold:102
@@ -366,5 +366,38 @@ tem-s">
     )
     .join(",")
     .replaceAll(/,/g, "")
-    // console.log(filter)
+    document.querySelector("#main-item-2").innerHTML = filter.map(
+        (a) =>
+          `
+      
+          <div href="#" class=" col-xl-2 col-6 col-md-3 main-item-class main-item-class${a.id}">
+          <a class=">
+  tem-s">
+                  <div class="main-img">
+              <img class="img-item" src="${a.img}">
+              </div>
+              <div class="p-name"> ${a.name}</div>
+              <div class="main-dow">
+                  <div class="all-star"
+                  <i class="fa-solid fa-star all-icon-star"></i>
+                  <i class="fa-solid fa-star all-icon-star"></i>
+                  <i class="fa-solid fa-star all-icon-star"></i>
+                  <i class="fa-solid fa-star all-icon-star"></i>
+                  <i class="fa-solid fa-star all-icon-star"></i>
+                  <i class="fa-solid fa-star all-icon-star"></i>
+  
+  
+                    </div>
+              <p class="sold-cl">(${a.sold})</p>
+  
+              </div>
+              <h6 class="h6-price">${a.price}đ</h6>
+  
+              
+          </a>
+      </div>
+      `
+      )
+      .join(",")
+      .replaceAll(/,/g, "")
 }

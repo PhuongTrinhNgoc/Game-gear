@@ -62,6 +62,9 @@
     margin-bottom: 23.5px;
     font-weight: bold;
 }
+.list-group-item:hover{
+    cursor: pointer;
+}
 @media (max-width: 1024px){
     .col-2-1{
         display: none;

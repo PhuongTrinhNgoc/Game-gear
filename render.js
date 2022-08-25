@@ -336,7 +336,7 @@ function showModaItem2(event){
       (a) =>
         `
     
-        <div href="#" class=" col-xl-2 col-sm-4 col-6 col-md-3 main-item-class main-item-class${a.id}">
+        <div href="#" class=" col-xl-2 col-6 col-md-3 main-item-class main-item-class${a.id}">
         <a class=">
 tem-s">
                 <div class="main-img">

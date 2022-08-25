@@ -28,7 +28,8 @@
 }
 .container-main{
     background-color: #ffffff;
-    margin-top: 50px;
+    margin-top: 70px;
+    padding-top: 20px;
 }
 .main-item-class:hover{
     box-shadow: 0 2px 12px rgb(0 0 0 / 12%);
@@ -52,4 +53,7 @@ color: black;
     padding: 10px;
     color: #000c;
     
+}
+.container-22{
+    margin-top: 40px;
 }

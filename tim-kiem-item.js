@@ -28,7 +28,7 @@ const myItem = [
   },
   {
     id: 2,
-    name: "áy Chơi 2,ame PlayStation®4",
+    name: "máy Chơi game PlayStation®4",
     img: "./img-gamegear/item-2.png",
     price: "1.900.000",
     sold: 102,
@@ -71,7 +71,7 @@ const myItem = [
   },
   {
     id: 8,
-    name: "console18",
+    name: "Xbox",
     img: "./img-gamegear/item9.png",
     price: "1.900.000",
     sold: 102,
@@ -143,7 +143,7 @@ const myItem = [
   },
   {
     id: 18,
-    name: "console18",
+    name: "Xbox",
     img: "./img-gamegear/hot7.png",
     price: "1.900.000",
     sold: 102,
@@ -241,12 +241,12 @@ function showModaItem(event) {
     a.name.toLocaleLowerCase().includes(inPut.value.toLocaleLowerCase())
   );
 
-  document.querySelector("#main-item").innerHTML = filter
+  document.querySelector("#main-search-1").innerHTML = filter
     .map(
       (a) =>
         `
     
-        <a href="#" class=" col-xl-2 col-6 col-md-3 main-item-class main-item-class${a.id}">
+        <a href="#" class=" col-xl-3 col-6 col-md-3 main-item-class main-item-class${a.id}">
         <div class=">
 tem-s">
                 <div class="main-img">

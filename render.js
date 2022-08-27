@@ -366,38 +366,39 @@ tem-s">
     )
     .join(",")
     .replaceAll(/,/g, "")
-    document.querySelector("#main-item-2").innerHTML = filter.map(
-        (a) =>
-          `
-      
-          <div href="#" class=" col-xl-2 col-6 col-md-3 main-item-class main-item-class${a.id}">
-          <a class=">
-  tem-s">
-                  <div class="main-img">
-              <img class="img-item" src="${a.img}">
-              </div>
-              <div class="p-name"> ${a.name}</div>
-              <div class="main-dow">
-                  <div class="all-star"
-                  <i class="fa-solid fa-star all-icon-star"></i>
-                  <i class="fa-solid fa-star all-icon-star"></i>
-                  <i class="fa-solid fa-star all-icon-star"></i>
-                  <i class="fa-solid fa-star all-icon-star"></i>
-                  <i class="fa-solid fa-star all-icon-star"></i>
-                  <i class="fa-solid fa-star all-icon-star"></i>
-  
-  
-                    </div>
-              <p class="sold-cl">(${a.sold})</p>
-  
-              </div>
-              <h6 class="h6-price">${a.price}đ</h6>
-  
-              
-          </a>
-      </div>
-      `
-      )
-      .join(",")
-      .replaceAll(/,/g, "")
+    document.querySelector("#main-item").innerHTML = filter.map(
+      (a) =>
+        `
+    
+        <div href="#" class=" col-xl-2 col-6 col-md-3 main-item-class main-item-class${a.id}">
+        <a class=">
+tem-s">
+                <div class="main-img">
+            <img class="img-item" src="${a.img}">
+            </div>
+            <div class="p-name"> ${a.name}</div>
+            <div class="main-dow">
+                <div class="all-star"
+                <i class="fa-solid fa-star all-icon-star"></i>
+                <i class="fa-solid fa-star all-icon-star"></i>
+                <i class="fa-solid fa-star all-icon-star"></i>
+                <i class="fa-solid fa-star all-icon-star"></i>
+                <i class="fa-solid fa-star all-icon-star"></i>
+                <i class="fa-solid fa-star all-icon-star"></i>
+
+
+                  </div>
+            <p class="sold-cl">(${a.sold})</p>
+
+            </div>
+            <h6 class="h6-price">${a.price}đ</h6>
+
+            
+        </a>
+    </div>
+    `
+    )
+    .join(",")
+    .replaceAll(/,/g, "")
+    
 }

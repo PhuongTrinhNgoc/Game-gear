@@ -5,6 +5,7 @@
   font-family: SegoeUI, sans-serif;
   /* line-height: 1.428571429; */
 }
+
 :root {
   --body-bg: #181818;
   --body-color: #f1f1f1;
@@ -288,6 +289,7 @@ li {
 /* back gr */
 .carousel-dark .carousel-caption {
   color: #fff;
+  width: 50%;
 }
 .carousel-dark .carousel-caption2 {
   color: #000c;
@@ -713,7 +715,10 @@ figure img {
   grid-auto-flow: column;
   margin: auto;
   box-sizing: border-box;
+  /* overflow-x:auto; */
+  
 }
+
 #next1 {
   top: 38%;
   right: -10px;
@@ -798,9 +803,8 @@ body{
   margin-right: 10px;
 }
 .carousel-item-1 {
-  right: -12%;
-  bottom: 7.25rem;
-  left: 15%;
+  bottom: 3.25rem;
+  left: 49%
 }
 .carousel-item-2 {
   right: 65%;
@@ -809,9 +813,8 @@ body{
   width: 80%;
 }
 .carousel-item-3 {
-  right: -24%;
-  bottom: 5.25rem;
-  left: 15%;
+  
+  left: 35%;
 }
 .video-bb {
   width: 100%;
@@ -845,6 +848,9 @@ body{
   font-weight: 600;
   color: #000c;
   left: 8rem;
+  background-color: rgba(128, 128, 128, 0.286);
+  padding: 10px 0;
+  border-radius: 20px;
 }
 .h1-you-need {
   font-size: 2rem;
@@ -907,7 +913,7 @@ body{
 .view-all {
 }
 .baner-text {
-  width: 40%;
+  width: 50%;
   right: 9%;
   top: 20%;
   text-align: center;
@@ -1334,4 +1340,72 @@ use:hover {
   position: absolute;
   bottom: -26rem;
   left: 7rem;
+} */
+.nav-item:hover{
+  background-color: rgb(154, 185, 224);
+}
+.dang{
+  padding: 12px;
+}
+.dang p{
+  font-size: 10px;
+  padding-top: 0;
+  margin-bottom: 0;
+  color: gray;
+}
+.h6-news-item{
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+.img-sale-1{
+  width:5%;
+  margin-right: 7px;
+}
+.sale-nh{
+  width: 100%;
+}
+
+.li-a{
+  color: #546e7a !important;
+}
+li:hover .li-a{
+  text-decoration:underline !important;
+}
+.list-unstyled li{
+  margin-bottom: 6px;
+}
+small:hover .li-a{
+  text-decoration:underline !important;
+
+}
+.fa:hover{
+  /* color: black; */
+  background-color:#2871c6 !important;
+}
+.text-tive {
+  top:50%;
+  left:8%;
+  color: #fff;
+}
+.btn-bo-game-1{
+  width: 30%;
+  margin-left: 35%;
+}
+.main-btn-2{
+  background-color: #1e5481;
+}
+.btn:focus {
+  color: none;
+  background-color: none;
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+/* .btn-danger{
+  background-color: #2871c6;
+  color: #fff;
+  border:1px solid hidden #2871c6 !important;
+}
+.btn-danger:hover{
+  border:1px solid #fff;
 } */

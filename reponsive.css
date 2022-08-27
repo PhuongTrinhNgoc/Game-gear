@@ -321,6 +321,10 @@
   padding: 0;
   font-size: 14px;
 }
+.btn-bo-game-1{
+  width: 30%;
+  margin-left: 35%;
+}
 }
 @media (max-width: 767px) {
   .navbar-toggler-1 {
@@ -333,9 +337,8 @@
   }
 
   .carousel-item-1 {
-    right: -12%;
-    bottom: 7.25rem;
-    left: 15%;
+    bottom: 2.25rem;
+    left: 39%;
   }
   .carousel-item-2 {
     width: 80%;
@@ -343,8 +346,8 @@
     bottom: 1.25rem;
   }
   .carousel-item-3 {
-    right: -24%;
-    bottom: 5.25rem;
+    bottom: 2.25rem;
+    left: 50%;
   }
   .title-web {
     top: 15%;
@@ -352,7 +355,7 @@
     text-align: center;
     font-weight: 600;
     color: #000c;
-    left: -4%;
+    left: 3%;
   }
   .h1-you-need {
     font-size: 65%;
@@ -402,9 +405,10 @@
   }
   .card-img-overlay-1 {
     position: absolute;
-    top: 9%;
-    right: 16%;
+    top: 17%;
+    right: 11%;
     z-index: 200;
+    width: 19%;
   }
   .card-text {
     color: black;
@@ -736,11 +740,18 @@
   }
   .btn-danger{
     font-size: 10px;
+    background-color: #2871c6 !;
+
   }
   .filter-by {
     margin-right: 10px;
     margin-bottom: 0;
     font-size: 10px;
+}
+.btn-bo-game-1{
+  width: 71%;
+  margin-left: 15% !important;
+  font-size: 12px;
 }
 /* .carousel-caption h5,p {
   display: none ;
@@ -776,9 +787,10 @@
 }
 .card-img-overlay-1 {
   position: absolute;
-  top: 1%;
-  right: 8%;
+  top: 12%;
+  right: 4%;
   z-index: 200;
+  width: 30%;
 }
 .carousel-caption1 {
   left: 27%;
@@ -883,7 +895,7 @@
   font-size: 8px;
 }
 .btn-danger {
-  font-size: 6px;
+  font-size: 8px;
 }
 .h5-sale-1 {
   font-size: 8px;
@@ -900,7 +912,7 @@
   text-align: center;
   font-weight: 600;
   color: #000c;
-  left: -8%;
+  left: 3%;
 }
 /* .lazy-loaded {
   right: 0;
@@ -943,6 +955,49 @@
   background-clip: padding-box;
   outline: 0;
   transition: transform .3s ease-in-out;
+}
+.carousel-caption-10 {
+  left: 17%;
+  bottom: 2.25rem;
+  width: 50%;
+}
+.modal-content{
+  width: 70%;
+}
+.h6-news-item {
+  text-align: start;
+  margin-top: 0px;
+  margin-bottom: 0;
+  font-size: 10px;
+}
+.dang p{
+  font-size: 6px;
+}
+.dang{
+  padding: 6px 0;
+  padding-right: 24px;
+}
+.card-text-none{
+  display: none;
+}
+.baner-text {
+  width: 47%;
+  right: 5%;
+  top: 20%;
+  text-align: center;
+  color: #000c;
+}
+.btn-bo-game-1{
+  width: 71%;
+  margin-left: 15% !important;
+  font-size: 8px;
+}
+.text-tive h4{
+  font-size: 14px;
+}
+.btn-bo-game-12{
+  width: 44%;
+  margin-left: 27% !important;
 }
 }
 /* @media (min-width: 280px) {

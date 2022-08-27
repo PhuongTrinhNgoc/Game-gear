@@ -1,5 +1,12 @@
 
-
+.tab-index{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.fa-chevron-right-1{
+    font-size: 10px;
+    margin: 0 6px;
+}
   .container-1{
       width: 100%;
       z-index: 0;
@@ -247,10 +254,11 @@ video{
     /* margin-top: 40px; */
 }
 .title-info {
-    top:40%;
-    right: 18%;
+    top: 23%;
+    right: 12%;
     background-color: rgba(255,255,255,0.6);
-    padding:40px;   
+    padding: 40px;
+    width: 70vw;
 }
 .title-h1-info{
     color: rgb(0,114,206);
@@ -288,3 +296,191 @@ video{
     font-size:0.87rem
 }
 /*  */
+/* @media (max-width:1399px){
+    .title-info {
+        top: 40%;
+        right: 12%;
+        background-color: rgba(255,255,255,0.6);
+        padding: 40px;
+    }
+}
+@media (max-width:1199px){
+    .title-info {
+        top: 40%;
+        right: 7.5%;
+        background-color: rgba(255,255,255,0.6);
+        padding: 40px;
+    }
+} */
+@media (max-width:1024px){
+    .title-info {
+        top: 26%;
+        right: 8%;
+        background-color: rgba(255,255,255,0.6);
+        padding: 40px;
+        width: 80vw;
+    }
+    .text-child-3{
+        position: absolute;
+        width: 30%;
+        top: 20%;
+        right: 4%;
+    }
+    .title-h1-info {
+        color: rgb(0,114,206);
+        font-family: "sst condensed","sst",Arial,sans-serif;
+        font-weight: 300;
+        margin: 30px 0;
+        font-size: 26px;
+    }
+}
+@media (max-width:767px){
+    .title-info {
+        top: 26%;
+        right: 8%;
+        background-color: rgba(255,255,255,0.6);
+        padding: 40px;
+        width: 80vw;
+    }
+    .text-child-3{
+        position: absolute;
+        width: 30%;
+        top: 20%;
+        right: 4%;
+    }
+    .title-h1-info {
+        color: rgb(0,114,206);
+        font-family: "sst condensed","sst",Arial,sans-serif;
+        font-weight: 300;
+        margin: 30px 0;
+        font-size: 20px;
+    }
+    .title-h1-info-1{
+        font-size: 18px;
+    }
+    .p-info-1{
+        font-size: 14px;
+    }
+    .h3-info-end{
+        font-size: 18px;
+
+    }
+    .p-info-end{
+        font-size: 14px;
+
+    }
+    .container-1 {
+        width: 100%;
+        z-index: 0;
+        /* background-color: #fff; */
+        height: 100%;
+        position: relative;
+        height: 400px;
+    }
+}
+@media (max-width:500px){
+    .title-info {
+        top: 23%;
+        right: 13%;
+        background-color: rgba(255,255,255,0.6);
+        padding: 14px;
+        width: 73vw;
+    }
+    .text-child-3{
+        position: absolute;
+        width: 30%;
+        top: 20%;
+        right: 4%;
+    }
+    .title-h1-info {
+        color: rgb(0,114,206);
+        font-family: "sst condensed","sst",Arial,sans-serif;
+        font-weight: 300;
+        margin: 15px 0;
+        font-size: 18px;
+    }
+    .title-h1-info-1{
+        font-size: 14px;
+    }
+    .title-h6-info{
+        font-size: 12px;
+    }
+    .p-info-1{
+        font-size: 10px;
+    }
+    .h3-info-end{
+        font-size: 14px;
+
+    }
+    .p-info-end{
+        font-size: 10px;
+
+    }
+    .compare {
+        font-size: 0.67rem;
+    }
+    .text-child-1 {
+        position: absolute;
+        width: 30%;
+        top: 15%;
+        left: 7%;
+    }
+    .price-sale- {
+        font-size: 10px;
+    }
+    .col-4-bh-main{
+        font-size: 12px;
+    }
+    small{
+        font-size: 10px;
+    }
+    .small{
+        font-size: 5px !important;
+    }
+    .row .text-center{
+        margin: 25px 0;
+    }
+    .text-duesen p{
+        font-size: 14px;
+    }
+}
+
+
+
+.link-grey { color: #aaa; } .link-grey:hover { color: #00913b; }
+.card-coment-1{
+  width: 100%;
+}
+.card-shadow-1{
+    width: 100%;
+    border: none !important;
+}
+.card-mb4-1{
+    width: 100%;
+}
+.rating-1{
+    padding-left: 0;
+    margin-top: 10px;
+}
+.card-body p{
+    margin-bottom: 0 !important;
+    /* margin-top: 10px; */
+}
+.d-flex-100{
+    margin-bottom: 10px;
+}
+.all-star-1{
+    margin: 10px 0;
+}
+.reply{
+    margin-top: 10px
+}
+.text-dark{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+}
+.selec{
+    padding: 20px;
+    border-radius: 20px;
+}

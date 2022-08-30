@@ -205,7 +205,7 @@ function render() {
       (a) =>
         `
     
-        <a href="#" class=" col-xl-2 col-sm-4 col-6 col-md-3 main-item-class main-item-class${a.id}">
+        <a href="./chi-tiet-sp.html"  class=" col-xl-2 col-sm-4 col-6 col-md-3 main-item-class main-item-class${a.id}">
         <div class=">
 tem-s">
                 <div class="main-img">
@@ -226,8 +226,12 @@ tem-s">
             <p class="sold-cl">(${a.sold})</p>
 
             </div>
-            <h6 class="h6-price">${a.price}đ</h6>
-
+            <div class="block">
+            <div id="item">
+              <div id="highlight"></div>
+              <h6>${a.price}</h6>
+            </div>
+          </div>
             
         </div>
     </a>
@@ -249,7 +253,7 @@ function showModaItem(event){
       (a) =>
         `
     
-        <a href="#" class=" col-xl-2 col-sm-4 col-6 col-md-3 main-item-class main-item-class${a.id}">
+        <a href="./chi-tiet-sp.html"  class=" col-xl-2 col-sm-4 col-6 col-md-3 main-item-class main-item-class${a.id}">
         <div class=">
 tem-s">
                 <div class="main-img">
@@ -270,8 +274,12 @@ tem-s">
             <p class="sold-cl">(${a.sold})</p>
 
             </div>
-            <h6 class="h6-price">${a.price}đ</h6>
-
+            <div class="block">
+            <div id="item">
+              <div id="highlight"></div>
+              <h6>${a.price}</h6>
+            </div>
+          </div>
             
         </div>
     </a>
@@ -292,7 +300,7 @@ function render2() {
       (a) =>
         `
     
-        <a href="#" class=" col-xl-2 col-sm-4 col-6 col-md-3 main-item-class main-item-class${a.id}">
+        <a href="./chi-tiet-sp.html"  class=" col-xl-2 col-sm-4 col-6 col-md-3 main-item-class main-item-class${a.id}">
         <div class=">
 tem-s">
                 <div class="main-img">
@@ -313,8 +321,12 @@ tem-s">
             <p class="sold-cl">(${a.sold})</p>
 
             </div>
-            <h6 class="h6-price">${a.price}đ</h6>
-
+            <div class="block">
+            <div id="item">
+              <div id="highlight"></div>
+              <h6>${a.price}</h6>
+            </div>
+          </div>
             
         </div>
     </a>
@@ -336,7 +348,7 @@ function showModaItem2(event){
       (a) =>
         `
     
-        <div href="#" class=" col-xl-2 col-6 col-md-3 main-item-class main-item-class${a.id}">
+        <div href="./chi-tiet-sp.html"  class=" col-xl-2 col-6 col-md-3 main-item-class main-item-class${a.id}">
         <a class=">
 tem-s">
                 <div class="main-img">
@@ -356,9 +368,12 @@ tem-s">
                   </div>
             <p class="sold-cl">(${a.sold})</p>
 
+            <div class="block">
+            <div id="item">
+              <div id="highlight"></div>
+              <h6>${a.price}</h6>
             </div>
-            <h6 class="h6-price">${a.price}đ</h6>
-
+          </div>
             
         </a>
     </div>
@@ -370,7 +385,7 @@ tem-s">
       (a) =>
         `
     
-        <div href="#" class=" col-xl-2 col-6 col-md-3 main-item-class main-item-class${a.id}">
+        <div href="./chi-tiet-sp.html"  class=" col-xl-2 col-6 col-md-3 main-item-class main-item-class${a.id}">
         <a class=">
 tem-s">
                 <div class="main-img">
@@ -390,9 +405,12 @@ tem-s">
                   </div>
             <p class="sold-cl">(${a.sold})</p>
 
+            <div class="block">
+            <div id="item">
+              <div id="highlight"></div>
+              <h6>${a.price}</h6>
             </div>
-            <h6 class="h6-price">${a.price}đ</h6>
-
+          </div>
             
         </a>
     </div>

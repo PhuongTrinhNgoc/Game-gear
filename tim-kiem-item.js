@@ -201,7 +201,7 @@ function render() {
       (a) =>
         `
     
-        <a href="#" class=" col-xl-3 col-6 col-md-3 main-item-class main-item-class${a.id}">
+        <a href="./chi-tiet-sp.html"  class=" col-xl-3 col-6 col-md-3 main-item-class main-item-class${a.id}">
         <div class=">
 tem-s">
                 <div class="main-img">
@@ -241,14 +241,10 @@ function showModaItem(event) {
     a.name.toLocaleLowerCase().includes(inPut.value.toLocaleLowerCase())
   );
 
-  document.querySelector("#main-search-1").innerHTML = filter
-    .map(
-      (a) =>
+  document.querySelector("#main-search-1").innerHTML = filter.map((a) =>
         `
-    
-        <a href="#" class=" col-xl-3 col-6 col-md-3 main-item-class main-item-class${a.id}">
-        <div class=">
-tem-s">
+        <a href="./chi-tiet-sp.html" class=" col-xl-3 col-6 col-md-3 main-item-class main-item-class${a.id}">
+        <div class="tem-s">
                 <div class="main-img">
             <img class="img-item" src="${a.img}">
             </div>

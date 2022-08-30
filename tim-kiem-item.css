@@ -65,6 +65,10 @@
 .list-group-item:hover{
     cursor: pointer;
 }
+.container-main-1{
+    margin-top: 0;
+    padding-top:0;
+    }
 @media (max-width: 1024px){
     .col-2-1{
         display: none;

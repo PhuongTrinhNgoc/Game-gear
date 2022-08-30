@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh Sách Sản Phẩm</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reponsive.css" />
+    <link rel="stylesheet" href="css-nav.css" />
+    <link rel="stylesheet" href="danh-sach-sp.css">
+    <link rel="stylesheet" href="deal.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-main">
+      <div class="container">
+        <nav id="navbar" class="navbar fixed-top">
+          <div class="container-fluid relative">
+            <a class="navbar-brand" href="index.html">
+              <img class="nav-img" src="img-gamegear/logo.png" alt=""
+            /></a>
+            <div class="item-navbar center-all">
+              <ul class="navbar-all-item d-flex j-c">
+                <a href="index.html" class="item-navbar-child">Trang Chủ</a>
+                <a href="chi-tiet-sp.html" class="item-navbar-child">Bàn Phím - Chuột</a>
+                <a href="chi-tiet-sp.html" class="item-navbar-child">Màn Hình</a>
+                <a href="chi-tiet-sp.html" class="item-navbar-child">Phụ Kiện</a>
+                <div class="dropdown-center dropdow-center-1">
+                  <button
+                    class="btn btn-secondary dropdown-toggle dropdown-toggle-1"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Khác
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Tin Tức</a></li>
+                    <li><a class="dropdown-item" href="#">sale</a></li>
+                  </ul>
+                </div>
+              </ul>
+            </div>
+            <div class="all-icon-main d-flex j-center a-center">
+              <button class="btn-nav-n">
+                <i
+                  class="fa-solid fa-magnifying-glass all-icon-nav all-icon-nav-1"
+                ></i>
+  
+                <div class="form-none">
+                  <form
+                    class="form-none form-inline my-2 my-lg-0 form-inline-1 d-flex"
+                  >
+                    <input
+                      class="form-control mr-sm-2"
+                      type="search"
+                      placeholder="Search"
+                    />
+                    <a
+                      href="tim-kiem-item.html"
+                      class="btn btn-outline-success btn-outline-success-2 my-2 my-sm-0"
+                      type="submit"
+                    >
+                      Search
+                    </a>
+                  </form>
+                </div>
+              </button>
+  
+              <div class="gio-hang">
+                <i class="fa-solid fa-bag-shopping all-icon-nav"></i>
+              </div>
+              <a href="dang-nhap.html" class="user">
+                <i class="fa-solid fa-user all-icon-nav"></i
+              ></a>
+            </div>
+            <button
+              class="navbar-toggler navbar-toggler-1"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  <img
+                    class="nav-img nav-img-2"
+                    src="img-gamegear/logo.png"
+                    alt=""
+                  />
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Trang Chủ</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Bàn Phím-Chuột</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Màn Hình</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Phụ Kiện</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Khác
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Tin Tức</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Sale</a>
+                      </li>
+                     
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    
+af
+
+
+
+
+
+<div class="end-foter p-relative">
+  <div class="p-absolute foter-abs">
+    <div class="container">
+      <div class="row mb-0 pt-5 row-2 justify-content-md-around justify-content-center text-center">
+        <div class="col-auto">
+          <figure class="figure">
+            <i class="fa-solid fa-car  gamepad-2"></i>
+
+            <figcaption class="figure-caption">
+              Giao Hàng Nhanh Chóng
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-auto">
+          <figure class="figure">
+            <i class="fa-brands fa-teamspeak gamepad-2"></i>
+            <figcaption class="figure-caption">Hỗ Trợ 24/7</figcaption>
+          </figure>
+        </div>
+
+        <div class="col-auto">
+          <figure class="figure">
+            <i class="fa-solid fa-pen gamepad-2"></i>
+            <figcaption class="figure-caption">Mô Tả Chi Tiết</figcaption>
+          </figure>
+        </div>
+        <div class="col-auto">
+          <figure class="figure">
+            <i class="fa-solid fa-ranking-star gamepad-2"></i>
+            <figcaption class="figure-caption">
+              Sản Phẩm Xu Hướng
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="card- py-5 border-0 px-0 mx-0 d-flex j-center">
+      <div class="card-body text-center">
+        <div class="justify-content-center">
+          <div class="col-auto">
+            <h6><b>Bạn vẫn còn nhiều câu hỏi?</b></h6>
+            <small class="text-muted">Gọi / Nhắn Tin: <span class="mx-2"><b>+84.16341999</b></span>Để Được Hỗ Trợ</small>
+            <div class="justify-content-center">
+              <div class="col-12">
+                <!-- 
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg btn-block my-5 btn-call-me"
+                >
+                  <i class="fa-solid fa-comments call-me"></i>
+                  Liên Hệ TRực Tiếp
+                </button> -->
+                <div class="dropdown">
+                  <button type="button" class="btn btn-primary dropdown-toggle btn-call-me" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                    <i class="fa-solid fa-comments call-me"></i>
+                    Liên Hệ Shop
+                  </button>
+                  <form class="dropdown-menu p-4">
+                    <div class="mb-3">
+                      <label for="exampleDropdownFormEmail2" class="form-label">email</label>
+                      <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email">
+                    </div>
+                    <div class="form-floating mb-3">
+                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                      <label for="floatingTextarea2">Gửi Tin Nhắn</label>
+                    </div>
+                    <!-- <div class="mb-3">
+                      <div class="form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="dropdownCheck2"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="dropdownCheck2"
+                        >
+                          Remember me
+                        </label>
+                      </div>
+                    </div> -->
+                    <button type="submit" class="btn btn-primary">
+                      Gửi Tin Nhắn
+                    </button>
+                  </form>
+                </div>
+
+                <!--  -->
+                <h6><b>Đảm bảo hoàn tiền 100%</b></h6>
+                <small class="text-muted">Hoàn Lại Toàn Bộ Tiền Cho Khách Hàng Nếu Sản Phẩm
+                  Lỗi</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid justify-content-center p-0 mx-0">
+      <footer class="">
+        <div class="container">
+          <div class="row row-fotter-1 mb-0 mt-5 mx-4 row-2 justify-content-xl-around justify-content-sm-between f-d-rv">
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 pt-4 order-1">
+              <ul class="list-unstyled">
+                <li class="mt-md-0 mt-4">Giải Pháp Của Chúng Tôi</li>
+                <li>
+                  <a class="li-a" href="">Bảo mật nền tảng tích hợp</a>
+                </li>
+                <li><a class="li-a" href="#">Tính năng cốt lõi</a></li>
+                <li>
+                  <a class="li-a" href="#">Tính năng sản phẩm và dịch vụ</a>
+                </li>
+                <li>
+                  <a class="li-a" href="#">Tính năng sản phẩm và dịch vụ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 pt-4 order-2">
+              <ul class="list-unstyled">
+                <li class="mt-md-0 mt-4">Lợi Ích Của Bạn</li>
+                <li>
+                  <a class="li-a" href="">Bảo mật nền tảng tích hợp</a>
+                </li>
+                <li><a class="li-a" href="#">Tính năng cốt lõi</a></li>
+                <li>
+                  <a class="li-a" href="#">Tính năng sản phẩm và dịch vụ</a>
+                </li>
+                <li>
+                  <a class="li-a" href="#">Tính năng sản phẩm và dịch vụ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 pt-4 col-sm-6 my-sm-0 order-md-3 order-sm-1 d-flex">
+              <ul class="list-unstyled">
+                <li class="mt-md-0 mt-4">Hợp Tác</li>
+                <li>
+                  <a class="li-a" href="">Bảo mật nền tảng tích hợp</a>
+                </li>
+                <li><a class="li-a" href="#">Tính năng cốt lõi</a></li>
+                <li>
+                  <a class="li-a" href="#">Tính năng sản phẩm và dịch vụ</a>
+                </li>
+                <li>
+                  <a class="li-a" href="#">Tính năng sản phẩm và dịch vụ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xl-3 text-left col-lg-4 col-md-4 col-sm-6 col-12 pt-4 my-sm-0 order-6 my-auto">
+              <div class="input-group-lg input-group mb-3 mt-md-0 mt-4">
+                <input type="text" class="form-control" placeholder="Enter your e-mail address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-success" type="button" id="button-addon2">
+                    <b>Join</b>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="line">
+          <div class="row row-fotter justify-content-lg-around mx-xl-5 mx-lg-4 mx-3 py-3 f-d-rv">
+            <div class="col order-1 align-self-center">
+              <p class="mb-0 text-uppercase">Địa Chỉ Shop</p>
+              <small>
+                <a class="li-a" href=""><i class="fa-solid fa-envelope adress-icon"></i>
+                  Email:phuongxu@gmail.com <br></a>
+                
+              </small>
+              <small>
+                <a class="li-a" href=""><i style="margin-right: 8px" class="fa-solid fa-phone adress-icon"></i>Số Điện Thoại : +84 90-421-3600 </a>
+                </small><br>
+              <small>
+                <a class="li-a" href=""> <i class="fa-solid fa-location-dot adress-icon"></i> Số
+                  79 - Thanh Xuân Hà Nội</a>
+               </small>
+            </div>
+            <div class="col-auto my-sm-0 order-6 my-auto pt-sm-0 pt-3 d-flex j-center a-center">
+              <ul class="list-unstyled">
+                <li>
+                  <p class="mb-0 pb-0 mt-5">THEO DÕI CHÚNG TÔI TẠI:</p>
+                </li>
+                <li class="d-flex">
+                  <a class="fa"><i class="fa-brands fa-facebook"></i></a><a class="fa"><i class="fa-brands fa-twitter"></i></a><a class="fa"><i class="fa-brands fa-instagram"></i></a><a class="fa"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr class="line">
+          <div class="row text-center py-3">
+            <div class="col">
+              <p class="text-muted text-muted-1">
+                <b>© 2022 - Bản Quyền Thuộc
+                  <a href="index.html"></a> GameGear</b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+  </div>
+
+  
+
+    <!-- <script src="js.js"></script> -->
+    <script src="deal.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"
+  ></script>
+  </body>
+  
+</html>

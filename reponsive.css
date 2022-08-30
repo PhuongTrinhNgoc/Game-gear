@@ -907,12 +907,13 @@
   font-size: 10px;
 }
 .title-web {
-  top: 8%;
+  top: 6%;
   /* left: 40px; */
   text-align: center;
   font-weight: 600;
   color: #000c;
-  left: 3%;
+  left: 6%;
+  width: 330px;
 }
 /* .lazy-loaded {
   right: 0;

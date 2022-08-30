@@ -172,6 +172,7 @@ width: 100%;
     padding: 8px;
     background-color: #fff;
     border-radius: 10px;
+    text-align: center;
 }
 
 /* inp */
@@ -442,6 +443,21 @@ video{
     }
     .text-duesen p{
         font-size: 14px;
+    }
+    .text-bh {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 10px;
+    }
+    .text-bh p{
+        font-size: 8px;
+    }
+    .buttons_added{
+        width: 50%;
+    }
+    .btn-primary-baner {
+        width: 70%;
     }
 }
 

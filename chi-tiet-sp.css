@@ -75,6 +75,10 @@
     display: inline-block;
     margin: 0px 8px;
   }
+  .p-rank,
+  .p-sell{
+    font-size: 12px;
+  }
   .price-all{
       background-color: #fafafa;
       padding: 10px;
@@ -313,6 +317,10 @@ video{
         padding: 40px;
     }
 } */
+.col-4-bh-main small{
+    font-size: 10px !important;
+    color: gray;
+}
 @media (max-width:1024px){
     .title-info {
         top: 26%;
@@ -431,6 +439,7 @@ video{
     }
     .col-4-bh-main{
         font-size: 12px;
+        justify-content: flex-start;
     }
     small{
         font-size: 10px;
@@ -458,6 +467,15 @@ video{
     }
     .btn-primary-baner {
         width: 70%;
+    }
+    .top-30{
+        top: 10px;
+    }
+    .badge {
+        font-size: 10px !important;
+    }
+    .img-sale- p{
+        font-size: 8px;
     }
 }
 

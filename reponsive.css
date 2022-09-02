@@ -882,12 +882,12 @@
   margin-right: 10px;
   margin-bottom: 0;
   font-size: 10px;
-  width: 20%;
+  width: 40%;
   text-align: end;
 }
 .form-select-1 {
   font-size: 8px;
-  width: 24%;
+  width: 37% !important;
 }
 .form-select {
   width: 32%;
@@ -912,7 +912,7 @@
   text-align: center;
   font-weight: 600;
   color: #000c;
-  left: 6%;
+  left: 4%;
   width: 330px;
 }
 /* .lazy-loaded {

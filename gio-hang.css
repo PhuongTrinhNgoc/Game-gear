@@ -368,7 +368,7 @@ margin-bottom: 10px;
         font-size: 12px;
     }
     .item-gh{
-        width: 37%;
+        width: 85%;
         /* flex-direction: column; */
         margin-right: 1rem;
     }
@@ -433,5 +433,10 @@ margin-bottom: 10px;
     .container-tt-end {
         margin-top: 1rem;
         margin-bottom: 2rem;
+    }
+}
+@media (max-width: 360px) {
+    .item-gh{
+        width: 80%;
     }
 }

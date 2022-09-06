@@ -30,6 +30,7 @@
 }
 .container-main{
     background-color: #ffffff;
+    position: relative;
  
 }
 .main-item-class:hover{
@@ -99,6 +100,17 @@ color: black;
     border-top-right-radius: 10px;
 
   }
+  .title-web-1 {
+    top: 5%;
+    /* left: 40px; */
+    text-align: center;
+    font-weight: 600;
+    color: #000c;
+    left:11%;
+    background-color: rgba(128, 128, 128, 0.286);
+    padding: 25px 0;
+    border-radius: 20px;
+  }
   @media(max-width:1024px){
 
 .main-item-class:hover #highlight{
@@ -108,9 +120,30 @@ color: black;
   .main-item-class:hover h6{
     color: #fff;
   }
+  .title-web-1 {
+    top: 6%;
+    /* left: 40px; */
+    text-align: center;
+    font-weight: 600;
+    color: #000c;
+    left: 24%;
+    background-color: rgba(128, 128, 128, 0.286);
+    padding: 25px 0;
+    border-radius: 20px;
+}
   }
   @media(max-width:768px){
-
+    .title-web-1 {
+        top: 20%;
+        /* left: 40px; */
+        text-align: center;
+        font-weight: 600;
+        color: #000c;
+        left: 18%;
+        background-color: rgba(128, 128, 128, 0.286);
+        padding: 25px 0;
+        border-radius: 20px;
+    }
     .main-item-class:hover #highlight{
         /* hardcoded */
         width: 24%; 
@@ -119,4 +152,16 @@ color: black;
         color: #fff;
       }
       }
-    
+@media (max-width: 507px) {
+    .title-web-1 {
+        top: 5rem;
+        left: 40px;
+        text-align: center;
+        font-weight: 600;
+        color: #000c;
+        left: 0rem;
+        background-color: rgba(128, 128, 128, 0.286);
+        padding: 12px 0;
+        border-radius: 20px;
+    }
+}

@@ -119,6 +119,7 @@
 .container-rigt-info{
     margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
 }
 /* .col-4-bh::after{
     content: "";
@@ -466,7 +467,9 @@ video{
         width: 50%;
     }
     .btn-primary-baner {
-        width: 70%;
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
     }
     .top-30{
         top: 10px;
@@ -476,6 +479,18 @@ video{
     }
     .img-sale- p{
         font-size: 8px;
+    }
+    .col5-bh{
+        width: 70%;
+        margin-left: 3rem;
+        margin-top: 1rem;
+    }
+    .col7-info{
+        width: 100%;
+    }
+    .all-icon-nav-baner {
+        font-size: 14px;
+        padding: 0 6px;
     }
 }
 

@@ -5,7 +5,7 @@
   font-family: SegoeUI, sans-serif;
   /* line-height: 1.428571429; */
 }
-
+title-web
 :root {
   --body-bg: #181818;
   --body-color: #f1f1f1;
@@ -443,9 +443,8 @@ a {
 }
 
 a span {
-  font-size: calc(
-    14px + (13 - 14) * ((100vw - 360px) / (1600 - 360))
-  ) !important;
+  font-size:
+    14px !important;
 }
 
 .active-1 span:hover {
@@ -652,6 +651,9 @@ figure img {
   color: #2871c6;
   transition:all 0.6s linear;
 }
+.item-1:hover .h6-news-item{
+  color: #2871c6;
+}
 .item-1 {
   text-align: center;
   padding: 5px;
@@ -848,9 +850,9 @@ body{
   text-align: center;
   font-weight: 600;
   color: #000c;
-  left: 8rem;
+  left: 6rem;
   background-color: rgba(128, 128, 128, 0.286);
-  padding: 25px 0;
+  padding: 30px 0;
   border-radius: 20px;
 }
 .h1-you-need {
@@ -1025,7 +1027,7 @@ figure .gamepad-2 {
   margin-bottom: 10px;
 }
 .pt-5 {
-  margin-top: 5rem;
+  margin-top: 3rem;
   padding-top: 0 !important;
 }
 .call-me {
@@ -1360,6 +1362,7 @@ use:hover {
 .h6-news-item{
   margin-top: 6px;
   margin-bottom: 0;
+  color: #00000c;
 }
 .img-sale-1{
   width:5%;

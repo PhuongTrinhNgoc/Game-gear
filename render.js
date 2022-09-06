@@ -28,21 +28,21 @@ const myItem = [
 },
   {
     id: 2,
-    name: "áy Chơi 2,ame PlayStation®4",
+    name: "Máy Chơi Game PlayStation®4",
     img: "./img-gamegear/item-2.png",
-    price: "1.900.000",
+    price: "1.600.000",
     sold:102
 },
   {
     id: 3,
-    name: "máy Chơi3,Game PlayStation®5",
+    name: "Máy Chơi Game PlayStation®3",
     img: "./img-gamegear/item-3.png",
-    price: "1.900.000",
+    price: "1.750.000",
     sold:102
 },
   {
     id: 4,
-    name: "console14",
+    name: "Tay Cầm Chơi Game Bluetooth iPega PG-9076 Dành Cho PS3,",
     img: "./img-gamegear/item-4.png",
     price: "1.900.000",
     sold:102

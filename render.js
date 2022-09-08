@@ -181,17 +181,17 @@ const myItem2 = [
     },
       {
         id: 23,
-        name: "console23",
-        img: "./img-gamegear/hot.png",
-        price: "1.900.000đ",
-        sold:102
+        name: "USP C-3 1T",
+        img: "./img-gamegear/bosung.png",
+        price: "400.000đ",
+        sold:19
     },
       {
         id: 24,
-        name: "console24",
-        img: "./img-gamegear/hot.png",
-        price: "1.900.000đ",
-        sold:102
+        name: "Phụ Kiện Hỗ Trợ Chơi Game Điện Thoại",
+        img: "./img-gamegear/bosung1.png",
+        price: "330.000đ",
+        sold:2
     },
 ]
 

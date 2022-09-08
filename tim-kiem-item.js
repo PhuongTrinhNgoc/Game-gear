@@ -235,7 +235,12 @@ tem-s">
 }
 render();
 
+
+let rearch;
+
 function showModaItem(event) {
+  const textS = document.querySelector('.text-s')
+  const elShow = document.querySelector('.soluong');
   const inPut = document.querySelector(".form-control");
   const filter = myItem.filter((a) =>
     a.name.toLocaleLowerCase().includes(inPut.value.toLocaleLowerCase())
@@ -272,5 +277,8 @@ function showModaItem(event) {
     )
     .join(",")
     .replaceAll(/,/g, "");
-  // console.log(filter)
+    rearch = filter.length;
+    elShow.textContent = `${filter.length}`
+    textS.innerHTML = inPut.value
+
 }

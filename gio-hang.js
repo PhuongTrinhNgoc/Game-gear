@@ -36,3 +36,22 @@ $('input.input-qty').each(function() {
       $this.attr('value', d).val(d)
     })
   })
+
+  // let myPR =[
+  //   {price:1980000}
+  // ]
+
+  function innerpr(e){
+    let pr = 1980000;
+    const inputPR = document.querySelector('.input-qty')
+    const newPR = document.querySelector('.price-end');
+   console.log(inputPR.value)
+    newPR.innerHTML = inputPR.value * pr
+  }
+  function innerpr1(event){
+    let pr = 1980000;
+    const inputPR = document.querySelector('.input-qty')
+    const newPR = document.querySelector('.price-end');
+   console.log(inputPR.value)
+    newPR.innerHTML = inputPR.value
+  }

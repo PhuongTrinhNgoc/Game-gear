@@ -20,6 +20,9 @@ body {
 li {
   list-style: none;
 }
+.f-wrap{
+  flex-wrap: wrap;
+}
 .f-d-rv {
   flex-direction: row-reverse;
 }
@@ -396,7 +399,30 @@ input::placeholder {
   margin-bottom: 20px !important;
   text-transform: uppercase;
 }
+.cnh{
+  font-size: 16px !important;
+  font-weight: bold;
+  margin-bottom: 10px !important;
+  text-transform: uppercase;
+}
+.all-img-cnh{
+  width: 100%;
+  justify-content: start;
+}
 
+.img-cnh{
+  width: 30%;
+}
+.img-cnh-1{
+  width: 10%;
+}
+.img-cnh-2{
+  width: 20%;
+  margin-left: 10px
+}
+.mt-4-fix{
+  margin-top: 0.7rem !important;
+}
 footer {
   overflow-x: hidden !important;
   background-color: #efeff9 !important;
@@ -443,8 +469,9 @@ a {
 }
 
 a span {
-  font-size:
-    14px !important;
+  font-size: calc(
+    14px + (13 - 14) * ((100vw - 360px) / (1600 - 360))
+  ) !important;
 }
 
 .active-1 span:hover {

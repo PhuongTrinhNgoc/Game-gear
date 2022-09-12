@@ -1452,3 +1452,10 @@ small:hover .li-a{
 .btn-danger:hover{
   border:1px solid #fff;
 } */
+button a{
+  color: #ef3b3c;
+}
+button:hover a {
+
+  color: #fff;
+}

@@ -239,6 +239,9 @@ render();
 let rearch;
 
 function showModaItem(event) {
+  
+  const noneDiv = document.querySelector('.rs-show')
+  const showDiv = document.querySelector('.reserach')
   const textS = document.querySelector('.text-s')
   const elShow = document.querySelector('.soluong');
   const inPut = document.querySelector(".form-control");
@@ -280,5 +283,7 @@ function showModaItem(event) {
     rearch = filter.length;
     elShow.textContent = `${filter.length}`
     textS.innerHTML = inPut.value
-
+    showDiv.style.display = 'block';
+    noneDiv.style.display = 'none'
+    document.querySelector("#tab-list").style = 'display: none';
 }

@@ -45,13 +45,13 @@ $('input.input-qty').each(function() {
     let pr = 1980000;
     const inputPR = document.querySelector('.input-qty')
     const newPR = document.querySelector('.price-end');
-   console.log(inputPR.value)
+  //  console.log(inputPR.value)
     newPR.innerHTML = inputPR.value * pr
   }
-  function innerpr1(event){
-    let pr = 1980000;
-    const inputPR = document.querySelector('.input-qty')
-    const newPR = document.querySelector('.price-end');
-   console.log(inputPR.value)
-    newPR.innerHTML = inputPR.value
-  }
+  // function innerpr1(event){
+  //   let pr = 1980000;
+  //   const inputPR = document.querySelector('.input-qty')
+  //   const newPR = document.querySelector('.price-end');
+  //  console.log(inputPR.value)
+  //   newPR.innerHTML = inputPR.value
+  // }

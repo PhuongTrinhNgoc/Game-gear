@@ -16,7 +16,15 @@
     margin-top: 32%;
 
 }
-
+.text-s{
+    color:#2871c6
+}   
+.form-none {
+    display: none;
+    position: absolute;
+    bottom: -26px;
+    right: 36px;
+}
 .filter-btn{
         display: flex;
         justify-content: space-around;
@@ -54,6 +62,16 @@
 .reserach,
 .list-item-filter{
     width: 50%;
+}
+.reserach{
+    display: none;
+}
+.rs-show{
+    width: 50%;
+}
+.tab-list{
+    display: flex;
+    justify-content: center;
 }
 .search-up{
     margin-bottom: 20px;

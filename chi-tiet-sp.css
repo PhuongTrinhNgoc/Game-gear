@@ -322,6 +322,18 @@ video{
     font-size: 10px !important;
     color: gray;
 }
+.title-info {
+    width: 75%;
+}
+/* @media (max-width:1900px){
+    .title-info {
+        top: 23%;
+        right: 7%;
+        background-color: rgba(255,255,255,0.6);
+        padding: 40px;
+        width: 59vw;
+    }
+} */
 @media (max-width:1024px){
     .title-info {
         top: 26%;

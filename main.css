@@ -5,7 +5,6 @@
   font-family: SegoeUI, sans-serif;
   /* line-height: 1.428571429; */
 }
-title-web
 :root {
   --body-bg: #181818;
   --body-color: #f1f1f1;
@@ -890,6 +889,7 @@ body{
   letter-spacing: 2px;
   line-height: 1.4;
   padding-inline: 5rem;
+  font-family: "sst",Arial,sans-serif;
 }
 .h4-input-main {
   font-weight: bolder;

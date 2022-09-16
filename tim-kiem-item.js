@@ -178,17 +178,17 @@ const myItem = [
 },
   {
     id: 23,
-    name: "console23",
-    img: "./img-gamegear/hot.png",
-    price: "1.900.000đ",
+    name: "camera MS-7",
+    img: "./img-gamegear/fix-1.png",
+    price: "1.650.000đ",
     sold:102
 },
   {
     id: 24,
-    name: "console24",
-    img: "./img-gamegear/hot.png",
-    price: "1.900.000đ",
-    sold:102
+    name: "Phụ Kiện conso-8",
+    img: "./img-gamegear/fix-2.png",
+    price: "550.000đ",
+    sold:15
 },
 ];
 

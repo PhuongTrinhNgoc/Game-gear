@@ -889,7 +889,7 @@ body{
   letter-spacing: 2px;
   line-height: 1.4;
   padding-inline: 5rem;
-  font-family: "sst",Arial,sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .h4-input-main {
   font-weight: bolder;

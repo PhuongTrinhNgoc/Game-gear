@@ -57,4 +57,7 @@ $('input.input-qty').each(function() {
   })
 
 
-  
+  function updow(event){
+    let upDow = document.getElementById('updow');
+    upDow.classList.toggle("updow1");
+  }

@@ -45,8 +45,8 @@ $('input.input-qty').each(function() {
     let pr = 1980000;
     const inputPR = document.querySelector('.input-qty')
     const newPR = document.querySelector('.price-end');
-  //  console.log(inputPR.value)
-    newPR.innerHTML = inputPR.value * pr
+
+    newPR.innerHTML = (inputPR.value * pr).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "");
   }
   // function innerpr1(event){
   //   let pr = 1980000;
@@ -54,4 +54,13 @@ $('input.input-qty').each(function() {
   //   const newPR = document.querySelector('.price-end');
   //  console.log(inputPR.value)
   //   newPR.innerHTML = inputPR.value
+  // }
+
+  // function showbh(){
+  // let checkbox = document.getElementById('check-box');
+  // let prItem = document.getElementById('pr-item');
+  // let prShip = document.getElementById('pr-ship');
+  // let prtt = document.getElementById('pr-tt');
+  // let prAll = document.getElementById('pr-all');
+    
   // }

@@ -37,6 +37,14 @@
     color: #fff;
 
 }
+.blue-btn:hover{
+background-color: #1b5598;
+cursor: pointer;
+}
+.red-btn:hover{
+    background-color: rgb(162, 15, 15);
+    cursor: pointer;
+}
 .red-btn{
     width: 50%;
     padding:6px;
@@ -95,12 +103,3 @@
         width: 100%;
     }
 };
-/* @media (max-width: 507px){
-   .filter-by {
-    margin-right: 10px;
-    margin-bottom: 0;
-    font-size: 10px;
-    width: 30% !important;
-    text-align: end;
-}
-} */

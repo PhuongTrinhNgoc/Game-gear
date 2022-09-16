@@ -334,6 +334,9 @@ video{
         width: 59vw;
     }
 } */
+.updow1{
+    display: none !important;
+}
 @media (max-width:1024px){
     .title-info {
         top: 26%;

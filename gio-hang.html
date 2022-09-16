@@ -226,7 +226,7 @@
               </div>
               <div class="card-conten-gh col-12">
                 <div class="card-item-gh d-flex a-center">
-                  <input class="checkbox-gh" type="checkbox" name="check" />
+                  <input onclick="showbh()" id="check-box" class="checkbox-gh" type="checkbox" name="check" />
                   <a href="chi-tiet-sp.html" class="item-gh d-flex a-center">
                     <img class="img-gh" src="img-gamegear/ps5.png" alt="" />
                     <div class="text-item-gh">
@@ -352,7 +352,7 @@
           <div class="col-lg-4 col-md-12 total-cart-container">
             <div class="total-value d-flex justify-content-between a-center">
               <span>Tiền hàng</span>
-              <span>1.900.000&nbsp;₫</span>
+              <span id="pr-item">1.900.000&nbsp;₫</span>
             </div>
 
             <div class="shipment-fee d-flex justify-content-between a-center">
@@ -367,7 +367,7 @@
                   data-original-title="Chọn địa chỉ để hiện phí ship"
                 ></i>
               </span>
-              <span>30.000&nbsp;₫</span>
+              <span id="pr-ship">30.000&nbsp;₫</span>
             </div>
 
             <div class="discount d-flex justify-content-between a-center">
@@ -376,7 +376,7 @@
             </div>
 
             <div class="pretax-value d-flex justify-content-between a-center">
-              <span>Tạm tính</span>
+              <span id="pr-tt">Tạm tính</span>
               <span>1.930.000&nbsp;₫</span>
             </div>
 
@@ -435,7 +435,7 @@
               class="grand-total fw-bold d-flex justify-content-between a-center"
             >
               <span>Tổng cộng</span>
-              <span>1.930.000&nbsp;₫</span>
+              <span id="pr-all">1.930.000&nbsp;₫</span>
             </div>
           </div>
         </div>
@@ -1296,5 +1296,6 @@
         crossorigin="anonymous"
       ></script>
     </div>
+
   </body>
 </html>

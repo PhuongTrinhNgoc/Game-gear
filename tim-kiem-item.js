@@ -286,4 +286,5 @@ function showModaItem(event) {
     showDiv.style.display = 'block';
     noneDiv.style.display = 'none'
     document.querySelector("#tab-list").style = 'display: none';
+    doucument.getElementById("container-rps").style = 'padding-bottom:10px';
 }

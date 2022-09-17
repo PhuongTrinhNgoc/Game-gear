@@ -1076,9 +1076,9 @@ figure .gamepad-2 {
 .btn-call-me::after {
   display: none;
 }
-.btn.show {
+/* .btn.show {
   background-color: #ef3b3c !important;
-}
+} */
 .btn-primany {
 }
 .btn-call-me:hover {
@@ -1458,4 +1458,14 @@ button a{
 button:hover a {
 
   color: #fff;
+}
+.fa-k1:hover{
+  background-color: #ef3b3c !important;
+}
+.btn.show:focus, .btn:active:focus {
+  box-shadow: none !important;
+  background-color: none !important;
+}
+.btn.show {
+  background-color: none !important;
 }
